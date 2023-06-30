@@ -7,6 +7,9 @@ const dbPath = path.join(userData, './data/data.db');
 const db = new Datastore({ filename: dbPath, autoload: true });
 const { ipcMain } = require('electron');
 
+
+const fs = require('fs');
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 
 
@@ -85,5 +88,48 @@ function insertData(data) {
 ipcMain.on('datos-para-insertar', (event, data) => {
   insertData(data);
 });
+
+/*ipcMain.on('direccion', (event, data) => {
+  console.log("dir:"+data);
+});*/
+
+
+
+//toma direccion de archivos colecta txts de esa direccion y los manda a un objeto
+ipcMain.on('direccion', (event, ubicacion) => {
+
+  console.log("dir:"+ubicacion);
+
+  const archivos = fs.readdirSync(ubicacion).filter(file => path.extname(file) === '.txt');
+  const objetos = [];
+
+  archivos.forEach(archivo => {
+    const contenido = fs.readFileSync(path.join(ubicacion, archivo), 'utf8');
+    const objeto = {
+      nombre: archivo,
+      contenido: contenido
+    };
+    objetos.push(objeto);
+  });
+
+  imprimirArrayObjetos(objetos);
+
+  event.reply('objetos', objetos);
+});
+
+
+
+//imprecion de objeto
+const imprimirArrayObjetos = (arrayObjetos) => {
+  arrayObjetos.forEach((objeto, index) => {
+    console.log(`Objeto ${index + 1}:`);
+    Object.entries(objeto).forEach(([clave, valor]) => {
+      console.log(`  ${clave}: ${valor}`);
+    });
+    console.log('-----------------------');
+  });
+};
+
+
 
 global.insertData = insertData;

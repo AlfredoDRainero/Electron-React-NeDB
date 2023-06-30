@@ -24,6 +24,11 @@ contextBridge.exposeInMainWorld('electronAPI', {
     ipcRenderer.send('datos-para-insertar', datos);
   },
 
+  enviarDireccion: (datos) => {
+    ipcRenderer.send('direccion', datos);
+  },
+
+
   // Ejemplo de método que escucha eventos del proceso principal
   recibirMensaje: (callback) => {
     ipcRenderer.on('mensaje', (event, mensaje) => {
