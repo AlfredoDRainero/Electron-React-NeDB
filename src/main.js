@@ -1,18 +1,15 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
-const Datastore = require('nedb');
+const { app, BrowserWindow } = require("electron");
 
-const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
-const dbPath = path.join(userData, './data/data.db');
-const db = new Datastore({ filename: dbPath, autoload: true });
-const { ipcMain } = require('electron');
+const { ipcMain } = require("electron");
+
+const {
+  SaveFilesToDB
+} = require("./services/database/FilesToDb");
 
 
-const fs = require('fs');
+
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
-
-
 
 const createWindow = () => {
   // Create the browser window.
@@ -20,10 +17,9 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      
       //preload: path.join(__dirname, './preload.js'),
-      preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
-    },
+      preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY
+    }
   });
 
   // and load the index.html of the app.
@@ -36,18 +32,18 @@ const createWindow = () => {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow);
+app.on("ready", createWindow);
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") {
     app.quit();
   }
 });
 
-app.on('activate', () => {
+app.on("activate", () => {
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if (BrowserWindow.getAllWindows().length === 0) {
@@ -65,71 +61,14 @@ app.on('activate', () => {
 
 
 
-// base de datos
-db.loadDatabase((err) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log('Base de datos cargada correctamente');
-  }
-});
-
-
-function insertData(data) {
-  db.insert(data, (err, newDoc) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log('Datos insertados:', newDoc);
-    }
-  });
-}
-
-ipcMain.on('datos-para-insertar', (event, data) => {
-  insertData(data);
-});
-
-/*ipcMain.on('direccion', (event, data) => {
-  console.log("dir:"+data);
-});*/
 
 
 
-//toma direccion de archivos colecta txts de esa direccion y los manda a un objeto
-ipcMain.on('direccion', (event, ubicacion) => {
-
-  console.log("dir:"+ubicacion);
-
-  const archivos = fs.readdirSync(ubicacion).filter(file => path.extname(file) === '.txt');
-  const objetos = [];
-
-  archivos.forEach(archivo => {
-    const contenido = fs.readFileSync(path.join(ubicacion, archivo), 'utf8');
-    const objeto = {
-      nombre: archivo,
-      contenido: contenido
-    };
-    objetos.push(objeto);
-  });
-
-  imprimirArrayObjetos(objetos);
-
-  event.reply('objetos', objetos);
+ipcMain.on("direccion", (event, ubicacion) => {
+  SaveFilesToDB(ubicacion);
 });
 
 
 
-//imprecion de objeto
-const imprimirArrayObjetos = (arrayObjetos) => {
-  arrayObjetos.forEach((objeto, index) => {
-    console.log(`Objeto ${index + 1}:`);
-    Object.entries(objeto).forEach(([clave, valor]) => {
-      console.log(`  ${clave}: ${valor}`);
-    });
-    console.log('-----------------------');
-  });
-};
 
 
-
-global.insertData = insertData;
