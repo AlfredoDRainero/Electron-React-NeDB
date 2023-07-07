@@ -1,7 +1,6 @@
 const { app } = require("electron");
 const path = require("path");
 const Datastore = require("nedb");
-const { ipcMain } = require("electron");
 const fs = require("fs");
 
 const {
@@ -16,8 +15,6 @@ const {
   actualizarNumeroPartnb
 } = require("../database/partnb");
 
-
-
 //busca ultimo numero de indice partnb
 let partNumber = 0;
 leerNumeroPartnb((numero) => {
@@ -29,80 +26,53 @@ leerNumeroPartnb((numero) => {
 
 const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let dbPath = path.join(userData, "../../data/data.db");
+let dbPath // = path.join(userData, "../../data/data.db");
 let db = new Datastore({ filename: dbPath, autoload: true });
 
 async function SaveFilesToDB(ubicacion) {
-  //await delay(2000); 
-    console.log("dir:" + ubicacion);
+  //delay por traba al arranque para que de tiempo de cargar programa
+  await delay(2000);
+  console.log("dir:" + ubicacion);
 
-    const archivos = fs
-      .readdirSync(ubicacion)
-      .filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
+  const archivos = fs
+    .readdirSync(ubicacion)
+    .filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
 
-    archivos.forEach((archivo) => {
-      let archivoTitulo = archivo.replace("_chr", "_hdr");
-      console.log("archivoTitulo:"+obtenerSubcadenaHastaGuionBajo(archivoTitulo))
+  archivos.forEach((archivo) => {
+    let archivoTitulo = archivo.replace("_chr", "_hdr");
+    console.log(      "archivoTitulo:" + obtenerSubcadenaHastaGuionBajo(archivoTitulo)    );
 
-      dbPath = path.join(
-        userData,
-        "./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) + ".db"
-      );
-      console.log("dbPath"+dbPath)
-        console.log("----------1")
-      if (!fs.existsSync(dbPath)) {
-        console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
-        fs.writeFileSync(dbPath, ""); // Crear archivo vacío
-      }
-      console.log("----------2")
-      db = new Datastore({ filename: dbPath, autoload: true });
-      console.log("----------3")
-      let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
-      console.log("----------4")
-      saveDataToDB(splitTextTitulo(Titulo), partNumber);
-      console.log("----------5")
-      let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
-      console.log("----------6")
-      saveDataToDB(convertLastFiveColumns(splitText(contenido)), partNumber);
-      console.log("----------7")
+    dbPath = path.join(userData, "./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) + ".db" );
+    console.log("dbPath" + dbPath);
 
-      partNumber++;
-    });
+    if (!fs.existsSync(dbPath)) {
+      console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
+      fs.writeFileSync(dbPath, ""); // Crear archivo vacío
+    }
 
-    actualizarNumeroPartnb(partNumber);
- 
+    db = new Datastore({ filename: dbPath, autoload: true });
+
+    let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
+    saveDataToDB(splitTextTitulo(Titulo), partNumber);
+
+    let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
+    saveDataToDB(convertLastFiveColumns(splitText(contenido)), partNumber);
+
+    partNumber++;
+  });
+
+  actualizarNumeroPartnb(partNumber);
 }
 
+// ver si hace falta..
 function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Uso del delay
-console.log('Inicio');
+console.log("Inicio");
 // Espera 2 segundos (2000 milisegundos)
-console.log('Después del delay');
-
+console.log("Después del delay");
 
 //base de datos
 function saveDataToDB(data, partnb) {

@@ -61,7 +61,7 @@ function App() {
   return (
     <div>
       <h2>Hello from React in Electron! laal</h2>
-
+      
       
      {/* <button onClick={openFile}>Abrir Archivo</button>*/}
 

@@ -63,7 +63,7 @@ app.on("activate", () => {
 
 
 
-
+// carga de archivos en base de datos con llamada activada pedida desde react
 ipcMain.on("direccion", (event, ubicacion) => {
   SaveFilesToDB(ubicacion);
 });
