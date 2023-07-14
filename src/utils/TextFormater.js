@@ -18,13 +18,13 @@ function splitTextTitulo(text) {
   for (let i = 0; i < rows.length; i++) {
     const columns = rows[i].split("\t");
     const selectedColumns = [
-      columns[2], // Columna 3
-      columns[4], // Columna 5
-      columns[6], // Columna 7
-      columns[8], // Columna 9
-      columns[22], // Columna 23
-      columns[37], // Columna 38
-      columns[55] // Columna 56
+      columns[2], // Columna 3 filename
+      columns[4], // Columna 5 date
+      columns[6], // Columna 7 time
+      columns[8], // Columna 9 dmesn (machine name)
+      columns[22], // Columna 23 partcomment
+      columns[37], // Columna 38 order
+      columns[55] // Columna 56 temperature
     ];
 
     result.push(selectedColumns);
@@ -32,6 +32,8 @@ function splitTextTitulo(text) {
 
   return result;
 }
+
+
 
 function convertLastFiveColumns(data) {
   const newData = [];
@@ -71,4 +73,5 @@ module.exports = {
   splitText,
   convertLastFiveColumns,
   splitTextTitulo
+
 };

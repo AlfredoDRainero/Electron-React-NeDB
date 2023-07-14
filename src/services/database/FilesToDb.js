@@ -3,23 +3,25 @@ const path = require("path");
 //const Datastore = require("nedb");
 const fs = require("fs");
 
-
 const {
   splitText,
   convertLastFiveColumns,
   splitTextTitulo,
   obtenerSubcadenaHastaGuionBajo
-} = require("../../utils/TextFormater2");
+} = require("../../utils/TextFormater");
+
+const {
+  obtenerFechaMedicion,
+  obtenerYearFromDate,
+  obtenerMonthFromDate
+} = require("../../utils/fecha");
 
 const {
   leerNumeroPartnb,
   actualizarNumeroPartnb
 } = require("../database/partnb");
 
-const {
-  saveDataToDB  
-} = require("../database/database");
-
+const { saveDataToDB } = require("../database/database");
 
 //busca ultimo numero de indice partnb
 let partNumber = 0;
@@ -32,34 +34,44 @@ leerNumeroPartnb((numero) => {
 
 const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
 
-
-
-
 async function SaveFilesToDB(ubicacion) {
-  // Delay para asegurar la carga del programa
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  //console.log("dir:" + ubicacion);
 
-  console.log("dir:" + ubicacion);
-
-  const archivos = fs.readdirSync(ubicacion).filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
+  const archivos = fs
+    .readdirSync(ubicacion)
+    .filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
 
   for (const archivo of archivos) {
     let archivoTitulo = archivo.replace("_chr", "_hdr");
-    console.log("archivoTitulo:" + obtenerSubcadenaHastaGuionBajo(archivoTitulo));
+    //console.log("archivoTitulo:" + obtenerSubcadenaHastaGuionBajo(archivoTitulo));
 
-    let dbPath = path.join(userData, "./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) + ".db");
-    console.log("dbPath:", dbPath);
+
+    let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
+    const date = obtenerFechaMedicion(Titulo);
+    const year = obtenerYearFromDate(date);
+    const month = obtenerMonthFromDate(date);
+
+
+    let dbPath = path.join(
+      userData,
+      "./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) +"_"+year+"_"+month+ ".db"
+    );
+    //console.log("dbPath:", dbPath);
 
     if (!fs.existsSync(dbPath)) {
       console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
       fs.writeFileSync(dbPath, ""); // Crear archivo vacío
     }
 
-    let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
+    
     await saveDataToDB(splitTextTitulo(Titulo), partNumber, dbPath);
 
     let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
-    await saveDataToDB(convertLastFiveColumns(splitText(contenido)), partNumber, dbPath);
+    await saveDataToDB(
+      convertLastFiveColumns(splitText(contenido)),
+      partNumber,
+      dbPath
+    );
 
     partNumber++;
   }
@@ -67,33 +79,22 @@ async function SaveFilesToDB(ubicacion) {
   actualizarNumeroPartnb(partNumber);
 }
 
-
 // ver si hace falta..
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+/*-------------------------- async y await -------------------
+ Cuando se declara una función como async, automáticamente devuelve una promesa. 
+ Esto significa que se puede utilizar await dentro de la función 
+ para esperar a que se resuelva una promesa y obtener su resultado de forma sincrónica.
+ 
+ Al utilizar la palabra clave await antes de una expresión de promesa, 
+ la función se detiene en ese punto hasta que la promesa se resuelva o se rechace
 
-
-//base de datos
-/*function saveDataToDB(data, partnb) {
-  data.forEach((row) => {
-    const document = {};
-    for (let i = 2; i < row.length; i++) {
-      document[i - 1] = row[i];
-    }
-
-    document.partnb = partnb;
-
-    db.insert(document, (err, newDoc) => {
-      if (err) {
-        console.error("Error al insertar en la base de datos:", err);
-      } else {
-        console.log("Documento insertado:", newDoc);
-      }
-    });
-  });
-}*/
+Al llamar a una función async, se obtiene una promesa que representa la ejecución de la función. Esto permite utilizar métodos 
+como .then() y .catch() para manejar la resolución o el rechazo de la promesa devuelta por la función async.
+ */
 
 /*// base de datos
 db.loadDatabase((err) => {
@@ -104,15 +105,6 @@ db.loadDatabase((err) => {
   }
 });
 */
-/*function insertData(data) {
-  db.insert(data, (err, newDoc) => {
-    if (err) {
-      console.error(err);
-    } else {
-      console.log("Datos insertados:", newDoc);
-    }
-  });
-}*/
 
 /*ipcMain.on("datos-para-insertar", (event, data) => {
   insertData(data);
