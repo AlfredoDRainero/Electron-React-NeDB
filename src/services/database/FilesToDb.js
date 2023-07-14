@@ -21,7 +21,8 @@ const {
   actualizarNumeroPartnb
 } = require("../database/partnb");
 
-const { saveDataToDB } = require("../database/database");
+const { saveContenidoDataToDB,
+  saveTituloDataToDB } = require("../database/database");
 
 //busca ultimo numero de indice partnb
 let partNumber = 0;
@@ -45,34 +46,41 @@ async function SaveFilesToDB(ubicacion) {
     let archivoTitulo = archivo.replace("_chr", "_hdr");
     //console.log("archivoTitulo:" + obtenerSubcadenaHastaGuionBajo(archivoTitulo));
 
-
+    // graba titulo + nombre de archivo
     let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
     const date = obtenerFechaMedicion(Titulo);
     const year = obtenerYearFromDate(date);
     const month = obtenerMonthFromDate(date);
 
-
     let dbPath = path.join(
       userData,
-      "./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) +"_"+year+"_"+month+ ".db"
+      "./data/" +
+        obtenerSubcadenaHastaGuionBajo(archivoTitulo) +
+        "_" +
+        year +
+        "_" +
+        month +
+        ".db"
     );
-    //console.log("dbPath:", dbPath);
+  
 
     if (!fs.existsSync(dbPath)) {
-      console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
+      //console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
       fs.writeFileSync(dbPath, ""); // Crear archivo vacío
     }
+    //console.log("titulo:",Titulo)
+    await saveTituloDataToDB(splitTextTitulo(Titulo),Titulo, partNumber, dbPath);
 
-    
-    await saveDataToDB(splitTextTitulo(Titulo), partNumber, dbPath);
-
+    //---------------graba contenido
     let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
-    await saveDataToDB(
+    await saveContenidoDataToDB(
       convertLastFiveColumns(splitText(contenido)),
       partNumber,
       dbPath
+      
     );
 
+    
     partNumber++;
   }
 

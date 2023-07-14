@@ -33,7 +33,20 @@ function splitTextTitulo(text) {
   return result;
 }
 
+function obtenerDatosColumnasTexto(text,columna) {
+  const rows = text.split("\n");
 
+  if (rows.length >= 2) {
+    const columns = rows[1].split("\t");
+
+    if (columns.length >= 5) {
+      //console.log("***fecha", columns[4]);
+      return columns[columna]; // Valor de la columna 4, fila 2
+    }
+  }
+
+  return null; // Si no se encuentra el valor deseado
+}
 
 function convertLastFiveColumns(data) {
   const newData = [];
@@ -72,6 +85,7 @@ module.exports = {
   obtenerSubcadenaHastaGuionBajo,
   splitText,
   convertLastFiveColumns,
-  splitTextTitulo
+  splitTextTitulo,
+  obtenerDatosColumnasTexto
 
 };

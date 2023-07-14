@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import {splitText, convertLastFiveColumns} from './utils/TextFormater2'
+import {splitText, convertLastFiveColumns} from './utils/TextFormater'
 import "./index.css"
 //const electron = window.require('electron');
 

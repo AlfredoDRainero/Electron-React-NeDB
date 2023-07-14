@@ -19,7 +19,7 @@ function obtenerYearFromDate(fecha) {
       const columns = rows[1].split("\t");
   
       if (columns.length >= 5) {
-        console.log("***fecha", columns[4]);
+        //console.log("***fecha", columns[4]);
         return columns[4]; // Valor de la columna 4, fila 2
       }
     }
