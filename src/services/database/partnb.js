@@ -30,10 +30,10 @@ function leerNumeroPartnb(callback) {
     const numeroActualizado = numero;
   
     // Crear o cargar la base de datos 'partnb.db'
-    const db = new Datastore({ filename: "./src/services/database/partnb.db", autoload: true });
+    const db2 = new Datastore({ filename: "./src/services/database/partnb.db", autoload: true });
   
     // Actualizar el número en la base de datos
-    db.update({}, { numero: numeroActualizado }, { upsert: true }, (err, numReplaced) => {
+    db2.update({}, { numero: numeroActualizado }, { upsert: true }, (err, numReplaced) => {
       if (err) {
         console.error("Error al actualizar el número:", err);
         return;

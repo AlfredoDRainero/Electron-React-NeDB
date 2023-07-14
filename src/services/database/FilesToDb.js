@@ -1,7 +1,8 @@
 const { app } = require("electron");
 const path = require("path");
-const Datastore = require("nedb");
+//const Datastore = require("nedb");
 const fs = require("fs");
+
 
 const {
   splitText,
@@ -15,6 +16,11 @@ const {
   actualizarNumeroPartnb
 } = require("../database/partnb");
 
+const {
+  saveDataToDB  
+} = require("../database/database");
+
+
 //busca ultimo numero de indice partnb
 let partNumber = 0;
 leerNumeroPartnb((numero) => {
@@ -26,56 +32,51 @@ leerNumeroPartnb((numero) => {
 
 const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
 
-let dbPath // = path.join(userData, "../../data/data.db");
-let db = new Datastore({ filename: dbPath, autoload: true });
+
+
 
 async function SaveFilesToDB(ubicacion) {
-  //delay por traba al arranque para que de tiempo de cargar programa
-  await delay(2000);
+  // Delay para asegurar la carga del programa
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
   console.log("dir:" + ubicacion);
 
-  const archivos = fs
-    .readdirSync(ubicacion)
-    .filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
+  const archivos = fs.readdirSync(ubicacion).filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
 
-  archivos.forEach((archivo) => {
+  for (const archivo of archivos) {
     let archivoTitulo = archivo.replace("_chr", "_hdr");
-    console.log(      "archivoTitulo:" + obtenerSubcadenaHastaGuionBajo(archivoTitulo)    );
+    console.log("archivoTitulo:" + obtenerSubcadenaHastaGuionBajo(archivoTitulo));
 
-    dbPath = path.join(userData, "./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) + ".db" );
-    console.log("dbPath" + dbPath);
+    let dbPath = path.join(userData, "./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) + ".db");
+    console.log("dbPath:", dbPath);
 
     if (!fs.existsSync(dbPath)) {
       console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
       fs.writeFileSync(dbPath, ""); // Crear archivo vacío
     }
 
-    db = new Datastore({ filename: dbPath, autoload: true });
-
     let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
-    saveDataToDB(splitTextTitulo(Titulo), partNumber);
+    await saveDataToDB(splitTextTitulo(Titulo), partNumber, dbPath);
 
     let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
-    saveDataToDB(convertLastFiveColumns(splitText(contenido)), partNumber);
+    await saveDataToDB(convertLastFiveColumns(splitText(contenido)), partNumber, dbPath);
 
     partNumber++;
-  });
+  }
 
   actualizarNumeroPartnb(partNumber);
 }
+
 
 // ver si hace falta..
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-// Uso del delay
-console.log("Inicio");
-// Espera 2 segundos (2000 milisegundos)
-console.log("Después del delay");
+
 
 //base de datos
-function saveDataToDB(data, partnb) {
+/*function saveDataToDB(data, partnb) {
   data.forEach((row) => {
     const document = {};
     for (let i = 2; i < row.length; i++) {
@@ -92,9 +93,9 @@ function saveDataToDB(data, partnb) {
       }
     });
   });
-}
+}*/
 
-// base de datos
+/*// base de datos
 db.loadDatabase((err) => {
   if (err) {
     console.error(err);
@@ -102,8 +103,8 @@ db.loadDatabase((err) => {
     console.log("Base de datos cargada correctamente");
   }
 });
-
-function insertData(data) {
+*/
+/*function insertData(data) {
   db.insert(data, (err, newDoc) => {
     if (err) {
       console.error(err);
@@ -111,14 +112,14 @@ function insertData(data) {
       console.log("Datos insertados:", newDoc);
     }
   });
-}
+}*/
 
 /*ipcMain.on("datos-para-insertar", (event, data) => {
   insertData(data);
 });*/
 
 //imprecion de objeto
-const imprimirArrayObjetos = (arrayObjetos) => {
+/*const imprimirArrayObjetos = (arrayObjetos) => {
   arrayObjetos.forEach((objeto, index) => {
     console.log(`Objeto ${index + 1}:`);
     Object.entries(objeto).forEach(([clave, valor]) => {
@@ -126,10 +127,10 @@ const imprimirArrayObjetos = (arrayObjetos) => {
     });
     console.log("-----------------------");
   });
-};
+};*/
 
 module.exports = {
   SaveFilesToDB
 };
 
-global.insertData = insertData;
+//global.insertData = insertData;
