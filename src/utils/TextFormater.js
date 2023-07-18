@@ -4,34 +4,56 @@ function splitText(text) {
 
   for (let i = 0; i < rows.length; i++) {
     const columns = rows[i].split("\t"); // Divide cada fila en columnas utilizando el carácter de tabulación ('\t')
-    const slicedColumns = columns.slice(0, 4).concat(columns.slice(5, 11)); // Obtiene un subconjunto de columnas según los índices especificados
+    const slicedColumns = columns.slice(0, 4).concat(columns.slice(5, 9)); // Obtiene un subconjunto de columnas según los índices especificados
     result.push(slicedColumns); // Agrega las columnas al resultado
   }
 
   return result; // Devuelve la matriz resultante
 }
 
-function splitTextTitulo(text) {
+
+
+function splitTextTitulo(text, partnb) {
+//funcion que toma un string lo separa en filas y columnas, busca palabras claves y devuelve 
+//en un objeto el valor de esas palabras que es tomado sobre la misma columna un renglon adelante
+
   const rows = text.split("\n");
-  const result = [];
+  const datosTituloInformeObj = {};
 
-  for (let i = 0; i < rows.length; i++) {
+  const palabrasClave = [
+    "filename",
+    "operid",
+    "date",
+    "time",
+    "dmesn",
+    "partcomment",
+    "order",
+    "temperatureworkpiece"
+  ];
+
+  for (let i = 0; i < rows.length - 1; i++) {
     const columns = rows[i].split("\t");
-    const selectedColumns = [
-      columns[2], // Columna 3 filename
-      columns[4], // Columna 5 date
-      columns[6], // Columna 7 time
-      columns[8], // Columna 9 dmesn (machine name)
-      columns[22], // Columna 23 partcomment
-      columns[37], // Columna 38 order
-      columns[55] // Columna 56 temperature
-    ];
+    const nextRowColumns = rows[i + 1].split("\t");
 
-    result.push(selectedColumns);
+    for (let j = 0; j < columns.length; j++) {
+      const palabra = columns[j];
+
+      if (palabrasClave.includes(palabra)) {
+        const valor = nextRowColumns[j];
+        datosTituloInformeObj[palabra] = valor;
+      }
+    }
   }
 
-  return result;
+
+  //agrega numero que usamos como indice partnb
+  datosTituloInformeObj["partnb"] = partnb;
+  //console.log("Valores en el objeto datosTituloInformeObj:");
+  //console.log(datosTituloInformeObj);
+
+  return datosTituloInformeObj;
 }
+
 
 function obtenerDatosColumnasTexto(text,columna) {
   const rows = text.split("\n");
@@ -86,6 +108,7 @@ module.exports = {
   splitText,
   convertLastFiveColumns,
   splitTextTitulo,
-  obtenerDatosColumnasTexto
+  obtenerDatosColumnasTexto,
+ 
 
 };

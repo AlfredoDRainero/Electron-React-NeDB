@@ -1,6 +1,5 @@
 const { app } = require("electron");
 const path = require("path");
-//const Datastore = require("nedb");
 const fs = require("fs");
 
 const {
@@ -21,8 +20,14 @@ const {
   actualizarNumeroPartnb
 } = require("../database/partnb");
 
-const { saveContenidoDataToDB,
-  saveTituloDataToDB } = require("../database/database");
+const { saveContenidoDataToDB  } = require("../database/SaveCHRtoDatabase");
+
+const { saveTituloDataToDB } = require("../database/SaveHDRtoDatabase");
+
+const { buscarArchivosEnCarpeta } = require("../files/files");
+
+const { buscarFechaTiempoYPartnb } = require("../database/loadDB");
+
 
 //busca ultimo numero de indice partnb
 let partNumber = 0;
@@ -36,15 +41,13 @@ leerNumeroPartnb((numero) => {
 const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
 
 async function SaveFilesToDB(ubicacion) {
-  //console.log("dir:" + ubicacion);
 
   const archivos = fs
     .readdirSync(ubicacion)
     .filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
 
   for (const archivo of archivos) {
-    let archivoTitulo = archivo.replace("_chr", "_hdr");
-    //console.log("archivoTitulo:" + obtenerSubcadenaHastaGuionBajo(archivoTitulo));
+    let archivoTitulo = archivo.replace("_chr", "_hdr");   
 
     // graba titulo + nombre de archivo
     let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
@@ -52,31 +55,18 @@ async function SaveFilesToDB(ubicacion) {
     const year = obtenerYearFromDate(date);
     const month = obtenerMonthFromDate(date);
 
-    let dbPath = path.join(
-      userData,
-      "./data/" +
-        obtenerSubcadenaHastaGuionBajo(archivoTitulo) +
-        "_" +
-        year +
-        "_" +
-        month +
-        ".db"
-    );
+    let dbPath = path.join(userData,"./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) + "_" + year + "_" +  month + ".db");
   
-
     if (!fs.existsSync(dbPath)) {
       //console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
       fs.writeFileSync(dbPath, ""); // Crear archivo vacío
     }
-    //console.log("titulo:",Titulo)
-    await saveTituloDataToDB(splitTextTitulo(Titulo),Titulo, partNumber, dbPath);
+    //await saveTituloDataToDB(splitTextTitulo(Titulo),Titulo, partNumber, dbPath);
+    await saveTituloDataToDB(splitTextTitulo(Titulo,partNumber), dbPath);
 
     //---------------graba contenido
     let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
-    await saveContenidoDataToDB(
-      convertLastFiveColumns(splitText(contenido)),
-      partNumber,
-      dbPath
+    await saveContenidoDataToDB(      convertLastFiveColumns(splitText(contenido)), partNumber, dbPath
       
     );
 
@@ -84,7 +74,23 @@ async function SaveFilesToDB(ubicacion) {
     partNumber++;
   }
 
+  
   actualizarNumeroPartnb(partNumber);
+
+  
+  /*buscarFechaTiempoYPartnb(buscarArchivosEnCarpeta()).then((resultados) => {
+    console.log('Resultados:', resultados);
+  });*/
+  //console.log("buscarArchivosEnCarpeta():",buscarArchivosEnCarpeta())
+  buscarArchivosEnCarpeta().then((resultados) => {
+    console.log('Archivos encontrados:', resultados.archivosEncontrados);
+  }).catch((error) => {
+    console.error('Error:', error);
+  });
+  
+  //const baseDeDatos = buscarArchivosEnCarpeta();
+  //console.log("baseDeDatos:",baseDeDatos)
+
 }
 
 // ver si hace falta..
