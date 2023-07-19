@@ -8,12 +8,8 @@ async function obtenerRegistrosEncontrados() {
   try {
     // Primero, buscamos y obtenemos los nombres de los archivos en la carpeta './data'
     const resultadosArchivos = await buscarArchivosEnCarpeta();
-   // console.log(  "Archivos encontrados:", resultadosArchivos.archivosEncontrados);
-
     // Luego, buscamos y obtenemos los campos date, time y partnb de los archivos encontrados
     const resultadosBusqueda = await buscarFechaTiempoYPartnb(  resultadosArchivos.archivosEncontrados );
-   // console.log("Resultados:", resultadosBusqueda);
-
     // Retornamos los resultados como un objeto
     return resultadosBusqueda;
   } catch (error) {
@@ -47,10 +43,7 @@ async function buscarFechaTiempoYPartnb(dbPaths) {
       db.find({}, { date: 1, time: 1, partnb: 1, _id: 0 }, (err, registros) => {
         if (err) {
           console.error("Error al buscar en la base de datos:", err);
-          resolve({
-            dbPath,
-            error: err
-          });
+          resolve({  dbPath, error: err });
         } else {
           // Crea un objeto para almacenar los valores encontrados
           const valoresEncontrados = {
@@ -95,7 +88,8 @@ async function buscarFechaTiempoYPartnb(dbPaths) {
 }
 
 module.exports = {
-  buscarFechaTiempoYPartnb,obtenerRegistrosEncontrados
+  buscarFechaTiempoYPartnb,
+  obtenerRegistrosEncontrados
 };
 
 // Llamada a la función para buscar y mostrar los datos
