@@ -1,0 +1,693 @@
+{"1":"C1_2_PC","2":"Y Value","3":"-82.641","4":"-82.630","5":"0.100","6":"-0.100","partnb":1192,"_id":"08HMh5EhFwFaEWoE"}
+{"1":"61B11_203_RFL","2":"Diameter","3":"20.008","4":"20.016","5":"0.016","6":"-0.016","partnb":1208,"_id":"0OG2S0ZmyabsZtW2"}
+{"1":"61B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.238","4":"26.200","5":"0.050","6":"-0.050","partnb":1204,"_id":"0RRvfDr8CwKsstej"}
+{"1":"2B03_4_PC","2":"True Position  2d Polar","3":"0.083","4":"0.000","5":"0.500","6":"0.000","partnb":1200,"_id":"0TZrF8hC57W2ix10"}
+{"1":"61B11_203_RFL","2":"Diameter","3":"20.008","4":"20.016","5":"0.016","6":"-0.016","partnb":1204,"_id":"0cyqdhs4duyn5gqA"}
+{"1":"11B11_233_RFL","2":"Diameter","3":"57.003","4":"57.015","5":"0.015","6":"-0.015","partnb":1212,"_id":"0hMLgHmWNrrWlQwr"}
+{"1":"11B22_334_LB","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.100","6":"0.000","partnb":1208,"_id":"0j7nzEkNwMkTE2qw"}
+{"1":"51B02_INF_121_RF.Y","2":"True Position  2d Polar.Y","3":"-107.530","4":"-107.500","5":"0.075","6":"-0.075","partnb":1212,"_id":"0qiCIfgOK9n3dp6G"}
+{"1":"61B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.174","4":"40.200","5":"0.050","6":"-0.050","partnb":1204,"_id":"18xTEUCPZ8CTbSiz"}
+{"1":"11F11_RF","2":"Flatness","3":"0.018","4":"0.000","5":"0.010","6":"0.000","partnb":1212,"_id":"1BmzJgzw0xCHjlVs"}
+{"1":"61B22_333_RFL","2":"Diameter","3":"15.027","4":"15.029","5":"0.013","6":"-0.013","partnb":1192,"_id":"1FgFeQoMRvgZ107t"}
+{"1":"11B11_234_LB.Z","2":"True Position  2d Polar.Z","3":"0.033","4":"0.000","5":"0.050","6":"-0.050","partnb":1200,"_id":"1I3KvEQl55YeqEpD"}
+{"1":"61B0__INF_RF","2":"True Position  2d Polar","3":"0.161","4":"0.000","5":"0.200","6":"0.000","partnb":1208,"_id":"1RoY3Oi7QGW70LW5"}
+{"1":"11F36_352_PC","2":"X Value","3":"-134.097","4":"-134.000","5":"0.150","6":"-0.150","partnb":1200,"_id":"1THP2IqTZ6wZx8WT"}
+{"1":"61B0_SUP_123_RF","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1208,"_id":"1Vk5GVQpw8Z1UgRe"}
+{"1":"2B03_4_PC.Z","2":"True Position  2d Polar.Z","3":"234.210","4":"234.215","5":"0.250","6":"-0.250","partnb":1192,"_id":"1YOdVUpoSvtByILJ"}
+{"1":"51F01_165_LB","2":"Z Value","3":"-59.625","4":"-59.650","5":"0.100","6":"-0.100","partnb":1188,"_id":"1d8wjslPm0JdObTi"}
+{"1":"61B0_INF_RF","2":"Roundness","3":"0.006","4":"0.000","5":"0.005","6":"0.000","partnb":1192,"_id":"1dq8Qc2SuVHcMh9J"}
+{"1":"11B36_350_LB","2":"Y Value","3":"55.054","4":"55.000","5":"0.200","6":"-0.200","partnb":1200,"_id":"1kFYYsonqKBybM8m"}
+{"1":"61B21_333_RFL","2":"Diameter","3":"15.026","4":"15.029","5":"0.013","6":"-0.013","partnb":1192,"_id":"1nCVNrFR7CMDypTX"}
+{"1":"11F22_RF","2":"X Value","3":"-113.267","4":"-113.130","5":"0.100","6":"-0.100","partnb":1196,"_id":"1ojt6BNV7NzlONL5"}
+{"1":"61B41_80_RFL","2":"Diameter","3":"12.011","4":"12.013","5":"0.013","6":"-0.013","partnb":1200,"_id":"1v8sPNBTrNjram7z"}
+{"1":"51B02_SUP_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.005","6":"0.000","partnb":1204,"_id":"1wOiRE4mDyv1BW2I"}
+{"1":"61B31_214_LB.Y","2":"True Position  2d Polar.Y","3":"4.995","4":"5.000","5":"0.050","6":"-0.050","partnb":1212,"_id":"1zluUxudkQtpMP2W"}
+{"1":"11B36_351_PC","2":"Z Value","3":"191.663","4":"191.550","5":"0.100","6":"-0.100","partnb":1188,"_id":"1zyyU4qezH8397cV"}
+{"1":"11F11_232_LB","2":"Perpendicularity","3":"0.039","4":"0.000","5":"0.050","6":"0.000","partnb":1204,"_id":"1zzsI89h36MHDzlt"}
+{"1":"C1_2_PC","2":"Y Value","3":"-82.641","4":"-82.630","5":"0.100","6":"-0.100","partnb":1188,"_id":"21JZCvXjQLl9T32h"}
+{"1":"51B02_INF_121_RF.X","2":"True Position  2d Polar.X","3":"26.613","4":"26.700","5":"0.075","6":"-0.075","partnb":1200,"_id":"2Fgjwjq9KzIMCs0s"}
+{"filename":"c:\\Users\\Public\\Documents\\Zeiss\\CALYPSO\\workarea\\results\\TRANSMISION-OP10-L_765_hdr.txt","operid":"Master","date":"2022-2-14","time":"5:39:45 am","dmesn":"114555","partcomment":"CARCASA: TRANSMISION  OPERACION: 10  MODELO: L MATERIAL: MAGNESIO PROGRAMA: LINEA: MQ200A ","order":"8 CTRL M1 RA 3971","temperatureworkpiece":"22.77","partnb":1200,"_id":"2IhamBhr7BbEWnAj"}
+{"1":"61B31_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.007","6":"0.000","partnb":1192,"_id":"2Ni6yvqgQTzEzmBi"}
+{"1":"61B0__INF_RF.Y","2":"True Position  2d Polar.Y","3":"0.073","4":"0.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"2ORJduGNMJl6JQN6"}
+{"1":"2B03_4_PC.Z","2":"True Position  2d Polar.Z","3":"234.210","4":"234.215","5":"0.250","6":"-0.250","partnb":1188,"_id":"2QxNim5uRK6hNpFE"}
+{"1":"2B0_1_PC.Z","2":"True Position  2d Polar.Z","3":"60.022","4":"60.000","5":"0.250","6":"-0.250","partnb":1188,"_id":"2UUPi87lQuL0pPJO"}
+{"1":"61B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.608","4":"56.550","5":"0.050","6":"-0.050","partnb":1196,"_id":"2Y5eD0p5wr3KU21l"}
+{"1":"2B0_1_PC.X","2":"True Position  2d Polar.X","3":"-38.989","4":"-39.000","5":"0.250","6":"-0.250","partnb":1188,"_id":"2bWitLUr3hg5XISI"}
+{"1":"61B21_334_LB","2":"True Position  2d Polar","3":"0.091","4":"0.000","5":"0.100","6":"0.000","partnb":1192,"_id":"2cz2jB2sHmEhwBDb"}
+{"1":"B1_3_PC","2":"Y Value","3":"76.066","4":"76.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"2eagmoiSI7levbXy"}
+{"1":"61B41_81_LB","2":"True Position  2d Polar","3":"0.026","4":"0.000","5":"0.080","6":"0.000","partnb":1196,"_id":"2m7SF56CUaF0wNbo"}
+{"1":"61B31_214_LB","2":"True Position  2d Polar","3":"0.127","4":"0.000","5":"0.100","6":"0.000","partnb":1204,"_id":"2pBTPgYnlP4sGYTc"}
+{"1":"61B0__INF_RF.Y","2":"True Position  2d Polar.Y","3":"0.073","4":"0.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"2tjAQgupD11GSoiT"}
+{"1":"2B03_4_PC","2":"True Position  2d Polar","3":"0.083","4":"0.000","5":"0.500","6":"0.000","partnb":1188,"_id":"32F0LuqjAUOfV2Bt"}
+{"1":"51B02_INF_121_RF","2":"True Position  2d Polar","3":"0.184","4":"0.000","5":"0.150","6":"0.000","partnb":1192,"_id":"33HtsQ9aAXTM93b2"}
+{"1":"61F11_RF","2":"Flatness","3":"0.014","4":"0.000","5":"0.010","6":"0.000","partnb":1204,"_id":"3OLBnoLP2YNRDzjp"}
+{"1":"11B26_300_PC","2":"Cartesian Distance","3":"17.004","4":"17.000","5":"0.200","6":"-0.200","partnb":1208,"_id":"3PGdxXQlyKnwZ8JZ"}
+{"1":"61B22_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1192,"_id":"3gHgzPAZmPZtsQ8H"}
+{"1":"61B41_80_RFL","2":"Diameter","3":"12.011","4":"12.013","5":"0.013","6":"-0.013","partnb":1188,"_id":"3m6eRQWalAoXd05P"}
+{"1":"61B0_SUP_125_RFL","2":"Diameter","3":"7.101","4":"7.107","5":"0.007","6":"-0.007","partnb":1212,"_id":"3tJtqLbDbXccUxfu"}
+{"1":"11B11_234_LB","2":"True Position  2d Polar","3":"0.073","4":"0.000","5":"0.100","6":"0.000","partnb":1212,"_id":"3vgA9D2XyEmMd6Fc"}
+{"1":"C1_2_PC","2":"Y Value","3":"-82.641","4":"-82.630","5":"0.100","6":"-0.100","partnb":1204,"_id":"41lSkrHHdnntEXW7"}
+{"1":"61B0_INF_123_LB","2":"Concentricity","3":"0.160","4":"0.000","5":"0.200","6":"0.000","partnb":1192,"_id":"43Ib5ybltrBUUbQ9"}
+{"1":"61B0_SUP_123_RF.Y","2":"True Position  2d Polar.Y","3":"0.064","4":"0.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"4AmZWa8BU60qEGqW"}
+{"1":"11F11_232_LB","2":"Perpendicularity","3":"0.039","4":"0.000","5":"0.050","6":"0.000","partnb":1212,"_id":"4IB1ADXj5O4evG8S"}
+{"1":"61B0_INF_123_LB","2":"Concentricity","3":"0.160","4":"0.000","5":"0.200","6":"0.000","partnb":1200,"_id":"4mxL2nURyrHSNrWP"}
+{"1":"11B21_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1212,"_id":"4uyjv5jTGip6krFu"}
+{"1":"11B22_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1200,"_id":"4z5OuU20mU7YZ5y0"}
+{"1":"61B21_333_RFL","2":"Diameter","3":"15.026","4":"15.029","5":"0.013","6":"-0.013","partnb":1200,"_id":"52Muu3jojfZnAUCg"}
+{"1":"61B0_INF_123_LB","2":"Concentricity","3":"0.160","4":"0.000","5":"0.200","6":"0.000","partnb":1188,"_id":"55hX3LJT1Zj60IBo"}
+{"1":"11B11_RF","2":"Roundness","3":"0.013","4":"0.000","5":"0.012","6":"0.000","partnb":1192,"_id":"5PUVcukyvPX1kC8K"}
+{"1":"A1_3_PC","2":"Y Value","3":"76.030","4":"76.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"5SWurWrnEEWd6jfT"}
+{"1":"11B11_RF","2":"Roundness","3":"0.013","4":"0.000","5":"0.012","6":"0.000","partnb":1208,"_id":"5UFtbMeXq7CBBqm5"}
+{"1":"61B41_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.007","6":"0.000","partnb":1204,"_id":"5UfXfN8NF5LgtR9K"}
+{"1":"51B02_SUP_121_LB.X","2":"True Position  2d Polar.X","3":"26.616","4":"26.700","5":"0.075","6":"-0.075","partnb":1200,"_id":"5Yk53SghGgK9QbuJ"}
+{"1":"61B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.608","4":"56.550","5":"0.050","6":"-0.050","partnb":1188,"_id":"5aAJ4Ks0dGEPLivv"}
+{"1":"51F01_165_LB","2":"Z Value","3":"-59.625","4":"-59.650","5":"0.100","6":"-0.100","partnb":1208,"_id":"5bDoF1dUea4y5EIP"}
+{"1":"11B11_234_LB.Z","2":"True Position  2d Polar.Z","3":"0.033","4":"0.000","5":"0.050","6":"-0.050","partnb":1204,"_id":"5dO0ngjsgi6m8dJV"}
+{"1":"51B02_INF_126_RFL","2":"Diameter","3":"7.100","4":"7.107","5":"0.007","6":"-0.007","partnb":1192,"_id":"5phs5EkZeZ3Ynd6X"}
+{"1":"61B0__SUP_123_RF","2":"Concentricity","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1196,"_id":"5qdMTTlfyYp0dd1s"}
+{"1":"61B21_333_RFL","2":"Diameter","3":"15.026","4":"15.029","5":"0.013","6":"-0.013","partnb":1204,"_id":"5wy3e3MJIrANaXcK"}
+{"1":"11B11_234_LB.Y","2":"True Position  2d Polar.Y","3":"0.016","4":"0.000","5":"0.050","6":"-0.050","partnb":1212,"_id":"5xVzfLFs6LryGqjC"}
+{"1":"61B0_INF_123_LB","2":"Concentricity","3":"0.160","4":"0.000","5":"0.200","6":"0.000","partnb":1204,"_id":"61xMmvDPQhP5L89C"}
+{"1":"51B02_SUP_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.005","6":"0.000","partnb":1188,"_id":"66jXDJr1TDtORzpz"}
+{"1":"11F11_RF","2":"Flatness","3":"0.018","4":"0.000","5":"0.010","6":"0.000","partnb":1192,"_id":"6931RshTfhwmVUJM"}
+{"1":"11B11_RF","2":"Roundness","3":"0.013","4":"0.000","5":"0.012","6":"0.000","partnb":1200,"_id":"6FDYfQGzvHxumoux"}
+{"1":"61B41_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.007","6":"0.000","partnb":1212,"_id":"6IfA4mffaQ1KHz7x"}
+{"filename":"c:\\Users\\Public\\Documents\\Zeiss\\CALYPSO\\workarea\\results\\TRANSMISION-OP10-L_765_hdr.txt","operid":"Master","date":"2022-2-14","time":"5:39:45 am","dmesn":"114555","partcomment":"CARCASA: TRANSMISION  OPERACION: 10  MODELO: L MATERIAL: MAGNESIO PROGRAMA: LINEA: MQ200A ","order":"8 CTRL M1 RA 3971","temperatureworkpiece":"22.77","partnb":1196,"_id":"6Pj9l1FEIupDiKaL"}
+{"1":"51B02_SUP_121_LB.Y","2":"True Position  2d Polar.Y","3":"-107.535","4":"-107.500","5":"0.075","6":"-0.075","partnb":1196,"_id":"6PjjRRPGmYWZe9Lg"}
+{"1":"51B02_SUP_126_RFL","2":"Diameter","3":"7.107","4":"7.107","5":"0.007","6":"-0.007","partnb":1188,"_id":"6VrHZbYmUDRudQc8"}
+{"1":"51B02_SUP_121_LB","2":"True Position  2d Polar","3":"0.182","4":"0.000","5":"0.150","6":"0.000","partnb":1192,"_id":"6fUaLPEXbgGf92st"}
+{"1":"51B02_INF_121_RF","2":"True Position  2d Polar","3":"0.184","4":"0.000","5":"0.150","6":"0.000","partnb":1200,"_id":"6nFxse3j7vDj8Asi"}
+{"1":"61B41_81_LB.Z","2":"True Position  2d Polar.Z","3":"288.327","4":"288.340","5":"0.040","6":"-0.040","partnb":1192,"_id":"6ob7qpCWPyVDyN4c"}
+{"1":"61B11_203_RFL","2":"Diameter","3":"20.008","4":"20.016","5":"0.016","6":"-0.016","partnb":1192,"_id":"6zpn9LIJyhMdxD6y"}
+{"1":"61B31_214_LB.Z","2":"True Position  2d Polar.Z","3":"57.113","4":"57.050","5":"0.050","6":"-0.050","partnb":1196,"_id":"78zuHHXhnBCaiLl9"}
+{"1":"51B01_RF","2":"Y Value","3":"0.014","4":"0.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"7Dz492sVIxvT9pex"}
+{"1":"11B21_334_LB","2":"True Position  2d Polar","3":"0.093","4":"0.000","5":"0.100","6":"0.000","partnb":1196,"_id":"7ELCXuRQJAyjRQ9h"}
+{"1":"51B02_INF_121_RF","2":"True Position  2d Polar","3":"0.184","4":"0.000","5":"0.150","6":"0.000","partnb":1204,"_id":"7EoHkVwWeDUQLy1j"}
+{"1":"11B21_334_LB","2":"True Position  2d Polar","3":"0.093","4":"0.000","5":"0.100","6":"0.000","partnb":1192,"_id":"7P6lF7UHnVL4sr5e"}
+{"1":"id","2":"type","3":"actual","4":"nominal","5":"uppertol","6":"lowertol","partnb":1200,"_id":"7Sf8AQJCaYAHF7if"}
+{"1":"11F21_RF","2":"X Value","3":"-124.767","4":"-124.650","5":"0.100","6":"-0.100","partnb":1208,"_id":"7cAK67VVWdNS414N"}
+{"1":"61B41_81_LB.Y","2":"True Position  2d Polar.Y","3":"60.799","4":"60.800","5":"0.040","6":"-0.040","partnb":1192,"_id":"7ofBgbGnz6RRKQam"}
+{"1":"51B02_SUP_126_RFL","2":"Diameter","3":"7.107","4":"7.107","5":"0.007","6":"-0.007","partnb":1208,"_id":"7yBRu14J07A73AMq"}
+{"1":"61F22_322_LB","2":"X Value","3":"82.429","4":"82.420","5":"0.050","6":"-0.050","partnb":1192,"_id":"89oEQk1SfQWxzao7"}
+{"1":"61F31_215_PC","2":"X Value","3":"82.406","4":"82.420","5":"0.050","6":"-0.050","partnb":1196,"_id":"8B09DRGyMdrlOEaJ"}
+{"1":"61B41_81_LB.Y","2":"True Position  2d Polar.Y","3":"60.799","4":"60.800","5":"0.040","6":"-0.040","partnb":1212,"_id":"8EZBA6wc2iUHGbN9"}
+{"1":"11B22_334_LB","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.100","6":"0.000","partnb":1188,"_id":"8F3bFG99OOPonlkL"}
+{"1":"11B26_301_PC","2":"Cartesian Distance","3":"40.233","4":"40.200","5":"0.200","6":"-0.200","partnb":1208,"_id":"8IML4tPL8vum3p3W"}
+{"1":"11B21_334_LB","2":"True Position  2d Polar","3":"0.093","4":"0.000","5":"0.100","6":"0.000","partnb":1188,"_id":"8PKjnRsoZh88P2n3"}
+{"1":"11B21_334_LB","2":"True Position  2d Polar","3":"0.093","4":"0.000","5":"0.100","6":"0.000","partnb":1208,"_id":"8x178KhrVNdipfmN"}
+{"1":"61B31_214_LB.Y","2":"True Position  2d Polar.Y","3":"4.995","4":"5.000","5":"0.050","6":"-0.050","partnb":1196,"_id":"8yAoXf6bmWkyfYNc"}
+{"1":"61B31_213_RFL","2":"Diameter","3":"9.198","4":"9.000","5":"0.300","6":"0.000","partnb":1188,"_id":"94rgzo6CVgBMXtDg"}
+{"1":"51B02_INF_126_RFL","2":"Diameter","3":"7.100","4":"7.107","5":"0.007","6":"-0.007","partnb":1208,"_id":"9DoVomYQwzb0eRyn"}
+{"1":"61B31_213_RFL","2":"Diameter","3":"9.198","4":"9.000","5":"0.300","6":"0.000","partnb":1196,"_id":"9MRn7RUOzmajhsco"}
+{"1":"61F22_322_LB","2":"X Value","3":"82.429","4":"82.420","5":"0.050","6":"-0.050","partnb":1212,"_id":"9RnVIqTtS3SqELpd"}
+{"1":"61B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.608","4":"56.550","5":"0.050","6":"-0.050","partnb":1204,"_id":"9Vkg0BxBiexCrsG3"}
+{"1":"61B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.238","4":"26.200","5":"0.050","6":"-0.050","partnb":1200,"_id":"9YCexaGkOebalwvj"}
+{"1":"51B02_INF_126_RFL","2":"Diameter","3":"7.100","4":"7.107","5":"0.007","6":"-0.007","partnb":1204,"_id":"9eImOMwUZrvSkV2x"}
+{"1":"11B11_RF","2":"Roundness","3":"0.013","4":"0.000","5":"0.012","6":"0.000","partnb":1196,"_id":"A1lX6SPNcCTYW9CW"}
+{"1":"ITEM_306_RFL","2":"Length of perpendicular","3":"34.371","4":"34.150","5":"0.300","6":"0.000","partnb":1212,"_id":"A60yThR4jUxOpaSn"}
+{"1":"C1_2_PC","2":"Y Value","3":"-82.641","4":"-82.630","5":"0.100","6":"-0.100","partnb":1196,"_id":"AHdfJvutxtcU3QZH"}
+{"1":"11B26_301_PC","2":"Cartesian Distance","3":"40.233","4":"40.200","5":"0.200","6":"-0.200","partnb":1188,"_id":"AJRLD0WpeFqkKf81"}
+{"1":"61B11_226_PC","2":"Cylindricity","3":"0.011","4":"0.000","5":"0.030","6":"0.000","partnb":1208,"_id":"AS1Ddxy6uKzBY8gG"}
+{"1":"61B22_333_RFL","2":"Diameter","3":"15.027","4":"15.029","5":"0.013","6":"-0.013","partnb":1208,"_id":"AYLHKGm2Hh8A3TaM"}
+{"1":"11B26_301_PC","2":"Cartesian Distance","3":"40.233","4":"40.200","5":"0.200","6":"-0.200","partnb":1204,"_id":"AgmHZ0aWq5LWWw1w"}
+{"1":"61B0_SUP_123_RF.X","2":"True Position  2d Polar.X","3":"-0.040","4":"0.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"B3cgWTu4a26w8JHB"}
+{"1":"11B21_333_RFL","2":"Diameter","3":"15.023","4":"15.029","5":"0.013","6":"-0.013","partnb":1196,"_id":"BOObYGvtmN0X0UTL"}
+{"1":"11F22_320_PC","2":"Cartesian Distance","3":"2.052","4":"2.070","5":"0.100","6":"-0.100","partnb":1212,"_id":"BQEN6AcqWlDveNuK"}
+{"1":"61B22_334_LB","2":"True Position  2d Polar","3":"0.116","4":"0.000","5":"0.100","6":"0.000","partnb":1204,"_id":"BXkRcqC6DC3ltPcM"}
+{"1":"2B0_1_PC","2":"True Position  2d Polar","3":"0.049","4":"0.000","5":"0.500","6":"0.000","partnb":1200,"_id":"BcEed3HLA09wrwGZ"}
+{"1":"11F36_RF","2":"Cartesian Distance","3":"18.778","4":"18.800","5":"0.150","6":"-0.150","partnb":1204,"_id":"BeXEVGnlD7yn5jah"}
+{"1":"61B0_SUP_125_RFL","2":"Diameter","3":"7.101","4":"7.107","5":"0.007","6":"-0.007","partnb":1204,"_id":"Bez2HWOB4thP2BHL"}
+{"1":"11F22_RF","2":"X Value","3":"-113.267","4":"-113.130","5":"0.100","6":"-0.100","partnb":1192,"_id":"BfmnkuqPvtRtn4A9"}
+{"1":"61B41_81_LB","2":"True Position  2d Polar","3":"0.026","4":"0.000","5":"0.080","6":"0.000","partnb":1200,"_id":"BwRuvG5obQP9evWF"}
+{"1":"61F11_200_PC","2":"X Value","3":"88.818","4":"88.800","5":"0.050","6":"-0.050","partnb":1188,"_id":"C0MMY2nfaxxt4a2K"}
+{"1":"61B0_INF_RF","2":"Roundness","3":"0.006","4":"0.000","5":"0.005","6":"0.000","partnb":1212,"_id":"C12TkKpagU5fmI8a"}
+{"1":"61B21_RF","2":"Roundness","3":"0.005","4":"0.000","5":"0.010","6":"0.000","partnb":1208,"_id":"C6iQlADGMtc0QYqM"}
+{"1":"11B26_301_PC","2":"Cartesian Distance","3":"40.233","4":"40.200","5":"0.200","6":"-0.200","partnb":1192,"_id":"C74duIanfOk4YsMQ"}
+{"1":"61B11_255_RFL","2":"Diameter","3":"21.995","4":"22.006","5":"0.006","6":"-0.006","partnb":1192,"_id":"C8uqTQ9jFi3OrW3Z"}
+{"1":"61B41_80_RFL","2":"Diameter","3":"12.011","4":"12.013","5":"0.013","6":"-0.013","partnb":1208,"_id":"CW4gfwI8V8fC3tNm"}
+{"1":"51B02_SUP_126_RFL","2":"Diameter","3":"7.107","4":"7.107","5":"0.007","6":"-0.007","partnb":1196,"_id":"Ckl5GmJz6GHYyZ2W"}
+{"1":"61B0_SUP_123_RF.Y","2":"True Position  2d Polar.Y","3":"0.064","4":"0.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"Cu1jVdStDAQ6qhRu"}
+{"1":"61F11_200_PC","2":"X Value","3":"88.818","4":"88.800","5":"0.050","6":"-0.050","partnb":1200,"_id":"CwgqLQVKseSgqaMz"}
+{"1":"61B11_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1204,"_id":"Cx2T6M5SYqVhhxAL"}
+{"1":"51B02_SUP_126_RFL","2":"Diameter","3":"7.107","4":"7.107","5":"0.007","6":"-0.007","partnb":1200,"_id":"Cz4wkrmy0mjYBBL8"}
+{"1":"61B21_RF","2":"Roundness","3":"0.005","4":"0.000","5":"0.010","6":"0.000","partnb":1200,"_id":"D0YqO0eQbiUB3mEt"}
+{"1":"61B0_INF_RF","2":"Roundness","3":"0.006","4":"0.000","5":"0.005","6":"0.000","partnb":1196,"_id":"D2SfvC5cMwjFNy6L"}
+{"1":"11F36_352_PC","2":"X Value","3":"-134.097","4":"-134.000","5":"0.150","6":"-0.150","partnb":1196,"_id":"DCNpTyACW5Bpv7Nl"}
+{"1":"61B41_80_RFL","2":"Diameter","3":"12.011","4":"12.013","5":"0.013","6":"-0.013","partnb":1204,"_id":"DKWYBYZaHoSKqUM3"}
+{"1":"61B31_213_RFL","2":"Diameter","3":"9.198","4":"9.000","5":"0.300","6":"0.000","partnb":1208,"_id":"DXdLwtNKZ0vEBAbK"}
+{"1":"11B11_233_RFL","2":"Diameter","3":"57.003","4":"57.015","5":"0.015","6":"-0.015","partnb":1192,"_id":"DmdKIej8SF8Rr3Wd"}
+{"1":"11F22_320_PC","2":"Cartesian Distance","3":"2.052","4":"2.070","5":"0.100","6":"-0.100","partnb":1204,"_id":"DoozZExAFFrzpAHK"}
+{"1":"61B0__INF_RF.Y","2":"True Position  2d Polar.Y","3":"0.073","4":"0.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"DuplKszCgt9cKrew"}
+{"1":"51B02_INF_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1200,"_id":"EDPMHqUmozlByY9T"}
+{"1":"11F21_321_PC","2":"Cartesian Distance","3":"9.456","4":"9.450","5":"0.100","6":"-0.100","partnb":1188,"_id":"EG2xQEWw6lujbRpd"}
+{"1":"61B21_333_RFL","2":"Diameter","3":"15.026","4":"15.029","5":"0.013","6":"-0.013","partnb":1196,"_id":"EJJNJyldvIQRsUy9"}
+{"1":"11B36_351_PC","2":"Z Value","3":"191.663","4":"191.550","5":"0.100","6":"-0.100","partnb":1192,"_id":"EPh8Ght6WoRM43HV"}
+{"1":"61F11_200_PC","2":"X Value","3":"88.818","4":"88.800","5":"0.050","6":"-0.050","partnb":1204,"_id":"EUwWVgyEZ0kVNCkM"}
+{"1":"61B31_214_LB","2":"True Position  2d Polar","3":"0.127","4":"0.000","5":"0.100","6":"0.000","partnb":1208,"_id":"EZJbQMmzebLcJYVf"}
+{"1":"11F36_RF","2":"Cartesian Distance","3":"18.778","4":"18.800","5":"0.150","6":"-0.150","partnb":1208,"_id":"EbQN7XHVtdkGu4kv"}
+{"1":"61B0_SUP_123_RF","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1212,"_id":"EjUa3mqQnExIZtRg"}
+{"1":"61B21_RF","2":"Roundness","3":"0.005","4":"0.000","5":"0.010","6":"0.000","partnb":1204,"_id":"Emw1LPZNsmxLVowY"}
+{"1":"ITEM_307_RFL","2":"Angle between Features","3":"53:59:11","4":"54:00:00","5":"01:00:00","6":"-01:00:00","partnb":1204,"_id":"Eu5T2FhQVWkJ8kSG"}
+{"1":"2B03_4_PC.X","2":"True Position  2d Polar.X","3":"-14.041","4":"-14.000","5":"0.250","6":"-0.250","partnb":1200,"_id":"Eup8vBcnsMF6ZkZD"}
+{"1":"61B0_SUP_123_RF","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1188,"_id":"Ez5wcftgW0FlOO4X"}
+{"1":"B1_3_PC","2":"Y Value","3":"76.066","4":"76.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"F0JlQSbLysLn4kcG"}
+{"1":"61B0_SUP_123_RF.X","2":"True Position  2d Polar.X","3":"-0.040","4":"0.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"F0wLRwLlwzgwM7Us"}
+{"1":"61F11_RF","2":"Flatness","3":"0.014","4":"0.000","5":"0.010","6":"0.000","partnb":1196,"_id":"F37gI0rppjARTVy4"}
+{"1":"11B21_334_LB","2":"True Position  2d Polar","3":"0.093","4":"0.000","5":"0.100","6":"0.000","partnb":1212,"_id":"F9UDOx52Npb4aKkv"}
+{"1":"61B21_334_LB","2":"True Position  2d Polar","3":"0.091","4":"0.000","5":"0.100","6":"0.000","partnb":1208,"_id":"FCrmOf4dVJknWJZL"}
+{"1":"51B02_SUP_121_LB","2":"True Position  2d Polar","3":"0.182","4":"0.000","5":"0.150","6":"0.000","partnb":1212,"_id":"FCuY2Ri6UXGdyBSj"}
+{"1":"A1_3_PC","2":"Y Value","3":"76.030","4":"76.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"FLkmZC1jmL483Mj4"}
+{"1":"61B0__SUP_123_RF","2":"Concentricity","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1212,"_id":"FYpdHrOsAGp1S655"}
+{"1":"51B02_INF_126_RFL","2":"Diameter","3":"7.100","4":"7.107","5":"0.007","6":"-0.007","partnb":1212,"_id":"FrSnTn8IqqKrO525"}
+{"1":"61B31_214_LB","2":"True Position  2d Polar","3":"0.127","4":"0.000","5":"0.100","6":"0.000","partnb":1200,"_id":"Fvp8vlbyt6WdxCdt"}
+{"partnb":1204,"_id":"GAcwgZsG8Utvl80x"}
+{"1":"2B0_1_PC.X","2":"True Position  2d Polar.X","3":"-38.989","4":"-39.000","5":"0.250","6":"-0.250","partnb":1212,"_id":"GFu4ZHqcmKPQQSKm"}
+{"1":"61B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.197","4":"-40.200","5":"0.050","6":"-0.050","partnb":1212,"_id":"GGF1fPspLKFjLx5b"}
+{"1":"11B36_350_LB","2":"Y Value","3":"55.054","4":"55.000","5":"0.200","6":"-0.200","partnb":1188,"_id":"GIVEFCgmdrf4Zy35"}
+{"filename":"c:\\Users\\Public\\Documents\\Zeiss\\CALYPSO\\workarea\\results\\TRANSMISION-OP10-L_765_hdr.txt","operid":"Master","date":"2022-2-14","time":"5:39:45 am","dmesn":"114555","partcomment":"CARCASA: TRANSMISION  OPERACION: 10  MODELO: L MATERIAL: MAGNESIO PROGRAMA: LINEA: MQ200A ","order":"8 CTRL M1 RA 3971","temperatureworkpiece":"22.77","partnb":1192,"_id":"GN7Bk9uCZ9AyaXUe"}
+{"1":"61F11_200_PC","2":"X Value","3":"88.818","4":"88.800","5":"0.050","6":"-0.050","partnb":1196,"_id":"GcGswiAJBvuKCLBr"}
+{"1":"61B22_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1188,"_id":"Gd9VWpZK9oHQm3Eq"}
+{"1":"11B11_233_RFL","2":"Diameter","3":"57.003","4":"57.015","5":"0.015","6":"-0.015","partnb":1200,"_id":"GeBulWxuIoiWqkY2"}
+{"1":"11B36_351_PC","2":"Z Value","3":"191.663","4":"191.550","5":"0.100","6":"-0.100","partnb":1212,"_id":"Gi0VBSoPvrVSP5yC"}
+{"1":"51B02_SUP_121_LB.X","2":"True Position  2d Polar.X","3":"26.616","4":"26.700","5":"0.075","6":"-0.075","partnb":1196,"_id":"GkoQ7zP8cEerUBQi"}
+{"1":"id","2":"type","3":"actual","4":"nominal","5":"uppertol","6":"lowertol","partnb":1192,"_id":"GvED2qJxB4YqynzM"}
+{"1":"51B02_INF_121_RF.X","2":"True Position  2d Polar.X","3":"26.613","4":"26.700","5":"0.075","6":"-0.075","partnb":1204,"_id":"GyLN7N3mMnbwE1vL"}
+{"1":"61B31_214_LB.Y","2":"True Position  2d Polar.Y","3":"4.995","4":"5.000","5":"0.050","6":"-0.050","partnb":1208,"_id":"H4MUQzZBdfQAv2Xm"}
+{"1":"51B02_INF_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1204,"_id":"H4lB6jKUDCBWKVBM"}
+{"1":"61B41_81_LB.Y","2":"True Position  2d Polar.Y","3":"60.799","4":"60.800","5":"0.040","6":"-0.040","partnb":1196,"_id":"HEGhgWjsgCW5UPt0"}
+{"1":"11B21_333_RFL","2":"Diameter","3":"15.023","4":"15.029","5":"0.013","6":"-0.013","partnb":1204,"_id":"HGJat3E5xl7rpx9E"}
+{"1":"51B02_INF_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1212,"_id":"HJAoIWqX7XPncyrE"}
+{"1":"61B31_214_LB.Y","2":"True Position  2d Polar.Y","3":"4.995","4":"5.000","5":"0.050","6":"-0.050","partnb":1192,"_id":"HNgoXS5Y6J3OIA8D"}
+{"1":"51B02_SUP_121_LB","2":"True Position  2d Polar","3":"0.182","4":"0.000","5":"0.150","6":"0.000","partnb":1200,"_id":"HPGiHLnoUJB2DWx2"}
+{"1":"11B21_333_RFL","2":"Diameter","3":"15.023","4":"15.029","5":"0.013","6":"-0.013","partnb":1212,"_id":"HcOwSdKYkgwf4XD5"}
+{"1":"61B0__INF_RF.X","2":"True Position  2d Polar.X","3":"-0.034","4":"0.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"HgL4V9iddlpnXz6d"}
+{"1":"51B02_SUP_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.005","6":"0.000","partnb":1192,"_id":"HmhJpsNXdgKAUNsK"}
+{"1":"51B02_SUP_121_LB","2":"True Position  2d Polar","3":"0.182","4":"0.000","5":"0.150","6":"0.000","partnb":1208,"_id":"Hq8OAxIPB9rMfoZX"}
+{"1":"11F36_352_PC","2":"X Value","3":"-134.097","4":"-134.000","5":"0.150","6":"-0.150","partnb":1212,"_id":"HvABlFlXvjHlCVnu"}
+{"1":"11B11_234_LB.Y","2":"True Position  2d Polar.Y","3":"0.016","4":"0.000","5":"0.050","6":"-0.050","partnb":1208,"_id":"HwoWyWriuh86A2Km"}
+{"1":"11F22_RF","2":"X Value","3":"-113.267","4":"-113.130","5":"0.100","6":"-0.100","partnb":1200,"_id":"INEJBNv2cQMZtz4r"}
+{"1":"11B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.155","4":"26.200","5":"0.050","6":"-0.050","partnb":1208,"_id":"IOYvO33lQ5xLeUdJ"}
+{"1":"11F22_320_PC","2":"Cartesian Distance","3":"2.052","4":"2.070","5":"0.100","6":"-0.100","partnb":1208,"_id":"ISnnsu4pRGpfq5Wf"}
+{"1":"61B31_214_LB.Y","2":"True Position  2d Polar.Y","3":"4.995","4":"5.000","5":"0.050","6":"-0.050","partnb":1204,"_id":"IW6VRVmfdD510KgI"}
+{"1":"61B0_SUP_125_RFL","2":"Diameter","3":"7.101","4":"7.107","5":"0.007","6":"-0.007","partnb":1192,"_id":"IZBKwB3fb2ZoyYpo"}
+{"1":"11F11_RF","2":"Flatness","3":"0.018","4":"0.000","5":"0.010","6":"0.000","partnb":1200,"_id":"IuzEVflf1n1NCkGK"}
+{"1":"11B26_300_PC","2":"Cartesian Distance","3":"17.004","4":"17.000","5":"0.200","6":"-0.200","partnb":1192,"_id":"J6cfsKUBYIJuCrJU"}
+{"1":"11B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.125","4":"-40.200","5":"0.050","6":"-0.050","partnb":1200,"_id":"JEERsAtwfB0B7bS5"}
+{"1":"11F11_228_RFL_X","2":"Distance","3":"204.136","4":"204.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"JI09bCzLD4dEuW3N"}
+{"1":"61B11_226_PC","2":"Cylindricity","3":"0.011","4":"0.000","5":"0.030","6":"0.000","partnb":1196,"_id":"JMQ85Zn8q6hFeQ9i"}
+{"1":"11F11_RF","2":"Flatness","3":"0.018","4":"0.000","5":"0.010","6":"0.000","partnb":1204,"_id":"JMhQmV9fMn9QwI8g"}
+{"1":"61B41_81_LB.Z","2":"True Position  2d Polar.Z","3":"288.327","4":"288.340","5":"0.040","6":"-0.040","partnb":1196,"_id":"JO3SzaavIzah57Ee"}
+{"1":"11F11_227_LB","2":"X Value","3":"-115.319","4":"-115.200","5":"0.040","6":"-0.040","partnb":1204,"_id":"JQapG3AT9hZSsDLP"}
+{"1":"61B0_SUP_123_RF.Y","2":"True Position  2d Polar.Y","3":"0.064","4":"0.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"JRVnFNltBvYYcXPV"}
+{"1":"A1_3_PC","2":"Y Value","3":"76.030","4":"76.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"JVDMatPRmX0E4Riv"}
+{"1":"2B03_4_PC","2":"True Position  2d Polar","3":"0.083","4":"0.000","5":"0.500","6":"0.000","partnb":1208,"_id":"JXRVCOR2h5VLHT6X"}
+{"1":"11B22_334_LB","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.100","6":"0.000","partnb":1212,"_id":"JrG7H61CT1ZrdZOx"}
+{"1":"61B41_81_LB.Z","2":"True Position  2d Polar.Z","3":"288.327","4":"288.340","5":"0.040","6":"-0.040","partnb":1208,"_id":"K2VK8rcLSt7KLpGl"}
+{"1":"61B31_214_LB","2":"True Position  2d Polar","3":"0.127","4":"0.000","5":"0.100","6":"0.000","partnb":1212,"_id":"K6HVtqTNXgp6x5ho"}
+{"1":"61B41_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.007","6":"0.000","partnb":1200,"_id":"K9anELlwPCLVqJsf"}
+{"1":"61B0_INF_123_LB","2":"Concentricity","3":"0.160","4":"0.000","5":"0.200","6":"0.000","partnb":1208,"_id":"KDbvuMeknhE47Pgg"}
+{"1":"61B0_INF_RF","2":"Roundness","3":"0.006","4":"0.000","5":"0.005","6":"0.000","partnb":1204,"_id":"KJaZd58Q42xRH5BQ"}
+{"1":"11F11_232_LB","2":"Perpendicularity","3":"0.039","4":"0.000","5":"0.050","6":"0.000","partnb":1196,"_id":"KJxtuYgEoBa2uPce"}
+{"1":"61B22_333_RFL","2":"Diameter","3":"15.027","4":"15.029","5":"0.013","6":"-0.013","partnb":1200,"_id":"KN1BO870F1dG6P11"}
+{"1":"11B11_234_LB","2":"True Position  2d Polar","3":"0.073","4":"0.000","5":"0.100","6":"0.000","partnb":1188,"_id":"KNtHRKog4ZRfvjpJ"}
+{"1":"2B03_4_PC","2":"True Position  2d Polar","3":"0.083","4":"0.000","5":"0.500","6":"0.000","partnb":1196,"_id":"KStibIes1Ltm9HOD"}
+{"1":"11B11_234_LB.Z","2":"True Position  2d Polar.Z","3":"0.033","4":"0.000","5":"0.050","6":"-0.050","partnb":1212,"_id":"KTdZivxfthjsbV4c"}
+{"1":"11B21_334_LB","2":"True Position  2d Polar","3":"0.093","4":"0.000","5":"0.100","6":"0.000","partnb":1204,"_id":"KXhdBQAX7qGDJNU8"}
+{"1":"11B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.541","4":"56.550","5":"0.050","6":"-0.050","partnb":1188,"_id":"KXtfRk8DATSonaP3"}
+{"1":"11B26_300_PC","2":"Cartesian Distance","3":"17.004","4":"17.000","5":"0.200","6":"-0.200","partnb":1212,"_id":"Kh7pKUkuTAO2YMLl"}
+{"1":"61B11_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1208,"_id":"Kli79UlHa0d9RBOa"}
+{"1":"61F11_RF","2":"Flatness","3":"0.014","4":"0.000","5":"0.010","6":"0.000","partnb":1188,"_id":"Kvjg4Ce4sBXC4rWh"}
+{"1":"61B0_SUP_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1196,"_id":"Kw5oUCwhgmOh1q5n"}
+{"1":"61B11_203_RFL","2":"Diameter","3":"20.008","4":"20.016","5":"0.016","6":"-0.016","partnb":1196,"_id":"KxFQQPCHYYyvR3We"}
+{"1":"11B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.155","4":"26.200","5":"0.050","6":"-0.050","partnb":1188,"_id":"L6n35VMHH4dtWYuk"}
+{"partnb":1208,"_id":"L8cRgcRW3sqoElTb"}
+{"1":"61F11_RF","2":"Flatness","3":"0.014","4":"0.000","5":"0.010","6":"0.000","partnb":1208,"_id":"LB1Zj7qTIsC1fIKv"}
+{"1":"51B02_INF_121_RF","2":"True Position  2d Polar","3":"0.184","4":"0.000","5":"0.150","6":"0.000","partnb":1212,"_id":"LYOTuzS0XAn1XAuw"}
+{"1":"C1_2_PC","2":"Y Value","3":"-82.641","4":"-82.630","5":"0.100","6":"-0.100","partnb":1212,"_id":"LhmNX2HDVS4sZcDq"}
+{"1":"11B11_234_LB","2":"True Position  2d Polar","3":"0.073","4":"0.000","5":"0.100","6":"0.000","partnb":1208,"_id":"LjadkoYUEOGbuXL2"}
+{"1":"2B03_4_PC.X","2":"True Position  2d Polar.X","3":"-14.041","4":"-14.000","5":"0.250","6":"-0.250","partnb":1208,"_id":"Lk7B5oxHbAJ0VUnX"}
+{"1":"61F22_322_LB","2":"X Value","3":"82.429","4":"82.420","5":"0.050","6":"-0.050","partnb":1196,"_id":"LqXCYk912WGZiFVt"}
+{"1":"11F11_227_LB","2":"X Value","3":"-115.319","4":"-115.200","5":"0.040","6":"-0.040","partnb":1188,"_id":"Lqdc81y6ovB7SwxI"}
+{"1":"61B41_81_LB","2":"True Position  2d Polar","3":"0.026","4":"0.000","5":"0.080","6":"0.000","partnb":1212,"_id":"LzbwzWTkJH8WZCaB"}
+{"1":"11B21_333_RFL","2":"Diameter","3":"15.023","4":"15.029","5":"0.013","6":"-0.013","partnb":1200,"_id":"LzmpBN1wUo67hDq3"}
+{"1":"61B0_INF_125_RFL","2":"Diameter","3":"7.097","4":"7.107","5":"0.007","6":"-0.007","partnb":1212,"_id":"M1N2DxkGEUxbiPeT"}
+{"1":"51B02_INF_121_RF.Y","2":"True Position  2d Polar.Y","3":"-107.530","4":"-107.500","5":"0.075","6":"-0.075","partnb":1196,"_id":"M4ZRY84R4SjK82TW"}
+{"1":"ITEM_307_RFL","2":"Angle between Features","3":"53:59:11","4":"54:00:00","5":"01:00:00","6":"-01:00:00","partnb":1196,"_id":"MAWBMkTf62aiuhSC"}
+{"1":"11B26_300_PC","2":"Cartesian Distance","3":"17.004","4":"17.000","5":"0.200","6":"-0.200","partnb":1196,"_id":"MNCmpq03zzmBSVDu"}
+{"1":"61B31_214_LB.Z","2":"True Position  2d Polar.Z","3":"57.113","4":"57.050","5":"0.050","6":"-0.050","partnb":1208,"_id":"McwXRcZncBjPvFSv"}
+{"1":"61B21_RF","2":"Roundness","3":"0.005","4":"0.000","5":"0.010","6":"0.000","partnb":1212,"_id":"Mp4NT16xYSct5iJX"}
+{"1":"61B11_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1196,"_id":"MqrH2RxwQuADK3LE"}
+{"1":"61B0_SUP_123_RF.X","2":"True Position  2d Polar.X","3":"-0.040","4":"0.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"MreCIJC5fe9PiQjQ"}
+{"1":"51B02_SUP_121_LB.Y","2":"True Position  2d Polar.Y","3":"-107.535","4":"-107.500","5":"0.075","6":"-0.075","partnb":1188,"_id":"Ms67BYjCq4gJLnoW"}
+{"1":"61B0_SUP_123_RF.Y","2":"True Position  2d Polar.Y","3":"0.064","4":"0.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"MyftctDm6QQwhZZZ"}
+{"1":"11B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.125","4":"-40.200","5":"0.050","6":"-0.050","partnb":1212,"_id":"N1bwqN3mzS9BuGhR"}
+{"1":"61B31_214_LB.Z","2":"True Position  2d Polar.Z","3":"57.113","4":"57.050","5":"0.050","6":"-0.050","partnb":1200,"_id":"N4gfGggtBoALGfnE"}
+{"1":"61B0_SUP_123_RF.Y","2":"True Position  2d Polar.Y","3":"0.064","4":"0.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"NDZ26kjOwmcDo21y"}
+{"1":"11B22_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1192,"_id":"NH1eLPkNL6dyPWH9"}
+{"1":"11B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.125","4":"-40.200","5":"0.050","6":"-0.050","partnb":1192,"_id":"NK1AeuAplNNth6Np"}
+{"1":"61F41_86_PC","2":"X Value","3":"83.860","4":"83.840","5":"0.125","6":"-0.125","partnb":1208,"_id":"NPThwYkUFziAjxVL"}
+{"1":"61B22_333_RFL","2":"Diameter","3":"15.027","4":"15.029","5":"0.013","6":"-0.013","partnb":1188,"_id":"NSckGVm30V8BaURt"}
+{"1":"61B0__INF_RF.Y","2":"True Position  2d Polar.Y","3":"0.073","4":"0.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"NZyP6aAa2Ww8rnwG"}
+{"1":"51B02_SUP_121_LB","2":"True Position  2d Polar","3":"0.182","4":"0.000","5":"0.150","6":"0.000","partnb":1188,"_id":"Nc1jJw3PBOjYlApQ"}
+{"1":"61B0_SUP_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1188,"_id":"NdOIYYfckw6kPkua"}
+{"1":"11B11_234_LB.Z","2":"True Position  2d Polar.Z","3":"0.033","4":"0.000","5":"0.050","6":"-0.050","partnb":1196,"_id":"Np7foi6JvhrCYmEJ"}
+{"1":"11F11_228_RFL_X","2":"Distance","3":"204.136","4":"204.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"NuXseXd8HSi5lDGu"}
+{"1":"B1_3_PC","2":"Y Value","3":"76.066","4":"76.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"O1xQTqwPGZSEn3MA"}
+{"1":"11B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.125","4":"-40.200","5":"0.050","6":"-0.050","partnb":1204,"_id":"O5JXNQKrN075xiCi"}
+{"1":"ITEM_306_RFL","2":"Length of perpendicular","3":"34.371","4":"34.150","5":"0.300","6":"0.000","partnb":1188,"_id":"O5xzHjBCjjUwp9MF"}
+{"1":"61B0_SUP_123_RF","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1196,"_id":"OBuTHNLP1FXYcwQO"}
+{"1":"61B0__INF_RF.Y","2":"True Position  2d Polar.Y","3":"0.073","4":"0.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"OE3D9bRxQhvqtlnm"}
+{"1":"11B22_334_LB","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.100","6":"0.000","partnb":1196,"_id":"OMt0Wn0myqo6rO4L"}
+{"1":"11F22_320_PC","2":"Cartesian Distance","3":"2.052","4":"2.070","5":"0.100","6":"-0.100","partnb":1196,"_id":"OVVCk8dod3SduSyv"}
+{"partnb":1196,"_id":"OWxOgJE1bSlUGkyg"}
+{"1":"11F36_RF","2":"Cartesian Distance","3":"18.778","4":"18.800","5":"0.150","6":"-0.150","partnb":1196,"_id":"ObUvzLKs2SnxNhvP"}
+{"1":"2B03_4_PC.Z","2":"True Position  2d Polar.Z","3":"234.210","4":"234.215","5":"0.250","6":"-0.250","partnb":1208,"_id":"Oie4NwxdOo2MPjMu"}
+{"1":"51B02_INF_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1192,"_id":"Oruy8ekaL0WOUmHA"}
+{"1":"61F21_322_RF","2":"X Value","3":"82.413","4":"82.420","5":"0.050","6":"-0.050","partnb":1208,"_id":"Ot2jGURWegQD5vuQ"}
+{"1":"11B11_234_LB","2":"True Position  2d Polar","3":"0.073","4":"0.000","5":"0.100","6":"0.000","partnb":1200,"_id":"PF0qj5PF5fqy91nc"}
+{"1":"11B11_233_RFL","2":"Diameter","3":"57.003","4":"57.015","5":"0.015","6":"-0.015","partnb":1196,"_id":"PHP8oVlLAZk6NdzK"}
+{"1":"61B31_214_LB","2":"True Position  2d Polar","3":"0.127","4":"0.000","5":"0.100","6":"0.000","partnb":1192,"_id":"PJNQape3vjwS1vKa"}
+{"1":"11F22_RF","2":"X Value","3":"-113.267","4":"-113.130","5":"0.100","6":"-0.100","partnb":1208,"_id":"PV99J2cCBQKiL5ut"}
+{"filename":"c:\\Users\\Public\\Documents\\Zeiss\\CALYPSO\\workarea\\results\\TRANSMISION-OP10-L_765_hdr.txt","operid":"Master","date":"2022-2-14","time":"5:39:45 am","dmesn":"114555","partcomment":"CARCASA: TRANSMISION  OPERACION: 10  MODELO: L MATERIAL: MAGNESIO PROGRAMA: LINEA: MQ200A ","order":"8 CTRL M1 RA 3971","temperatureworkpiece":"22.77","partnb":1208,"_id":"PadHC53XqQE1auB5"}
+{"filename":"c:\\Users\\Public\\Documents\\Zeiss\\CALYPSO\\workarea\\results\\TRANSMISION-OP10-L_765_hdr.txt","operid":"Master","date":"2022-2-14","time":"5:39:45 am","dmesn":"114555","partcomment":"CARCASA: TRANSMISION  OPERACION: 10  MODELO: L MATERIAL: MAGNESIO PROGRAMA: LINEA: MQ200A ","order":"8 CTRL M1 RA 3971","temperatureworkpiece":"22.77","partnb":1188,"_id":"Pbz4WxEACNBiT3YU"}
+{"1":"61F31_215_PC","2":"X Value","3":"82.406","4":"82.420","5":"0.050","6":"-0.050","partnb":1200,"_id":"PgJIGkhCoC0zDKaj"}
+{"1":"2B03_4_PC","2":"True Position  2d Polar","3":"0.083","4":"0.000","5":"0.500","6":"0.000","partnb":1192,"_id":"Pqmgr2QtOu85wZAG"}
+{"1":"11B26_301_PC","2":"Cartesian Distance","3":"40.233","4":"40.200","5":"0.200","6":"-0.200","partnb":1212,"_id":"Px926fydMOoESO6K"}
+{"1":"61B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.608","4":"56.550","5":"0.050","6":"-0.050","partnb":1208,"_id":"PxWPUvjWPBFbc78A"}
+{"1":"ITEM_307_RFL","2":"Angle between Features","3":"53:59:11","4":"54:00:00","5":"01:00:00","6":"-01:00:00","partnb":1208,"_id":"Q01XTs5z1WHkR2Hp"}
+{"1":"61B31_213_RFL","2":"Diameter","3":"9.198","4":"9.000","5":"0.300","6":"0.000","partnb":1204,"_id":"Q3NfI1Ci5CRdUwWD"}
+{"1":"61F11_RF","2":"Flatness","3":"0.014","4":"0.000","5":"0.010","6":"0.000","partnb":1212,"_id":"Q3ViXgIsNnPqlZju"}
+{"1":"2B03_4_PC.X","2":"True Position  2d Polar.X","3":"-14.041","4":"-14.000","5":"0.250","6":"-0.250","partnb":1192,"_id":"Q9A6IGD85JpGuY2L"}
+{"1":"11B22_333_RF","2":"Diameter","3":"15.022","4":"15.029","5":"0.013","6":"-0.013","partnb":1212,"_id":"QEpxPp1WSJeDaX2i"}
+{"1":"2B0_1_PC","2":"True Position  2d Polar","3":"0.049","4":"0.000","5":"0.500","6":"0.000","partnb":1188,"_id":"QMFuapDbEWPY3rzq"}
+{"1":"61B0__INF_RF","2":"True Position  2d Polar","3":"0.161","4":"0.000","5":"0.200","6":"0.000","partnb":1196,"_id":"QOWpsYtS0ZAqr1Tp"}
+{"1":"11B11_234_LB.Y","2":"True Position  2d Polar.Y","3":"0.016","4":"0.000","5":"0.050","6":"-0.050","partnb":1196,"_id":"QOWx64ozzNdS4Zov"}
+{"1":"61B21_333_RFL","2":"Diameter","3":"15.026","4":"15.029","5":"0.013","6":"-0.013","partnb":1212,"_id":"QTlOjyyOdeVCtJOg"}
+{"1":"11F11_228_RFL_X","2":"Distance","3":"204.136","4":"204.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"QVrxwOjvcW2h4ImX"}
+{"1":"51B02_SUP_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.005","6":"0.000","partnb":1200,"_id":"QZ0xopgCdm3snMu3"}
+{"1":"11B11_234_LB.Y","2":"True Position  2d Polar.Y","3":"0.016","4":"0.000","5":"0.050","6":"-0.050","partnb":1200,"_id":"Qa8zPB21SMPTubY7"}
+{"1":"11B11_233_RFL","2":"Diameter","3":"57.003","4":"57.015","5":"0.015","6":"-0.015","partnb":1208,"_id":"QgmFiY717rRn7KYE"}
+{"1":"11F36_352_PC","2":"X Value","3":"-134.097","4":"-134.000","5":"0.150","6":"-0.150","partnb":1188,"_id":"Qod6sJLIVjmtMkrW"}
+{"1":"11B36_351_PC","2":"Z Value","3":"191.663","4":"191.550","5":"0.100","6":"-0.100","partnb":1204,"_id":"Qof1Gv4pzZ8nBKuA"}
+{"1":"61B0__INF_RF","2":"True Position  2d Polar","3":"0.161","4":"0.000","5":"0.200","6":"0.000","partnb":1200,"_id":"QokSMN5LJrP8LUQ4"}
+{"1":"61B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.174","4":"40.200","5":"0.050","6":"-0.050","partnb":1188,"_id":"QpF0kkhfHu18bqoW"}
+{"1":"51B02_INF_126_RFL","2":"Diameter","3":"7.100","4":"7.107","5":"0.007","6":"-0.007","partnb":1188,"_id":"QtWSg7OyueB0RiP4"}
+{"1":"61B0__SUP_123_RF","2":"Concentricity","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1200,"_id":"R1JQ5xS3J2xsaI49"}
+{"1":"61B21_333_RFL","2":"Diameter","3":"15.026","4":"15.029","5":"0.013","6":"-0.013","partnb":1208,"_id":"R4Z2eQrPGxlLrNH8"}
+{"1":"61B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.174","4":"40.200","5":"0.050","6":"-0.050","partnb":1200,"_id":"RTKvN3cKUdRWilqC"}
+{"1":"61B0_INF_125_RFL","2":"Diameter","3":"7.097","4":"7.107","5":"0.007","6":"-0.007","partnb":1192,"_id":"RZilACWsyWKZTsVc"}
+{"1":"61B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.174","4":"40.200","5":"0.050","6":"-0.050","partnb":1208,"_id":"RkeqDqLz9tftp0yF"}
+{"1":"61B31_214_LB.Z","2":"True Position  2d Polar.Z","3":"57.113","4":"57.050","5":"0.050","6":"-0.050","partnb":1188,"_id":"RmXeAoykwepi7hzY"}
+{"1":"61B21_RF","2":"Roundness","3":"0.005","4":"0.000","5":"0.010","6":"0.000","partnb":1196,"_id":"RngCgfHTUY2ueoB9"}
+{"1":"11B22_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1208,"_id":"RtXgeRiS8T9dXYhK"}
+{"1":"61B0__INF_RF.X","2":"True Position  2d Polar.X","3":"-0.034","4":"0.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"S6EkTiQIHxII56Qt"}
+{"1":"61B0_INF_125_RFL","2":"Diameter","3":"7.097","4":"7.107","5":"0.007","6":"-0.007","partnb":1208,"_id":"SAPV9P8OuE1qy85g"}
+{"1":"11F11_227_LB","2":"X Value","3":"-115.319","4":"-115.200","5":"0.040","6":"-0.040","partnb":1200,"_id":"SJl6zRoPbWmx8ZBI"}
+{"1":"61F31_215_PC","2":"X Value","3":"82.406","4":"82.420","5":"0.050","6":"-0.050","partnb":1208,"_id":"SLhgdybId2tYChMg"}
+{"1":"2B03_4_PC","2":"True Position  2d Polar","3":"0.083","4":"0.000","5":"0.500","6":"0.000","partnb":1204,"_id":"STg1ZE0NDV6NpouS"}
+{"1":"61B0_INF_125_RFL","2":"Diameter","3":"7.097","4":"7.107","5":"0.007","6":"-0.007","partnb":1196,"_id":"SVOrGtmSP6hLZTQO"}
+{"1":"11B22_333_RF","2":"Diameter","3":"15.022","4":"15.029","5":"0.013","6":"-0.013","partnb":1196,"_id":"SnphXQtDHdwSJopB"}
+{"1":"61B0_SUP_123_RF.Y","2":"True Position  2d Polar.Y","3":"0.064","4":"0.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"Sv6z7nX29zh0k7Pq"}
+{"1":"61B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.174","4":"40.200","5":"0.050","6":"-0.050","partnb":1196,"_id":"T1ij6630AJ8Fiyfa"}
+{"1":"61B22_334_LB","2":"True Position  2d Polar","3":"0.116","4":"0.000","5":"0.100","6":"0.000","partnb":1208,"_id":"T3KrADvJwUtG79Lc"}
+{"1":"61B31_213_RFL","2":"Diameter","3":"9.198","4":"9.000","5":"0.300","6":"0.000","partnb":1200,"_id":"TBzQZukNTV5xkQjC"}
+{"1":"61B21_334_LB","2":"True Position  2d Polar","3":"0.091","4":"0.000","5":"0.100","6":"0.000","partnb":1204,"_id":"TLMgf7dEJy3gAaxp"}
+{"1":"61B41_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.007","6":"0.000","partnb":1188,"_id":"TOOPrfGYysM772iB"}
+{"1":"61B0__INF_RF.X","2":"True Position  2d Polar.X","3":"-0.034","4":"0.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"TcUpDqiqgH4AV5WZ"}
+{"1":"11B22_334_LB","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.100","6":"0.000","partnb":1200,"_id":"Td6rV4ZwPeKE9mFx"}
+{"1":"61B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.174","4":"40.200","5":"0.050","6":"-0.050","partnb":1212,"_id":"TgYeSr1ydpElueHp"}
+{"1":"61B31_214_LB.Y","2":"True Position  2d Polar.Y","3":"4.995","4":"5.000","5":"0.050","6":"-0.050","partnb":1188,"_id":"TlaK7puVW5uQRCKf"}
+{"1":"11B11_233_RFL","2":"Diameter","3":"57.003","4":"57.015","5":"0.015","6":"-0.015","partnb":1188,"_id":"TmjTupqBKksFpJbs"}
+{"1":"11B26_300_PC","2":"Cartesian Distance","3":"17.004","4":"17.000","5":"0.200","6":"-0.200","partnb":1204,"_id":"TobJhe2EXKlYm1lJ"}
+{"1":"51B02_SUP_121_LB.X","2":"True Position  2d Polar.X","3":"26.616","4":"26.700","5":"0.075","6":"-0.075","partnb":1208,"_id":"TolywqrrB09l9THq"}
+{"1":"2B03_4_PC.Z","2":"True Position  2d Polar.Z","3":"234.210","4":"234.215","5":"0.250","6":"-0.250","partnb":1212,"_id":"U3fakje4QXDLgyUp"}
+{"1":"61B31_213_RFL","2":"Diameter","3":"9.198","4":"9.000","5":"0.300","6":"0.000","partnb":1192,"_id":"UEvijtwdeGkjQ8Ya"}
+{"1":"61B0_INF_RF","2":"Roundness","3":"0.006","4":"0.000","5":"0.005","6":"0.000","partnb":1208,"_id":"Ub7Hfu82cxJFMzf8"}
+{"1":"2B0_1_PC.Z","2":"True Position  2d Polar.Z","3":"60.022","4":"60.000","5":"0.250","6":"-0.250","partnb":1196,"_id":"UrstMTiUUuE9QVF5"}
+{"1":"11B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.155","4":"26.200","5":"0.050","6":"-0.050","partnb":1196,"_id":"UxXv6SFOQNFGBDce"}
+{"1":"61F21_322_RF","2":"X Value","3":"82.413","4":"82.420","5":"0.050","6":"-0.050","partnb":1188,"_id":"UytQxqgVwEW9qTQf"}
+{"1":"61B41_81_LB.Z","2":"True Position  2d Polar.Z","3":"288.327","4":"288.340","5":"0.040","6":"-0.040","partnb":1200,"_id":"VFgTbwlOXhk1bFyq"}
+{"1":"11F36_RF","2":"Cartesian Distance","3":"18.778","4":"18.800","5":"0.150","6":"-0.150","partnb":1192,"_id":"VSEyx4F7TPCGReO4"}
+{"1":"61B31_214_LB.Z","2":"True Position  2d Polar.Z","3":"57.113","4":"57.050","5":"0.050","6":"-0.050","partnb":1204,"_id":"VUm2oKNbkUGKWExs"}
+{"1":"61B0__INF_RF","2":"True Position  2d Polar","3":"0.161","4":"0.000","5":"0.200","6":"0.000","partnb":1204,"_id":"VWJ4CxoD6OtHGVbA"}
+{"1":"2B0_1_PC.X","2":"True Position  2d Polar.X","3":"-38.989","4":"-39.000","5":"0.250","6":"-0.250","partnb":1204,"_id":"VZQq2EVR7U5iGKhQ"}
+{"1":"11B22_334_LB","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.100","6":"0.000","partnb":1192,"_id":"VaiVMCoRIxZYfIBw"}
+{"1":"B1_3_PC","2":"Y Value","3":"76.066","4":"76.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"Vdy9f0UVVSJDOxpN"}
+{"1":"11B11_RF","2":"Roundness","3":"0.013","4":"0.000","5":"0.012","6":"0.000","partnb":1188,"_id":"VgRrhlunyGes144q"}
+{"1":"61B0__SUP_123_RF","2":"Concentricity","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1208,"_id":"Vhgc9yAKy49tf1gD"}
+{"1":"61B0_SUP_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1200,"_id":"VmNN5L3BsDc8Cyly"}
+{"1":"A1_3_PC","2":"Y Value","3":"76.030","4":"76.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"Vzc5P7XPmWQBaw9N"}
+{"1":"ITEM_307_RFL","2":"Angle between Features","3":"53:59:11","4":"54:00:00","5":"01:00:00","6":"-01:00:00","partnb":1212,"_id":"W1Da7jRcs5kJ0fui"}
+{"1":"11B26_300_PC","2":"Cartesian Distance","3":"17.004","4":"17.000","5":"0.200","6":"-0.200","partnb":1200,"_id":"W2B5AY1iwzFjlwJz"}
+{"1":"51B02_INF_121_RF.X","2":"True Position  2d Polar.X","3":"26.613","4":"26.700","5":"0.075","6":"-0.075","partnb":1196,"_id":"WFZEzYcqYFZjFLYx"}
+{"1":"61B41_81_LB.Z","2":"True Position  2d Polar.Z","3":"288.327","4":"288.340","5":"0.040","6":"-0.040","partnb":1204,"_id":"WG5bxAnHhcjtsc1e"}
+{"1":"51B01_RF","2":"Y Value","3":"0.014","4":"0.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"WP4ZIqKJOxRcGyE9"}
+{"1":"2B0_1_PC.X","2":"True Position  2d Polar.X","3":"-38.989","4":"-39.000","5":"0.250","6":"-0.250","partnb":1208,"_id":"WPaOEOvQg0rqknhn"}
+{"1":"51B01_RF","2":"Y Value","3":"0.014","4":"0.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"WWLyhKnjW8ha3WbC"}
+{"1":"51B02_INF_126_RFL","2":"Diameter","3":"7.100","4":"7.107","5":"0.007","6":"-0.007","partnb":1200,"_id":"WXb28mbUJXyqOF1c"}
+{"1":"51B02_INF_121_RF.Y","2":"True Position  2d Polar.Y","3":"-107.530","4":"-107.500","5":"0.075","6":"-0.075","partnb":1208,"_id":"Wc7pL4F06wlVYdpA"}
+{"1":"11B21_334_LB","2":"True Position  2d Polar","3":"0.093","4":"0.000","5":"0.100","6":"0.000","partnb":1200,"_id":"Wr46ajt5Yf9F7bRG"}
+{"1":"61B0_SUP_123_RF","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1204,"_id":"Wvilx46DF1ELT5p7"}
+{"1":"11F11_228_RFL_X","2":"Distance","3":"204.136","4":"204.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"XCvYSgsvq22I29UI"}
+{"1":"61B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.238","4":"26.200","5":"0.050","6":"-0.050","partnb":1192,"_id":"XLcO2ivPeMMnotUe"}
+{"1":"11F11_227_LB","2":"X Value","3":"-115.319","4":"-115.200","5":"0.040","6":"-0.040","partnb":1212,"_id":"XMexA6JyIXkYXvuA"}
+{"1":"61B0_SUP_123_RF","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1200,"_id":"XaSV4ziMIOoEqaDl"}
+{"1":"61B22_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1200,"_id":"XlVjdpEG9WQPIuNj"}
+{"1":"61B41_81_LB","2":"True Position  2d Polar","3":"0.026","4":"0.000","5":"0.080","6":"0.000","partnb":1188,"_id":"XsmQxz83tlvWMSMa"}
+{"1":"51B02_SUP_121_LB.Y","2":"True Position  2d Polar.Y","3":"-107.535","4":"-107.500","5":"0.075","6":"-0.075","partnb":1208,"_id":"Y4Sv8oJg9jAxPLfu"}
+{"1":"51B01_166_LB","2":"X Value","3":"7.168","4":"7.200","5":"0.175","6":"-0.175","partnb":1200,"_id":"YbMm6r8N6bdzmCMv"}
+{"1":"51B02_INF_121_RF","2":"True Position  2d Polar","3":"0.184","4":"0.000","5":"0.150","6":"0.000","partnb":1188,"_id":"Yc8fATFfluoBHk2O"}
+{"partnb":1204,"_id":"YfbIriuGErZyKT61"}
+{"1":"11B36_350_LB","2":"Y Value","3":"55.054","4":"55.000","5":"0.200","6":"-0.200","partnb":1192,"_id":"YkkKj77q0zahipJC"}
+{"1":"61B41_80_RFL","2":"Diameter","3":"12.011","4":"12.013","5":"0.013","6":"-0.013","partnb":1192,"_id":"YttSbq9ULI0nXTOI"}
+{"1":"11F11_RF","2":"Flatness","3":"0.018","4":"0.000","5":"0.010","6":"0.000","partnb":1188,"_id":"Yvo6dPgapCPMbSEi"}
+{"1":"2B03_4_PC.X","2":"True Position  2d Polar.X","3":"-14.041","4":"-14.000","5":"0.250","6":"-0.250","partnb":1204,"_id":"YwhlV5BJPpHOrOmY"}
+{"1":"11B22_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1196,"_id":"Z0uSHeFsCEkTjjo1"}
+{"1":"B1_3_PC","2":"Y Value","3":"76.066","4":"76.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"Z3KrFiIXhokWJXHB"}
+{"1":"51B02_SUP_121_LB","2":"True Position  2d Polar","3":"0.182","4":"0.000","5":"0.150","6":"0.000","partnb":1196,"_id":"Z3XSQMB19vsvEdmx"}
+{"1":"61B11_255_RFL","2":"Diameter","3":"21.995","4":"22.006","5":"0.006","6":"-0.006","partnb":1212,"_id":"Z60pbKhoh9YrkxDl"}
+{"1":"61B0__INF_RF.Y","2":"True Position  2d Polar.Y","3":"0.073","4":"0.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"ZAQhncGD7JlPJude"}
+{"1":"61F31_215_PC","2":"X Value","3":"82.406","4":"82.420","5":"0.050","6":"-0.050","partnb":1212,"_id":"ZB80a789zfjV7ZsV"}
+{"1":"51B02_INF_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1196,"_id":"ZG6zHTJKrnmCZ6ja"}
+{"1":"61B41_81_LB.Y","2":"True Position  2d Polar.Y","3":"60.799","4":"60.800","5":"0.040","6":"-0.040","partnb":1204,"_id":"ZPqwfQw8bAuHFu3i"}
+{"1":"61F11_200_PC","2":"X Value","3":"88.818","4":"88.800","5":"0.050","6":"-0.050","partnb":1192,"_id":"ZQw4hAMIUG3foF0l"}
+{"1":"11B22_333_RF","2":"Diameter","3":"15.022","4":"15.029","5":"0.013","6":"-0.013","partnb":1208,"_id":"ZVMqJcUYLCE5ZsnP"}
+{"1":"61B11_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1212,"_id":"ZYgAk6EBWtqiB8dK"}
+{"1":"61F22_322_LB","2":"X Value","3":"82.429","4":"82.420","5":"0.050","6":"-0.050","partnb":1200,"_id":"ZZOfgUtQhcsSF8Hc"}
+{"1":"61B22_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1204,"_id":"ZeezFNnE3Ubt454c"}
+{"1":"11F11_228_RFL_X","2":"Distance","3":"204.136","4":"204.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"Zfd7sDooFthSCKGa"}
+{"1":"2B0_1_PC.X","2":"True Position  2d Polar.X","3":"-38.989","4":"-39.000","5":"0.250","6":"-0.250","partnb":1200,"_id":"Zgicwk2dqgj6G01d"}
+{"1":"2B03_4_PC.X","2":"True Position  2d Polar.X","3":"-14.041","4":"-14.000","5":"0.250","6":"-0.250","partnb":1188,"_id":"ZkkFpeTVfhGks8bW"}
+{"1":"61B22_333_RFL","2":"Diameter","3":"15.027","4":"15.029","5":"0.013","6":"-0.013","partnb":1212,"_id":"ZtnAx9gUsa0NUT44"}
+{"1":"61B0__INF_RF.X","2":"True Position  2d Polar.X","3":"-0.034","4":"0.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"ZwHtZi4t3SMo3f1h"}
+{"partnb":1196,"_id":"a246kmxNHtX9rpxP"}
+{"1":"61B31_214_LB.Y","2":"True Position  2d Polar.Y","3":"4.995","4":"5.000","5":"0.050","6":"-0.050","partnb":1200,"_id":"a4NQiq4HqfSYWw0r"}
+{"1":"61B0_SUP_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1208,"_id":"a5mlkvDSPvipvf0u"}
+{"1":"61B11_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1200,"_id":"aFHVBj9maIpSnmwK"}
+{"1":"61F41_86_PC","2":"X Value","3":"83.860","4":"83.840","5":"0.125","6":"-0.125","partnb":1200,"_id":"aLqJ1l9xmbMoUafc"}
+{"1":"61B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.174","4":"40.200","5":"0.050","6":"-0.050","partnb":1192,"_id":"aTyb5jKLeN4cCrnt"}
+{"1":"11B11_234_LB.Y","2":"True Position  2d Polar.Y","3":"0.016","4":"0.000","5":"0.050","6":"-0.050","partnb":1188,"_id":"aWWXD7DuNSgeeyI1"}
+{"1":"11B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.125","4":"-40.200","5":"0.050","6":"-0.050","partnb":1196,"_id":"aaLDKlbeBUiBSgns"}
+{"1":"61B21_334_LB","2":"True Position  2d Polar","3":"0.091","4":"0.000","5":"0.100","6":"0.000","partnb":1212,"_id":"aacVrCHZt525IA08"}
+{"1":"61B41_81_LB","2":"True Position  2d Polar","3":"0.026","4":"0.000","5":"0.080","6":"0.000","partnb":1192,"_id":"aeY58O5RiXb9uRgu"}
+{"1":"11B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.125","4":"-40.200","5":"0.050","6":"-0.050","partnb":1208,"_id":"aiIogKwwLeAmbrQf"}
+{"1":"id","2":"type","3":"actual","4":"nominal","5":"uppertol","6":"lowertol","partnb":1188,"_id":"alLjbnjP2WegPIFr"}
+{"1":"2B0_1_PC.Z","2":"True Position  2d Polar.Z","3":"60.022","4":"60.000","5":"0.250","6":"-0.250","partnb":1200,"_id":"amkj6fX9VCrltWCP"}
+{"1":"61B31_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.007","6":"0.000","partnb":1212,"_id":"aq0DHY387KFXnSHn"}
+{"1":"61F21_322_RF","2":"X Value","3":"82.413","4":"82.420","5":"0.050","6":"-0.050","partnb":1192,"_id":"aqQ4yauJOmiR9s1B"}
+{"1":"61B0__INF_RF","2":"True Position  2d Polar","3":"0.161","4":"0.000","5":"0.200","6":"0.000","partnb":1188,"_id":"aqaSHq5WDkDK6qBv"}
+{"1":"11F21_321_PC","2":"Cartesian Distance","3":"9.456","4":"9.450","5":"0.100","6":"-0.100","partnb":1204,"_id":"b1ps6QGVmJs2rUQ3"}
+{"1":"11F21_321_PC","2":"Cartesian Distance","3":"9.456","4":"9.450","5":"0.100","6":"-0.100","partnb":1192,"_id":"bCLWma8CzRxA70zG"}
+{"1":"B1_3_PC","2":"Y Value","3":"76.066","4":"76.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"bLKyLUVXtaHfKWzj"}
+{"1":"11B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.541","4":"56.550","5":"0.050","6":"-0.050","partnb":1204,"_id":"bNUJSIkPqCb5IPWZ"}
+{"1":"11B11_RF","2":"Roundness","3":"0.013","4":"0.000","5":"0.012","6":"0.000","partnb":1204,"_id":"bRtfkrnf8kJddB5l"}
+{"1":"11F36_RF","2":"Cartesian Distance","3":"18.778","4":"18.800","5":"0.150","6":"-0.150","partnb":1200,"_id":"bRxmxl0ud1reP7HY"}
+{"1":"51B02_SUP_121_LB.X","2":"True Position  2d Polar.X","3":"26.616","4":"26.700","5":"0.075","6":"-0.075","partnb":1204,"_id":"bWHSokmYxiF99zb5"}
+{"1":"11F22_RF","2":"X Value","3":"-113.267","4":"-113.130","5":"0.100","6":"-0.100","partnb":1204,"_id":"bbMz29GDVCbWNdc4"}
+{"1":"61B31_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.007","6":"0.000","partnb":1208,"_id":"bbhquEhSOWh5xeTk"}
+{"1":"11B11_234_LB","2":"True Position  2d Polar","3":"0.073","4":"0.000","5":"0.100","6":"0.000","partnb":1196,"_id":"bsIaJld3q0GedV9o"}
+{"1":"id","2":"type","3":"actual","4":"nominal","5":"uppertol","6":"lowertol","partnb":1196,"_id":"bwQzksTnDrL5FaQo"}
+{"1":"11B11_RF","2":"Roundness","3":"0.013","4":"0.000","5":"0.012","6":"0.000","partnb":1212,"_id":"cEBaJlQswuIKQFL6"}
+{"1":"61B0__INF_RF","2":"True Position  2d Polar","3":"0.161","4":"0.000","5":"0.200","6":"0.000","partnb":1212,"_id":"cEKEBDcIiN5laF2j"}
+{"1":"11F11_232_LB","2":"Perpendicularity","3":"0.039","4":"0.000","5":"0.050","6":"0.000","partnb":1200,"_id":"cOy8T0kjaFD03hDW"}
+{"1":"11F21_321_PC","2":"Cartesian Distance","3":"9.456","4":"9.450","5":"0.100","6":"-0.100","partnb":1212,"_id":"cWezdMc4R6YtF9lW"}
+{"1":"51B01_166_LB","2":"X Value","3":"7.168","4":"7.200","5":"0.175","6":"-0.175","partnb":1208,"_id":"cZxmeGM5bPjffVoL"}
+{"1":"61B0__INF_RF.X","2":"True Position  2d Polar.X","3":"-0.034","4":"0.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"cdFYZ6kGJ72uN2XH"}
+{"1":"2B0_1_PC.Z","2":"True Position  2d Polar.Z","3":"60.022","4":"60.000","5":"0.250","6":"-0.250","partnb":1212,"_id":"ce4jZCiuCmBJCu94"}
+{"1":"11F22_RF","2":"X Value","3":"-113.267","4":"-113.130","5":"0.100","6":"-0.100","partnb":1188,"_id":"cfcWR05mv5rbYJQO"}
+{"1":"61B0_SUP_123_RF","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1192,"_id":"cgOmttuhsZxGmbTx"}
+{"1":"61F41_86_PC","2":"X Value","3":"83.860","4":"83.840","5":"0.125","6":"-0.125","partnb":1204,"_id":"cw9ju0p5LTsfWrZT"}
+{"1":"11B11_234_LB","2":"True Position  2d Polar","3":"0.073","4":"0.000","5":"0.100","6":"0.000","partnb":1192,"_id":"d1G8xje03HI1ZRfL"}
+{"1":"61B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.238","4":"26.200","5":"0.050","6":"-0.050","partnb":1196,"_id":"dBDNWyapQAzrcJQm"}
+{"1":"11F36_352_PC","2":"X Value","3":"-134.097","4":"-134.000","5":"0.150","6":"-0.150","partnb":1204,"_id":"dBvLT9BRN6bRzLEh"}
+{"1":"11B22_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1204,"_id":"dD84WkognCU7opb5"}
+{"1":"61B0_SUP_125_RFL","2":"Diameter","3":"7.101","4":"7.107","5":"0.007","6":"-0.007","partnb":1208,"_id":"dGefHHt1cDsgmNx2"}
+{"1":"51B01_166_LB","2":"X Value","3":"7.168","4":"7.200","5":"0.175","6":"-0.175","partnb":1204,"_id":"e0eFOWpIx9tC0Ucn"}
+{"1":"61B21_334_LB","2":"True Position  2d Polar","3":"0.091","4":"0.000","5":"0.100","6":"0.000","partnb":1200,"_id":"e650G0W91BLQn0Sz"}
+{"1":"61B11_203_RFL","2":"Diameter","3":"20.008","4":"20.016","5":"0.016","6":"-0.016","partnb":1200,"_id":"eAR8GtQ5AIB8y4uq"}
+{"1":"11B21_333_RFL","2":"Diameter","3":"15.023","4":"15.029","5":"0.013","6":"-0.013","partnb":1192,"_id":"eBCKJLyqoIv65xcD"}
+{"1":"11B26_301_PC","2":"Cartesian Distance","3":"40.233","4":"40.200","5":"0.200","6":"-0.200","partnb":1196,"_id":"eD7ab73Y2ur6FNJ0"}
+{"partnb":1188,"_id":"eHEaym8jZPs92tuD"}
+{"1":"51B02_SUP_126_RFL","2":"Diameter","3":"7.107","4":"7.107","5":"0.007","6":"-0.007","partnb":1212,"_id":"eKhiVMeEmQchvZH2"}
+{"1":"11F21_321_PC","2":"Cartesian Distance","3":"9.456","4":"9.450","5":"0.100","6":"-0.100","partnb":1208,"_id":"eRKU595W9oCJnCtJ"}
+{"1":"51B02_INF_126_RFL","2":"Diameter","3":"7.100","4":"7.107","5":"0.007","6":"-0.007","partnb":1196,"_id":"eYOnZshos2Wur3Kf"}
+{"1":"61B11_255_RFL","2":"Diameter","3":"21.995","4":"22.006","5":"0.006","6":"-0.006","partnb":1200,"_id":"eZ0fAS4J3JeIBWZH"}
+{"1":"61B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.608","4":"56.550","5":"0.050","6":"-0.050","partnb":1200,"_id":"eadvwORiqhhNMxR7"}
+{"1":"51B02_INF_121_RF.X","2":"True Position  2d Polar.X","3":"26.613","4":"26.700","5":"0.075","6":"-0.075","partnb":1188,"_id":"edUcHe4J2d6JLGI9"}
+{"1":"61B11_203_RFL","2":"Diameter","3":"20.008","4":"20.016","5":"0.016","6":"-0.016","partnb":1188,"_id":"euvX38uoDU4b1MWt"}
+{"1":"61B41_81_LB.Y","2":"True Position  2d Polar.Y","3":"60.799","4":"60.800","5":"0.040","6":"-0.040","partnb":1208,"_id":"ezrYX8xe4coi1ANc"}
+{"1":"51B02_INF_121_RF.X","2":"True Position  2d Polar.X","3":"26.613","4":"26.700","5":"0.075","6":"-0.075","partnb":1208,"_id":"f0D4Ldpj8WQ1PgZJ"}
+{"1":"11B21_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1204,"_id":"f5sc4YHrJIn4mjS6"}
+{"1":"2B0_1_PC.Z","2":"True Position  2d Polar.Z","3":"60.022","4":"60.000","5":"0.250","6":"-0.250","partnb":1192,"_id":"f6EcqbJXZyYh81Lt"}
+{"1":"11B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.155","4":"26.200","5":"0.050","6":"-0.050","partnb":1204,"_id":"fAXhZZnOMgeUh0jF"}
+{"1":"51B02_SUP_126_RFL","2":"Diameter","3":"7.107","4":"7.107","5":"0.007","6":"-0.007","partnb":1204,"_id":"fBIxT3apBjYthS1h"}
+{"1":"61B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.197","4":"-40.200","5":"0.050","6":"-0.050","partnb":1188,"_id":"fELAx637WEVeJLK1"}
+{"1":"2B0_1_PC","2":"True Position  2d Polar","3":"0.049","4":"0.000","5":"0.500","6":"0.000","partnb":1208,"_id":"fTnTvqlf8yO2MDPZ"}
+{"1":"51B02_SUP_121_LB.X","2":"True Position  2d Polar.X","3":"26.616","4":"26.700","5":"0.075","6":"-0.075","partnb":1188,"_id":"fqZkiGQL5pST2bWB"}
+{"1":"11B11_233_RFL","2":"Diameter","3":"57.003","4":"57.015","5":"0.015","6":"-0.015","partnb":1204,"_id":"ftCNwEbCXaoOvO7n"}
+{"1":"11F36_RF","2":"Cartesian Distance","3":"18.778","4":"18.800","5":"0.150","6":"-0.150","partnb":1188,"_id":"fus3OYebnDeyYmOy"}
+{"1":"2B0_1_PC","2":"True Position  2d Polar","3":"0.049","4":"0.000","5":"0.500","6":"0.000","partnb":1212,"_id":"fypkHJ1EDBdRVJNa"}
+{"1":"61B21_333_RFL","2":"Diameter","3":"15.026","4":"15.029","5":"0.013","6":"-0.013","partnb":1188,"_id":"g23b5PwW8wqdtR0V"}
+{"1":"61B21_334_LB","2":"True Position  2d Polar","3":"0.091","4":"0.000","5":"0.100","6":"0.000","partnb":1196,"_id":"gSrxMTU1YNSOwA0p"}
+{"1":"51B02_INF_121_RF","2":"True Position  2d Polar","3":"0.184","4":"0.000","5":"0.150","6":"0.000","partnb":1196,"_id":"gT90XD0hA2TejEyo"}
+{"1":"61B22_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1196,"_id":"gTHAHTis1NnMHUyU"}
+{"1":"61B0__SUP_123_RF","2":"Concentricity","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1204,"_id":"gTVMGKnSVvNNNNnL"}
+{"1":"11F11_227_LB","2":"X Value","3":"-115.319","4":"-115.200","5":"0.040","6":"-0.040","partnb":1196,"_id":"gU0rT9R05kHmXrZs"}
+{"1":"11B22_333_RF","2":"Diameter","3":"15.022","4":"15.029","5":"0.013","6":"-0.013","partnb":1200,"_id":"gXEyXaiaY90sglyy"}
+{"1":"11B22_334_LB","2":"True Position  2d Polar","3":"0.151","4":"0.000","5":"0.100","6":"0.000","partnb":1204,"_id":"gZg9hZQMvJbDfDrW"}
+{"1":"51B02_INF_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1188,"_id":"goim4EbYqz9yXVwL"}
+{"1":"61B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.197","4":"-40.200","5":"0.050","6":"-0.050","partnb":1204,"_id":"gzL4NLu67EYkzy4u"}
+{"1":"51B01_166_LB","2":"X Value","3":"7.168","4":"7.200","5":"0.175","6":"-0.175","partnb":1196,"_id":"h1F12skXncWbhdmG"}
+{"1":"B1_3_PC","2":"Y Value","3":"76.066","4":"76.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"hKErrpHyofK8vdUb"}
+{"1":"11B11_234_LB.Z","2":"True Position  2d Polar.Z","3":"0.033","4":"0.000","5":"0.050","6":"-0.050","partnb":1188,"_id":"hKY1eN2kbY2HmDqB"}
+{"1":"11F22_320_PC","2":"Cartesian Distance","3":"2.052","4":"2.070","5":"0.100","6":"-0.100","partnb":1192,"_id":"hKhGLnsXSoLVYJsK"}
+{"1":"61B0_SUP_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1204,"_id":"hKwTiMLLjlaSFOIZ"}
+{"1":"11F11_RF","2":"Flatness","3":"0.018","4":"0.000","5":"0.010","6":"0.000","partnb":1196,"_id":"hLC0fZ3h3yWVze2J"}
+{"1":"51B02_SUP_121_LB.Y","2":"True Position  2d Polar.Y","3":"-107.535","4":"-107.500","5":"0.075","6":"-0.075","partnb":1212,"_id":"hOWfR1kOJpGZwsiQ"}
+{"1":"61B0_SUP_123_RF.X","2":"True Position  2d Polar.X","3":"-0.040","4":"0.000","5":"0.100","6":"-0.100","partnb":1188,"_id":"hPkripeswsA3a9lu"}
+{"1":"61B0_INF_125_RFL","2":"Diameter","3":"7.097","4":"7.107","5":"0.007","6":"-0.007","partnb":1204,"_id":"hdryqXuUeqNSmAAk"}
+{"1":"2B0_1_PC","2":"True Position  2d Polar","3":"0.049","4":"0.000","5":"0.500","6":"0.000","partnb":1196,"_id":"hjL2hEWKBUmCk97B"}
+{"1":"61B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.608","4":"56.550","5":"0.050","6":"-0.050","partnb":1212,"_id":"hjp2LpmGjDawt5xW"}
+{"1":"61B11_255_RFL","2":"Diameter","3":"21.995","4":"22.006","5":"0.006","6":"-0.006","partnb":1204,"_id":"hwGH3bVcr3DrMNki"}
+{"1":"61B11_255_RFL","2":"Diameter","3":"21.995","4":"22.006","5":"0.006","6":"-0.006","partnb":1208,"_id":"hy1gpBctkU22L8ad"}
+{"1":"11F22_320_PC","2":"Cartesian Distance","3":"2.052","4":"2.070","5":"0.100","6":"-0.100","partnb":1188,"_id":"iQoDW0JwjcolYrGf"}
+{"1":"ITEM_307_RFL","2":"Angle between Features","3":"53:59:11","4":"54:00:00","5":"01:00:00","6":"-01:00:00","partnb":1188,"_id":"iRK5qZmVrZ2XU3FA"}
+{"1":"61B0__SUP_123_RF","2":"Concentricity","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1192,"_id":"iW81wyym15bu8D0O"}
+{"1":"11B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.541","4":"56.550","5":"0.050","6":"-0.050","partnb":1212,"_id":"iY3AkFOqoP2MeLOk"}
+{"1":"61B31_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.007","6":"0.000","partnb":1200,"_id":"izqAqiVnz6K7qFOR"}
+{"1":"11B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.541","4":"56.550","5":"0.050","6":"-0.050","partnb":1192,"_id":"izrlqIL9Y13PXGaS"}
+{"1":"11F11_RF","2":"Flatness","3":"0.018","4":"0.000","5":"0.010","6":"0.000","partnb":1208,"_id":"j5CVZm13VXaFJhMt"}
+{"1":"61F22_322_LB","2":"X Value","3":"82.429","4":"82.420","5":"0.050","6":"-0.050","partnb":1188,"_id":"j5FJ38foGwctFxaG"}
+{"1":"11B36_350_LB","2":"Y Value","3":"55.054","4":"55.000","5":"0.200","6":"-0.200","partnb":1196,"_id":"jLHtD1zRx2K71rD6"}
+{"1":"11B36_351_PC","2":"Z Value","3":"191.663","4":"191.550","5":"0.100","6":"-0.100","partnb":1196,"_id":"jOmWkjewoLUD5xY0"}
+{"1":"61F11_RF","2":"Flatness","3":"0.014","4":"0.000","5":"0.010","6":"0.000","partnb":1200,"_id":"jOtg6aFMhjSzro5p"}
+{"1":"ITEM_306_RFL","2":"Length of perpendicular","3":"34.371","4":"34.150","5":"0.300","6":"0.000","partnb":1204,"_id":"jP59usK6QPcgKhcK"}
+{"1":"61F31_215_PC","2":"X Value","3":"82.406","4":"82.420","5":"0.050","6":"-0.050","partnb":1188,"_id":"jRwTu26RxI7uGvnZ"}
+{"1":"11F11_232_LB","2":"Perpendicularity","3":"0.039","4":"0.000","5":"0.050","6":"0.000","partnb":1188,"_id":"jgFe206ukJu1Qox4"}
+{"1":"61B0_SUP_123_RF.X","2":"True Position  2d Polar.X","3":"-0.040","4":"0.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"jp8j5DdGaQG8oueN"}
+{"1":"51B02_INF_121_RF.Y","2":"True Position  2d Polar.Y","3":"-107.530","4":"-107.500","5":"0.075","6":"-0.075","partnb":1200,"_id":"jr3fNFOJ6jXkIoc0"}
+{"1":"61B11_226_PC","2":"Cylindricity","3":"0.011","4":"0.000","5":"0.030","6":"0.000","partnb":1212,"_id":"juPEjDoaiiLLag5t"}
+{"1":"61B0_INF_125_RFL","2":"Diameter","3":"7.097","4":"7.107","5":"0.007","6":"-0.007","partnb":1188,"_id":"jvEhhFONvacnx2dl"}
+{"1":"ITEM_306_RFL","2":"Length of perpendicular","3":"34.371","4":"34.150","5":"0.300","6":"0.000","partnb":1192,"_id":"jvQyeGsILNOUmlkS"}
+{"filename":"c:\\Users\\Public\\Documents\\Zeiss\\CALYPSO\\workarea\\results\\TRANSMISION-OP10-L_765_hdr.txt","operid":"Master","date":"2022-2-14","time":"5:39:45 am","dmesn":"114555","partcomment":"CARCASA: TRANSMISION  OPERACION: 10  MODELO: L MATERIAL: MAGNESIO PROGRAMA: LINEA: MQ200A ","order":"8 CTRL M1 RA 3971","temperatureworkpiece":"22.77","partnb":1212,"_id":"jyWhLmsomhew0bGU"}
+{"1":"61B31_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.007","6":"0.000","partnb":1196,"_id":"kJk5pjzMqFR5VuYC"}
+{"1":"C1_2_PC","2":"Y Value","3":"-82.641","4":"-82.630","5":"0.100","6":"-0.100","partnb":1208,"_id":"kKrkqLQuMJsnmasv"}
+{"1":"11B26_300_PC","2":"Cartesian Distance","3":"17.004","4":"17.000","5":"0.200","6":"-0.200","partnb":1188,"_id":"kO3KkAhF7y5cYslj"}
+{"1":"2B03_4_PC.X","2":"True Position  2d Polar.X","3":"-14.041","4":"-14.000","5":"0.250","6":"-0.250","partnb":1212,"_id":"kQc4ZHd1EoQMTR8K"}
+{"partnb":1200,"_id":"kUmVfDlt6m5RTy2r"}
+{"1":"11B22_333_RF","2":"Diameter","3":"15.022","4":"15.029","5":"0.013","6":"-0.013","partnb":1188,"_id":"kZtOjsryxB148cwB"}
+{"1":"61B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.197","4":"-40.200","5":"0.050","6":"-0.050","partnb":1192,"_id":"kfErtSOgR7dMdyvS"}
+{"1":"61B22_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1208,"_id":"ki42EKvntgXDYvob"}
+{"1":"61B22_334_LB","2":"True Position  2d Polar","3":"0.116","4":"0.000","5":"0.100","6":"0.000","partnb":1188,"_id":"kkkQOXxzct18klQg"}
+{"1":"61F41_86_PC","2":"X Value","3":"83.860","4":"83.840","5":"0.125","6":"-0.125","partnb":1188,"_id":"klx8DMgQQI26jRi0"}
+{"1":"11F11_228_RFL_X","2":"Distance","3":"204.136","4":"204.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"koM37WbeRf7mle5b"}
+{"1":"ITEM_307_RFL","2":"Angle between Features","3":"53:59:11","4":"54:00:00","5":"01:00:00","6":"-01:00:00","partnb":1192,"_id":"kpOMjAQpojPPzJm3"}
+{"1":"61B22_333_RFL","2":"Diameter","3":"15.027","4":"15.029","5":"0.013","6":"-0.013","partnb":1204,"_id":"l9ZBOaDeBiXsKqmQ"}
+{"1":"51B01_166_LB","2":"X Value","3":"7.168","4":"7.200","5":"0.175","6":"-0.175","partnb":1188,"_id":"lAz4ZwMBSfi6deFZ"}
+{"1":"ITEM_306_RFL","2":"Length of perpendicular","3":"34.371","4":"34.150","5":"0.300","6":"0.000","partnb":1200,"_id":"lE7o4KVxeW91EObF"}
+{"1":"11F21_RF","2":"X Value","3":"-124.767","4":"-124.650","5":"0.100","6":"-0.100","partnb":1196,"_id":"lHYPqnWLhhAjDNWx"}
+{"1":"61F41_86_PC","2":"X Value","3":"83.860","4":"83.840","5":"0.125","6":"-0.125","partnb":1212,"_id":"lIbK7LFf4fhKGq6O"}
+{"1":"2B0_1_PC.X","2":"True Position  2d Polar.X","3":"-38.989","4":"-39.000","5":"0.250","6":"-0.250","partnb":1192,"_id":"lLEVur6K8DyGabgz"}
+{"partnb":1192,"_id":"lPTgrcKAXYObKlug"}
+{"1":"2B0_1_PC","2":"True Position  2d Polar","3":"0.049","4":"0.000","5":"0.500","6":"0.000","partnb":1204,"_id":"lTLHVSaplVNKD5AZ"}
+{"1":"61B22_334_LB","2":"True Position  2d Polar","3":"0.116","4":"0.000","5":"0.100","6":"0.000","partnb":1212,"_id":"lbQuOE3cnu3lsWiW"}
+{"1":"11B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.541","4":"56.550","5":"0.050","6":"-0.050","partnb":1196,"_id":"lca7SI6PiTGeblt0"}
+{"1":"11F11_227_LB","2":"X Value","3":"-115.319","4":"-115.200","5":"0.040","6":"-0.040","partnb":1208,"_id":"lezFotpmUy4R7N7i"}
+{"1":"61B0_INF_123_LB","2":"Concentricity","3":"0.160","4":"0.000","5":"0.200","6":"0.000","partnb":1196,"_id":"lg62lhJBkpzPWCcQ"}
+{"1":"11B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.155","4":"26.200","5":"0.050","6":"-0.050","partnb":1212,"_id":"lie3Ca6GnClKaJlG"}
+{"1":"11B22_333_RF","2":"Diameter","3":"15.022","4":"15.029","5":"0.013","6":"-0.013","partnb":1192,"_id":"m8rA5VPuiPPOgU2t"}
+{"1":"2B03_4_PC.X","2":"True Position  2d Polar.X","3":"-14.041","4":"-14.000","5":"0.250","6":"-0.250","partnb":1196,"_id":"mGn5Jx2nVB1SB7X2"}
+{"1":"11B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.189","4":"40.200","5":"0.050","6":"-0.050","partnb":1204,"_id":"mNluKmZxduIIsVDY"}
+{"1":"61B22_334_LB","2":"True Position  2d Polar","3":"0.116","4":"0.000","5":"0.100","6":"0.000","partnb":1200,"_id":"mSyX8RPYGchPer4Z"}
+{"1":"61B0_SUP_125_RFL","2":"Diameter","3":"7.101","4":"7.107","5":"0.007","6":"-0.007","partnb":1196,"_id":"me4P4elg2UNeqDRC"}
+{"1":"11B11_234_LB.Y","2":"True Position  2d Polar.Y","3":"0.016","4":"0.000","5":"0.050","6":"-0.050","partnb":1204,"_id":"mknDTsITlyG3ODej"}
+{"1":"11B26_301_PC","2":"Cartesian Distance","3":"40.233","4":"40.200","5":"0.200","6":"-0.200","partnb":1200,"_id":"mptTKHzwJZMyEB3s"}
+{"1":"11B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.189","4":"40.200","5":"0.050","6":"-0.050","partnb":1200,"_id":"mqorOdjFmBp92U8h"}
+{"partnb":1212,"_id":"mqvr3demrvb46u46"}
+{"1":"51B02_SUP_121_LB","2":"True Position  2d Polar","3":"0.182","4":"0.000","5":"0.150","6":"0.000","partnb":1204,"_id":"n1cxRcgqWr5Uc0TG"}
+{"1":"61B31_214_LB","2":"True Position  2d Polar","3":"0.127","4":"0.000","5":"0.100","6":"0.000","partnb":1188,"_id":"n1fSJdrWJjRO9y30"}
+{"1":"11F11_228_RFL_X","2":"Distance","3":"204.136","4":"204.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"n2UWYUXCkAxT0SNx"}
+{"1":"11B22_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1188,"_id":"n5HI8sDrioFWMw9C"}
+{"1":"11B11_234_LB.Y","2":"True Position  2d Polar.Y","3":"0.016","4":"0.000","5":"0.050","6":"-0.050","partnb":1192,"_id":"nIcHZbZIO3coNHIG"}
+{"1":"51B02_INF_121_RF.Y","2":"True Position  2d Polar.Y","3":"-107.530","4":"-107.500","5":"0.075","6":"-0.075","partnb":1204,"_id":"nNnYaK4xIetKEAHN"}
+{"1":"11B21_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1208,"_id":"nOTsVChXfPb0bQFd"}
+{"1":"id","2":"type","3":"actual","4":"nominal","5":"uppertol","6":"lowertol","partnb":1208,"_id":"nZ2SbsGkFu6WKy62"}
+{"1":"61B41_80_RFL","2":"Diameter","3":"12.011","4":"12.013","5":"0.013","6":"-0.013","partnb":1196,"_id":"ngFLB4wWWlKRQy0n"}
+{"1":"11F21_RF","2":"X Value","3":"-124.767","4":"-124.650","5":"0.100","6":"-0.100","partnb":1188,"_id":"nh7uxlU9phytMew0"}
+{"1":"61B11_255_RFL","2":"Diameter","3":"21.995","4":"22.006","5":"0.006","6":"-0.006","partnb":1196,"_id":"nj8YmJzxg5hwiplp"}
+{"1":"51B01_166_LB","2":"X Value","3":"7.168","4":"7.200","5":"0.175","6":"-0.175","partnb":1212,"_id":"njjeTwoV1eE9IBVH"}
+{"1":"61B0_SUP_125_RFL","2":"Diameter","3":"7.101","4":"7.107","5":"0.007","6":"-0.007","partnb":1188,"_id":"nkeY6g0W1lQXMDX6"}
+{"1":"51F01_165_LB","2":"Z Value","3":"-59.625","4":"-59.650","5":"0.100","6":"-0.100","partnb":1192,"_id":"nlfYn602K0KlBv6s"}
+{"1":"61B31_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.007","6":"0.000","partnb":1204,"_id":"nvMA54g4buy7AIQ5"}
+{"1":"2B0_1_PC.Z","2":"True Position  2d Polar.Z","3":"60.022","4":"60.000","5":"0.250","6":"-0.250","partnb":1208,"_id":"nwsWia7uIjgLOY93"}
+{"1":"11F21_RF","2":"X Value","3":"-124.767","4":"-124.650","5":"0.100","6":"-0.100","partnb":1200,"_id":"nz52y5JyxhnoAgpV"}
+{"1":"61B11_226_PC","2":"Cylindricity","3":"0.011","4":"0.000","5":"0.030","6":"0.000","partnb":1204,"_id":"o3NDjD7IVW25PMeE"}
+{"1":"61B11_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1188,"_id":"o9lfhc9a3R0dwSWT"}
+{"1":"61B0__INF_RF","2":"True Position  2d Polar","3":"0.161","4":"0.000","5":"0.200","6":"0.000","partnb":1192,"_id":"oKpo9xaw8f3ZmG6a"}
+{"partnb":1200,"_id":"oLjyLY2YVOiPKZ4L"}
+{"partnb":1212,"_id":"oPM0O9Y3nQEmJ4af"}
+{"1":"61B41_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.007","6":"0.000","partnb":1208,"_id":"ocdEX4OmSFRWCVnn"}
+{"1":"51B02_INF_121_RF.Y","2":"True Position  2d Polar.Y","3":"-107.530","4":"-107.500","5":"0.075","6":"-0.075","partnb":1188,"_id":"oh6ej4VPqVE5YkxT"}
+{"1":"61B0_SUP_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1212,"_id":"otvAQROCuowPevxB"}
+{"1":"51B01_166_LB","2":"X Value","3":"7.168","4":"7.200","5":"0.175","6":"-0.175","partnb":1192,"_id":"ozt1xHnHBitPTQfd"}
+{"1":"11B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.189","4":"40.200","5":"0.050","6":"-0.050","partnb":1192,"_id":"p8hx7eh4x3pcEWCx"}
+{"1":"11B11_234_LB.Z","2":"True Position  2d Polar.Z","3":"0.033","4":"0.000","5":"0.050","6":"-0.050","partnb":1192,"_id":"p9HKvegrL28ooHYH"}
+{"1":"61B0_INF_RF","2":"Roundness","3":"0.006","4":"0.000","5":"0.005","6":"0.000","partnb":1200,"_id":"pBj3U65S7mvGbmdU"}
+{"1":"id","2":"type","3":"actual","4":"nominal","5":"uppertol","6":"lowertol","partnb":1204,"_id":"pGp7UsbGr8g4VD5Y"}
+{"1":"ITEM_306_RFL","2":"Length of perpendicular","3":"34.371","4":"34.150","5":"0.300","6":"0.000","partnb":1196,"_id":"pHjHG3FW3PsvFQqC"}
+{"1":"51F01_165_LB","2":"Z Value","3":"-59.625","4":"-59.650","5":"0.100","6":"-0.100","partnb":1196,"_id":"pK8Qu1C42gByep6B"}
+{"1":"51B02_INF_121_RF.X","2":"True Position  2d Polar.X","3":"26.613","4":"26.700","5":"0.075","6":"-0.075","partnb":1212,"_id":"pP24G1yAe1aCgVKW"}
+{"1":"11F21_321_PC","2":"Cartesian Distance","3":"9.456","4":"9.450","5":"0.100","6":"-0.100","partnb":1200,"_id":"pcEU6GXIHajKWcbG"}
+{"1":"61B0__SUP_123_RF","2":"Concentricity","3":"0.151","4":"0.000","5":"0.200","6":"0.000","partnb":1188,"_id":"pov3LOTPkr8oVBN4"}
+{"1":"2B0_1_PC","2":"True Position  2d Polar","3":"0.049","4":"0.000","5":"0.500","6":"0.000","partnb":1192,"_id":"pqOADuiFCEsOe2pe"}
+{"1":"11B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.189","4":"40.200","5":"0.050","6":"-0.050","partnb":1196,"_id":"pu3D4YrHfVFUNlHG"}
+{"1":"2B03_4_PC.Z","2":"True Position  2d Polar.Z","3":"234.210","4":"234.215","5":"0.250","6":"-0.250","partnb":1200,"_id":"puwAUk0jwShjsO7y"}
+{"1":"61F21_322_RF","2":"X Value","3":"82.413","4":"82.420","5":"0.050","6":"-0.050","partnb":1196,"_id":"pwO8IrIFCcsUKdhy"}
+{"1":"61B41_81_LB","2":"True Position  2d Polar","3":"0.026","4":"0.000","5":"0.080","6":"0.000","partnb":1204,"_id":"pxj5DJmYRjFLioc2"}
+{"1":"61B41_81_LB.Y","2":"True Position  2d Polar.Y","3":"60.799","4":"60.800","5":"0.040","6":"-0.040","partnb":1200,"_id":"q3Vah8htb1LKzhoy"}
+{"1":"51B02_INF_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1208,"_id":"q6UoP6w96myjy7EY"}
+{"1":"61B11_203_RFL","2":"Diameter","3":"20.008","4":"20.016","5":"0.016","6":"-0.016","partnb":1212,"_id":"q7pkFW8N139WNZ1B"}
+{"1":"11B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.541","4":"56.550","5":"0.050","6":"-0.050","partnb":1200,"_id":"qN5v2QE9xv1n9pnw"}
+{"1":"61B41_81_LB","2":"True Position  2d Polar","3":"0.026","4":"0.000","5":"0.080","6":"0.000","partnb":1208,"_id":"qSl5Yt1yx56d77Zb"}
+{"1":"11B11_234_LB","2":"True Position  2d Polar","3":"0.073","4":"0.000","5":"0.100","6":"0.000","partnb":1204,"_id":"qcQl34UBpgiInmiO"}
+{"1":"11B36_351_PC","2":"Z Value","3":"191.663","4":"191.550","5":"0.100","6":"-0.100","partnb":1208,"_id":"qcYxRRwwtVW6y9Wg"}
+{"1":"51B02_SUP_121_LB.X","2":"True Position  2d Polar.X","3":"26.616","4":"26.700","5":"0.075","6":"-0.075","partnb":1192,"_id":"qrzW0FLFjagvmLoj"}
+{"1":"61F31_215_PC","2":"X Value","3":"82.406","4":"82.420","5":"0.050","6":"-0.050","partnb":1204,"_id":"qvL592l8RNTUTM2f"}
+{"1":"2B0_1_PC.Z","2":"True Position  2d Polar.Z","3":"60.022","4":"60.000","5":"0.250","6":"-0.250","partnb":1204,"_id":"qx2v7T0kCQtLt7p4"}
+{"1":"61B0_SUP_123_RF.Y","2":"True Position  2d Polar.Y","3":"0.064","4":"0.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"qxSw7WEe2Zp64Xx0"}
+{"1":"51B01_RF","2":"Y Value","3":"0.014","4":"0.000","5":"0.100","6":"-0.100","partnb":1196,"_id":"r0gqmu8FsWOrBA06"}
+{"1":"11B36_350_LB","2":"Y Value","3":"55.054","4":"55.000","5":"0.200","6":"-0.200","partnb":1208,"_id":"rDaZDpsoEMRZ2YMt"}
+{"1":"61F11_200_PC","2":"X Value","3":"88.818","4":"88.800","5":"0.050","6":"-0.050","partnb":1212,"_id":"rEbOVzMFotFPQsp2"}
+{"1":"61B22_333_RFL","2":"Diameter","3":"15.027","4":"15.029","5":"0.013","6":"-0.013","partnb":1196,"_id":"rGHcGpGckXPfjNSu"}
+{"1":"61B21_RF","2":"Roundness","3":"0.005","4":"0.000","5":"0.010","6":"0.000","partnb":1192,"_id":"rMYA0airjl2LjH7o"}
+{"1":"61F41_86_PC","2":"X Value","3":"83.860","4":"83.840","5":"0.125","6":"-0.125","partnb":1196,"_id":"rOXcWuyKvRRJ5Pez"}
+{"1":"11F22_RF","2":"X Value","3":"-113.267","4":"-113.130","5":"0.100","6":"-0.100","partnb":1212,"_id":"rZfNGXsTo2k8l9XG"}
+{"1":"61B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.197","4":"-40.200","5":"0.050","6":"-0.050","partnb":1196,"_id":"rmIkBQ21xzkKQT0B"}
+{"1":"C1_2_PC","2":"Y Value","3":"-82.641","4":"-82.630","5":"0.100","6":"-0.100","partnb":1200,"_id":"rpzw4mV5cOMsaaUK"}
+{"1":"61B41_81_LB.Z","2":"True Position  2d Polar.Z","3":"288.327","4":"288.340","5":"0.040","6":"-0.040","partnb":1212,"_id":"rqBAMDYq7jMiJWXI"}
+{"1":"61B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.238","4":"26.200","5":"0.050","6":"-0.050","partnb":1188,"_id":"rxI7vDUTFuPMWX2D"}
+{"1":"61F21_322_RF","2":"X Value","3":"82.413","4":"82.420","5":"0.050","6":"-0.050","partnb":1212,"_id":"rxSFCew7Z1kSaPsE"}
+{"1":"id","2":"type","3":"actual","4":"nominal","5":"uppertol","6":"lowertol","partnb":1212,"_id":"rzp0djOvj9KQnUSD"}
+{"1":"51B01_RF","2":"Y Value","3":"0.014","4":"0.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"s1AIK9snc3ZnG5y8"}
+{"1":"61B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.197","4":"-40.200","5":"0.050","6":"-0.050","partnb":1200,"_id":"s3ZRwT3xOFkfavo3"}
+{"1":"61B31_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.007","6":"0.000","partnb":1188,"_id":"s4jcfsLhG6XwDYZC"}
+{"1":"61F22_322_LB","2":"X Value","3":"82.429","4":"82.420","5":"0.050","6":"-0.050","partnb":1204,"_id":"s9diDdBGio8ZHjVF"}
+{"1":"61B0_SUP_125_RFL","2":"Diameter","3":"7.101","4":"7.107","5":"0.007","6":"-0.007","partnb":1200,"_id":"sITblDFfyjCeJAIF"}
+{"1":"61B31_214_LB","2":"True Position  2d Polar","3":"0.127","4":"0.000","5":"0.100","6":"0.000","partnb":1196,"_id":"sKeAdjpSm63ZwFb0"}
+{"1":"61B21_334_LB","2":"True Position  2d Polar","3":"0.091","4":"0.000","5":"0.100","6":"0.000","partnb":1188,"_id":"sQeJwipaSUdaj37X"}
+{"1":"61B0__INF_RF.X","2":"True Position  2d Polar.X","3":"-0.034","4":"0.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"sRDPCXqF8YevRpj4"}
+{"1":"61B0_SUP_123_RF.X","2":"True Position  2d Polar.X","3":"-0.040","4":"0.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"sUVKGzHTEx3lHtfY"}
+{"1":"51B02_SUP_121_LB.Y","2":"True Position  2d Polar.Y","3":"-107.535","4":"-107.500","5":"0.075","6":"-0.075","partnb":1192,"_id":"sdfkYV9XEt8Ghwu5"}
+{"1":"11B21_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1188,"_id":"seChtKd2B1r2y4VH"}
+{"1":"51B02_SUP_126_RFL","2":"Diameter","3":"7.107","4":"7.107","5":"0.007","6":"-0.007","partnb":1192,"_id":"sh4nTWXGIj8pivWD"}
+{"1":"61B11_255_RFL","2":"Diameter","3":"21.995","4":"22.006","5":"0.006","6":"-0.006","partnb":1188,"_id":"skd0unidVLH3bqNj"}
+{"1":"61B21_RF","2":"Roundness","3":"0.005","4":"0.000","5":"0.010","6":"0.000","partnb":1188,"_id":"smd9GuVxsxwxaTWQ"}
+{"1":"ITEM_307_RFL","2":"Angle between Features","3":"53:59:11","4":"54:00:00","5":"01:00:00","6":"-01:00:00","partnb":1200,"_id":"sudSgQhonIMg9ZMX"}
+{"1":"11B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.541","4":"56.550","5":"0.050","6":"-0.050","partnb":1208,"_id":"svhMKlrAiHZqq8JU"}
+{"1":"11B21_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1196,"_id":"syGwL3RtqcQfAx3n"}
+{"1":"11B21_333_RFL","2":"Diameter","3":"15.023","4":"15.029","5":"0.013","6":"-0.013","partnb":1208,"_id":"t4rX7EwiJFPUYSp4"}
+{"1":"61B22_334_LB","2":"True Position  2d Polar","3":"0.116","4":"0.000","5":"0.100","6":"0.000","partnb":1196,"_id":"t8HInfbYPYmy1XXV"}
+{"1":"61B11_226_PC","2":"Cylindricity","3":"0.011","4":"0.000","5":"0.030","6":"0.000","partnb":1192,"_id":"tAWcyXQsCrktTZl0"}
+{"1":"61B41_81_LB.Z","2":"True Position  2d Polar.Z","3":"288.327","4":"288.340","5":"0.040","6":"-0.040","partnb":1188,"_id":"tFXRxdrWP6wwbeYa"}
+{"1":"11B21_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1192,"_id":"tKJXvwbK95RzbBTz"}
+{"1":"51F01_165_LB","2":"Z Value","3":"-59.625","4":"-59.650","5":"0.100","6":"-0.100","partnb":1212,"_id":"tOQuJiE9ZUjDhuzX"}
+{"1":"51B02_SUP_121_LB.X","2":"True Position  2d Polar.X","3":"26.616","4":"26.700","5":"0.075","6":"-0.075","partnb":1212,"_id":"tPUDlzZp1DF8AN8u"}
+{"1":"11F11_232_LB","2":"Perpendicularity","3":"0.039","4":"0.000","5":"0.050","6":"0.000","partnb":1192,"_id":"tU5THXegTnHEZykB"}
+{"1":"11B11_234_LB.Z","2":"True Position  2d Polar.Z","3":"0.033","4":"0.000","5":"0.050","6":"-0.050","partnb":1208,"_id":"uGLinPDehAo8NrFv"}
+{"1":"61F21_322_RF","2":"X Value","3":"82.413","4":"82.420","5":"0.050","6":"-0.050","partnb":1204,"_id":"uKsnuUJIAnrUNvSD"}
+{"1":"11F36_RF","2":"Cartesian Distance","3":"18.778","4":"18.800","5":"0.150","6":"-0.150","partnb":1212,"_id":"uLD7lXpNkiaauNzM"}
+{"partnb":1208,"_id":"uLkpte4wD8LV1rrx"}
+{"1":"2B03_4_PC.Z","2":"True Position  2d Polar.Z","3":"234.210","4":"234.215","5":"0.250","6":"-0.250","partnb":1204,"_id":"uMAytcLyX1fWbE3t"}
+{"1":"51F01_165_LB","2":"Z Value","3":"-59.625","4":"-59.650","5":"0.100","6":"-0.100","partnb":1200,"_id":"uUATG9aiVGdwAVdf"}
+{"1":"51B02_INF_121_RF.X","2":"True Position  2d Polar.X","3":"26.613","4":"26.700","5":"0.075","6":"-0.075","partnb":1192,"_id":"uUxQSDgmtWQ2ZxPf"}
+{"1":"11F21_321_PC","2":"Cartesian Distance","3":"9.456","4":"9.450","5":"0.100","6":"-0.100","partnb":1196,"_id":"ucfX066RKKgm3HCX"}
+{"1":"61B0_SUP_123_RF.X","2":"True Position  2d Polar.X","3":"-0.040","4":"0.000","5":"0.100","6":"-0.100","partnb":1200,"_id":"uck9b4VtxiSGOtM6"}
+{"1":"61B0__INF_RF.X","2":"True Position  2d Polar.X","3":"-0.034","4":"0.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"ugji1ppUAaKsXvZT"}
+{"1":"2B03_4_PC.Z","2":"True Position  2d Polar.Z","3":"234.210","4":"234.215","5":"0.250","6":"-0.250","partnb":1196,"_id":"uk2Y4tfvt4B5U9Zq"}
+{"1":"61B41_80_RFL","2":"Diameter","3":"12.011","4":"12.013","5":"0.013","6":"-0.013","partnb":1212,"_id":"uokPhYCBEYKexCeY"}
+{"1":"11B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.189","4":"40.200","5":"0.050","6":"-0.050","partnb":1188,"_id":"usQvlkel2f0J5NVK"}
+{"1":"11F21_RF","2":"X Value","3":"-124.767","4":"-124.650","5":"0.100","6":"-0.100","partnb":1204,"_id":"usccC6yrWcxhDrGb"}
+{"1":"11B22_333_RF","2":"Diameter","3":"15.022","4":"15.029","5":"0.013","6":"-0.013","partnb":1204,"_id":"uy32Fv7k2z65ivM0"}
+{"1":"61B0_INF_125_RFL","2":"Diameter","3":"7.097","4":"7.107","5":"0.007","6":"-0.007","partnb":1200,"_id":"v9R7lQFGa9Vb8FHv"}
+{"1":"11F21_RF","2":"X Value","3":"-124.767","4":"-124.650","5":"0.100","6":"-0.100","partnb":1192,"_id":"vI9qda1AgSCJMhdM"}
+{"1":"51B02_SUP_121_LB.Y","2":"True Position  2d Polar.Y","3":"-107.535","4":"-107.500","5":"0.075","6":"-0.075","partnb":1204,"_id":"vJC04sPdLEPZB0sH"}
+{"1":"61B11_226_PC","2":"Cylindricity","3":"0.011","4":"0.000","5":"0.030","6":"0.000","partnb":1188,"_id":"vKCPvwgrKv8sxwJP"}
+{"1":"61B0__INF_RF.Y","2":"True Position  2d Polar.Y","3":"0.073","4":"0.000","5":"0.100","6":"-0.100","partnb":1192,"_id":"vKTIClcvol7glF1I"}
+{"1":"61B31_214_LB.Z","2":"True Position  2d Polar.Z","3":"57.113","4":"57.050","5":"0.050","6":"-0.050","partnb":1192,"_id":"vNx7nwTdvnk3MGm5"}
+{"1":"A1_3_PC","2":"Y Value","3":"76.030","4":"76.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"vTmofQUNE6SWVgDZ"}
+{"1":"11F21_RF","2":"X Value","3":"-124.767","4":"-124.650","5":"0.100","6":"-0.100","partnb":1212,"_id":"vczNVxug6HeZc9Xr"}
+{"filename":"c:\\Users\\Public\\Documents\\Zeiss\\CALYPSO\\workarea\\results\\TRANSMISION-OP10-L_765_hdr.txt","operid":"Master","date":"2022-2-14","time":"5:39:45 am","dmesn":"114555","partcomment":"CARCASA: TRANSMISION  OPERACION: 10  MODELO: L MATERIAL: MAGNESIO PROGRAMA: LINEA: MQ200A ","order":"8 CTRL M1 RA 3971","temperatureworkpiece":"22.77","partnb":1204,"_id":"vlzwqGv67QDO3Y1q"}
+{"1":"11F11_232_LB","2":"Perpendicularity","3":"0.039","4":"0.000","5":"0.050","6":"0.000","partnb":1208,"_id":"vo1f0GbyPCqJVHoR"}
+{"1":"11B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.155","4":"26.200","5":"0.050","6":"-0.050","partnb":1192,"_id":"vsckPzgMtpwurTn0"}
+{"1":"11F11_227_LB","2":"X Value","3":"-115.319","4":"-115.200","5":"0.040","6":"-0.040","partnb":1192,"_id":"vzaQoUklplDWtIkI"}
+{"1":"61F21_322_RF","2":"X Value","3":"82.413","4":"82.420","5":"0.050","6":"-0.050","partnb":1200,"_id":"w5j51ITNnTj4pN75"}
+{"1":"61B22_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1212,"_id":"wNFBILJfTIkGcuY1"}
+{"1":"A1_3_PC","2":"Y Value","3":"76.030","4":"76.000","5":"0.100","6":"-0.100","partnb":1212,"_id":"wX8zoeI1q4i0yDuf"}
+{"1":"2B0_1_PC.X","2":"True Position  2d Polar.X","3":"-38.989","4":"-39.000","5":"0.250","6":"-0.250","partnb":1196,"_id":"wYHVs7HjtfY4Od1y"}
+{"1":"61B22_334_LB","2":"True Position  2d Polar","3":"0.116","4":"0.000","5":"0.100","6":"0.000","partnb":1192,"_id":"wazuh3Gj2hYgSClM"}
+{"partnb":1188,"_id":"wcVCsdLv3rBQzYbY"}
+{"1":"61B0_INF_123_LB","2":"Concentricity","3":"0.160","4":"0.000","5":"0.200","6":"0.000","partnb":1212,"_id":"wemzg5uG9QdMVsiB"}
+{"1":"2B03_4_PC","2":"True Position  2d Polar","3":"0.083","4":"0.000","5":"0.500","6":"0.000","partnb":1212,"_id":"wghzOmX88kq5u680"}
+{"1":"11B36_351_PC","2":"Z Value","3":"191.663","4":"191.550","5":"0.100","6":"-0.100","partnb":1200,"_id":"wjeumWFUpbXaQHZl"}
+{"1":"61B11_226_PC","2":"Cylindricity","3":"0.011","4":"0.000","5":"0.030","6":"0.000","partnb":1200,"_id":"wjlEtRykcztrBlyP"}
+{"1":"11B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.189","4":"40.200","5":"0.050","6":"-0.050","partnb":1212,"_id":"wqgaqu3J5BbGN44c"}
+{"1":"61B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.238","4":"26.200","5":"0.050","6":"-0.050","partnb":1208,"_id":"wwFC5cUIsfyuSE4G"}
+{"1":"61F11_RF","2":"Flatness","3":"0.014","4":"0.000","5":"0.010","6":"0.000","partnb":1192,"_id":"wwfZBB05iypqy2KS"}
+{"1":"11B21_333_RFL","2":"Diameter","3":"15.023","4":"15.029","5":"0.013","6":"-0.013","partnb":1188,"_id":"x8pyV7CMulM8WDFk"}
+{"1":"11F36_352_PC","2":"X Value","3":"-134.097","4":"-134.000","5":"0.150","6":"-0.150","partnb":1208,"_id":"xBYFN94MhhjrJ0Q8"}
+{"1":"61B31_214_LB.Z","2":"True Position  2d Polar.Z","3":"57.113","4":"57.050","5":"0.050","6":"-0.050","partnb":1212,"_id":"xEhmN3TnWCffpTWB"}
+{"1":"51B01_RF","2":"Y Value","3":"0.014","4":"0.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"xLaDsrY4YGb7GUh3"}
+{"1":"61F41_86_PC","2":"X Value","3":"83.860","4":"83.840","5":"0.125","6":"-0.125","partnb":1192,"_id":"xM6uEig2fnC1PN5b"}
+{"1":"61B0_SUP_RF","2":"Roundness","3":"0.004","4":"0.000","5":"0.005","6":"0.000","partnb":1192,"_id":"xMufEXPyFPSU4MUg"}
+{"partnb":1192,"_id":"xQ0v990WEUf5oGwj"}
+{"1":"51B02_INF_121_RF.Y","2":"True Position  2d Polar.Y","3":"-107.530","4":"-107.500","5":"0.075","6":"-0.075","partnb":1192,"_id":"xRbdjy4JPCEwwnvG"}
+{"1":"11F36_352_PC","2":"X Value","3":"-134.097","4":"-134.000","5":"0.150","6":"-0.150","partnb":1192,"_id":"xaGSAFF3ho73knhP"}
+{"1":"11B22_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1212,"_id":"xnO1jitQLWchAjKs"}
+{"1":"11F22_320_PC","2":"Cartesian Distance","3":"2.052","4":"2.070","5":"0.100","6":"-0.100","partnb":1200,"_id":"y56sx2pojftinukR"}
+{"1":"61B41_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.007","6":"0.000","partnb":1196,"_id":"y6QlQg0Pa02uBZpC"}
+{"1":"A1_3_PC","2":"Y Value","3":"76.030","4":"76.000","5":"0.100","6":"-0.100","partnb":1208,"_id":"y9H4vrsmZKr97eab"}
+{"1":"51F01_165_LB","2":"Z Value","3":"-59.625","4":"-59.650","5":"0.100","6":"-0.100","partnb":1204,"_id":"yDg75DJlechunlUo"}
+{"1":"61F31_215_PC","2":"X Value","3":"82.406","4":"82.420","5":"0.050","6":"-0.050","partnb":1192,"_id":"yElWTkwu6O36fdAb"}
+{"1":"51B02_SUP_121_LB.Y","2":"True Position  2d Polar.Y","3":"-107.535","4":"-107.500","5":"0.075","6":"-0.075","partnb":1200,"_id":"yF7PxOxe0sX6Mkur"}
+{"1":"11B36_350_LB","2":"Y Value","3":"55.054","4":"55.000","5":"0.200","6":"-0.200","partnb":1204,"_id":"yGdy9NsQD8yHg9t9"}
+{"1":"51B02_SUP_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.005","6":"0.000","partnb":1196,"_id":"yMZt4aSq322jDNGC"}
+{"1":"ITEM_306_RFL","2":"Length of perpendicular","3":"34.371","4":"34.150","5":"0.300","6":"0.000","partnb":1208,"_id":"yRvQNO91jbF61SkW"}
+{"1":"61B11_RF","2":"Roundness","3":"0.009","4":"0.000","5":"0.010","6":"0.000","partnb":1192,"_id":"yawFyVeioXS8JiaQ"}
+{"1":"11B21_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.010","6":"0.000","partnb":1200,"_id":"ycyG3JLnSvXEAjrs"}
+{"1":"11B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.155","4":"26.200","5":"0.050","6":"-0.050","partnb":1200,"_id":"ydXttYu49LcuqKo8"}
+{"1":"51B02_SUP_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.005","6":"0.000","partnb":1212,"_id":"ygZHoORbv5BdkuQl"}
+{"1":"11B21_334_LB.Y","2":"True Position  2d Polar.Y","3":"40.189","4":"40.200","5":"0.050","6":"-0.050","partnb":1208,"_id":"yhSmTOEUDXndnxW5"}
+{"1":"51B02_SUP_RF","2":"Roundness","3":"0.010","4":"0.000","5":"0.005","6":"0.000","partnb":1208,"_id":"z0gxfyZXS8tSsXA9"}
+{"1":"61B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.197","4":"-40.200","5":"0.050","6":"-0.050","partnb":1208,"_id":"zDVcRIWPLquMwM8L"}
+{"1":"51B01_RF","2":"Y Value","3":"0.014","4":"0.000","5":"0.100","6":"-0.100","partnb":1204,"_id":"zFDivWKbSBbQ2ebP"}
+{"1":"61B21_334_LB.Z","2":"True Position  2d Polar.Z","3":"26.238","4":"26.200","5":"0.050","6":"-0.050","partnb":1212,"_id":"zGCFZQ841LRbyZQZ"}
+{"1":"61F11_200_PC","2":"X Value","3":"88.818","4":"88.800","5":"0.050","6":"-0.050","partnb":1208,"_id":"zHQp84F0bKFuEDyG"}
+{"1":"61B22_334_LB.Z","2":"True Position  2d Polar.Z","3":"56.608","4":"56.550","5":"0.050","6":"-0.050","partnb":1192,"_id":"zJpkf4JcpjKTBH66"}
+{"1":"61F22_322_LB","2":"X Value","3":"82.429","4":"82.420","5":"0.050","6":"-0.050","partnb":1208,"_id":"zM4l7clyXZq4Ulsh"}
+{"1":"61B0_INF_RF","2":"Roundness","3":"0.006","4":"0.000","5":"0.005","6":"0.000","partnb":1188,"_id":"zfdWYhfGz4hBsYFq"}
+{"1":"11B36_350_LB","2":"Y Value","3":"55.054","4":"55.000","5":"0.200","6":"-0.200","partnb":1212,"_id":"zgnJRJC0JoGeBsn1"}
+{"1":"61B41_81_LB.Y","2":"True Position  2d Polar.Y","3":"60.799","4":"60.800","5":"0.040","6":"-0.040","partnb":1188,"_id":"zh9eUvcND7lUvUkM"}
+{"1":"51B02_INF_121_RF","2":"True Position  2d Polar","3":"0.184","4":"0.000","5":"0.150","6":"0.000","partnb":1208,"_id":"zoKdSGap5pvXUxYK"}
+{"1":"61B41_RF","2":"Roundness","3":"0.007","4":"0.000","5":"0.007","6":"0.000","partnb":1192,"_id":"zpDkplKmnnTZ5D4q"}
+{"1":"11B22_334_LB.Y","2":"True Position  2d Polar.Y","3":"-40.125","4":"-40.200","5":"0.050","6":"-0.050","partnb":1188,"_id":"zrMxCmgBZ2OqTVaF"}
+{"1":"61B31_213_RFL","2":"Diameter","3":"9.198","4":"9.000","5":"0.300","6":"0.000","partnb":1212,"_id":"zxHlHlX6kHSIKsxt"}

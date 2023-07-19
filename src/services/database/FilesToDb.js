@@ -24,9 +24,9 @@ const { saveContenidoDataToDB  } = require("../database/SaveCHRtoDatabase");
 
 const { saveTituloDataToDB } = require("../database/SaveHDRtoDatabase");
 
-const { buscarArchivosEnCarpeta } = require("../files/files");
 
-const { buscarFechaTiempoYPartnb } = require("../database/loadDB");
+
+const { obtenerRegistrosEncontrados } = require("../database/loadDB");
 
 
 //busca ultimo numero de indice partnb
@@ -77,16 +77,30 @@ async function SaveFilesToDB(ubicacion) {
   
   actualizarNumeroPartnb(partNumber);
 
+
+  obtenerRegistrosEncontrados()
+  .then((registrosEncontrados) => {
+    // Aquí podemos acceder a los datos en la variable registrosEncontrados
+    console.log('Registros encontrados:', registrosEncontrados);
+  })
+  .catch((error) => {
+    console.error('Error al obtener registros:', error);
+  });
+
   
-  /*buscarFechaTiempoYPartnb(buscarArchivosEnCarpeta()).then((resultados) => {
-    console.log('Resultados:', resultados);
-  });*/
-  //console.log("buscarArchivosEnCarpeta():",buscarArchivosEnCarpeta())
+  
+ 
+/*
   buscarArchivosEnCarpeta().then((resultados) => {
     console.log('Archivos encontrados:', resultados.archivosEncontrados);
+
+ 
+
   }).catch((error) => {
     console.error('Error:', error);
-  });
+  });*/
+
+  
   
   //const baseDeDatos = buscarArchivosEnCarpeta();
   //console.log("baseDeDatos:",baseDeDatos)

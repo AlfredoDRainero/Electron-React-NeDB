@@ -22,7 +22,7 @@ function buscarArchivosEnCarpeta() {
                 console.error('Error al obtener información del archivo:', err);
               } else {
                 if (stats.isFile()) {
-                  archivosEncontrados.push(archivo); // Agrega el nombre del archivo al array
+                  archivosEncontrados.push(directorio+"/"+archivo); // Agrega el nombre del archivo al array
                 }
               }
   
