@@ -1,94 +1,58 @@
-
-import React, { useState, useEffect } from "react";
-import {splitText, convertLastFiveColumns} from './utils/TextFormater'
-import "./index.css"
+import React, { useEffect } from "react";
+import "./index.css";
 //const electron = window.require('electron');
-
-
-const Table = ({ data }) => {
-  return (
-    <table>
-      <tbody>
-        {data.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((cell, cellIndex) => (
-              <td key={cellIndex}>{cell}</td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-};
-
-
 
 function App() {
 
-
-  function enviarDatos() {
-    const datos = { name: "asdasds", age: 301 }; // Datos a insertar en la base de datos
-    window.electronAPI.enviarDatos(datos);
-
-  }
-
-  function enviarDireccion() {
-    //const datos = { name: "John dd", age: 301 }; // Datos a insertar en la base de datos
-    window.electronAPI.enviarDireccion("C:\\Users\\vwari8y.VW\\Documents\\informesCZ\\prueba4\\Electron-React-NeDB\\InformesSinProcesar\\");
-    
-  }
-
-  enviarDatos();
-  enviarDireccion();
-  const [state, setState] =    useState();
-  const [fileContent, setFileContent] = useState('');
-  const [data, setData] = useState([]);
-
-  /*function getValueFromFileAndRow(file, row, column) {
-    if (file.length > row && file[row].length > column) {
-      return file[row][column];
+  useEffect(() => {
+    function enviarDatos() {
+      const datos = { name: "asdasds", age: 301 }; // Datos a insertar en la base de datos
+      window.electronAPI.enviarDatos(datos);
     }
-    return undefined;
-  }*/
+
+    function enviarDireccion() {
+      //const datos = { name: "John dd", age: 301 }; // Datos a insertar en la base de datos
+      window.electronAPI.enviarDireccion(
+        "C:\\Users\\vwari8y.VW\\Documents\\informesCZ\\prueba4\\Electron-React-NeDB\\InformesSinProcesar\\"
+      );
+    }
+
+    enviarDatos();
+    enviarDireccion();
+  });
 
 
-  useEffect(() => {    return () => { };}, []); 
+  useEffect(() => {
+    async function obtenerMensaje() {
+      try {
+        const mensaje = await window.electronAPI.recibirMensaje();
+        console.log("Mensaje recibido en app.jsx:", mensaje);
+      } catch (error) {
+        console.error("Error al obtener el mensaje:", error);
+      }
+    }
 
+    obtenerMensaje();
+  }, []);
 
-
-
-
+  
   return (
     <div>
       <h2>Hello from React in Electron! laal</h2>
-      
-      
-     {/* <button onClick={openFile}>Abrir Archivo</button>*/}
 
+      {/* <button onClick={openFile}>Abrir Archivo</button>*/}
       <h1>Tabla generada</h1>
-
       {/*<h1>Data from SQLite Database</h1>
-      <ul>
-        {data.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-
-        <Table data={convertLastFiveColumns(splitText(fileContent))} />*/}
-    
+        <ul>
+          {data.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+          <Table data={convertLastFiveColumns(splitText(fileContent))} />*/}
     </div>
   );
-
-
-
-
 }
 
 export default App;
 
-
-
-
-
-//--------------------------------------------------------------------------
 

@@ -78,6 +78,8 @@ async function SaveFilesToDB(ubicacion) {
   actualizarNumeroPartnb(partNumber);
 
 
+
+/*
   obtenerRegistrosEncontrados()
   .then((registrosEncontrados) => {
     // Aquí podemos acceder a los datos en la variable registrosEncontrados
@@ -87,7 +89,7 @@ async function SaveFilesToDB(ubicacion) {
     console.error('Error al obtener registros:', error);
   });
 
-  
+  */
   
  
 /*

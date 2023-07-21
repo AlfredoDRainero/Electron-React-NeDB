@@ -29,6 +29,8 @@ const createWindow = () => {
   mainWindow.webContents.openDevTools();
 };
 
+
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
@@ -58,17 +60,34 @@ app.on("activate", () => {
 
 
 
-
-
-
-
-
 // carga de archivos en base de datos con llamada activada pedida desde react
 ipcMain.on("direccion", (event, ubicacion) => {
   SaveFilesToDB(ubicacion);
+  console.log("ubicacion:",ubicacion)
 });
 
 
+
+  // Función asincrónica que retorna una promesa con un mensaje
+  function doSomethingAsync() {
+    return new Promise((resolve) => {
+      // Simulamos una operación asincrónica
+      setTimeout(() => {
+        resolve("¡Hola desde la promesa en main.js!");
+      }, 2000); // Esperamos 2 segundos antes de resolver la promesa
+    });
+  }
+  
+  ipcMain.on("obtener-mensaje", async (event) => {
+    try {
+      const mensaje = await doSomethingAsync();
+      event.sender.send("mensaje-desde-main", mensaje);
+    } catch (error) {
+      // Manejo de errores si es necesario
+      event.sender.send("mensaje-desde-main", "Error al obtener el mensaje");
+    }
+  });
+  
 
 
 
