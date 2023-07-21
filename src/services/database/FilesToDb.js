@@ -20,14 +20,11 @@ const {
   actualizarNumeroPartnb
 } = require("../database/partnb");
 
-const { saveContenidoDataToDB  } = require("../database/SaveCHRtoDatabase");
+const { saveContenidoDataToDB } = require("../database/SaveCHRtoDatabase");
 
 const { saveTituloDataToDB } = require("../database/SaveHDRtoDatabase");
 
-
-
 const { obtenerRegistrosEncontrados } = require("../database/loadDB");
-
 
 //busca ultimo numero de indice partnb
 let partNumber = 0;
@@ -41,13 +38,12 @@ leerNumeroPartnb((numero) => {
 const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
 
 async function SaveFilesToDB(ubicacion) {
-
   const archivos = fs
     .readdirSync(ubicacion)
     .filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
 
   for (const archivo of archivos) {
-    let archivoTitulo = archivo.replace("_chr", "_hdr");   
+    let archivoTitulo = archivo.replace("_chr", "_hdr");
 
     // graba titulo + nombre de archivo
     let Titulo = fs.readFileSync(path.join(ubicacion, archivoTitulo), "utf8");
@@ -55,44 +51,50 @@ async function SaveFilesToDB(ubicacion) {
     const year = obtenerYearFromDate(date);
     const month = obtenerMonthFromDate(date);
 
-    let dbPath = path.join(userData,"./data/" + obtenerSubcadenaHastaGuionBajo(archivoTitulo) + "_" + year + "_" +  month + ".db");
-  
+    let dbPath = path.join(
+      userData,
+      "./data/" +
+        obtenerSubcadenaHastaGuionBajo(archivoTitulo) +
+        "_" +
+        year +
+        "_" +
+        month +
+        ".db"
+    );
+
     if (!fs.existsSync(dbPath)) {
       //console.log("El archivo no existe. Creando nuevo archivo:", dbPath);
       fs.writeFileSync(dbPath, ""); // Crear archivo vacío
     }
     //await saveTituloDataToDB(splitTextTitulo(Titulo),Titulo, partNumber, dbPath);
-    await saveTituloDataToDB(splitTextTitulo(Titulo,partNumber), dbPath);
+    await saveTituloDataToDB(splitTextTitulo(Titulo, partNumber), dbPath);
 
     //---------------graba contenido
     let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
-    await saveContenidoDataToDB(      convertLastFiveColumns(splitText(contenido)), partNumber, dbPath
-      
+    await saveContenidoDataToDB(
+      convertLastFiveColumns(splitText(contenido)),
+      partNumber,
+      dbPath
     );
 
-    
     partNumber++;
   }
 
-  
   actualizarNumeroPartnb(partNumber);
 
+  /*obtenerRegistrosEncontrados()
+    .then((registrosEncontrados) => {
+      // Aquí podemos acceder a los datos en la variable registrosEncontrados
+      console.log("Registros encontrados:", registrosEncontrados);
+     
+    })
+    .catch((error) => {
+      console.error("Error al obtener registros:", error);
+    });*/
 
 
-/*
-  obtenerRegistrosEncontrados()
-  .then((registrosEncontrados) => {
-    // Aquí podemos acceder a los datos en la variable registrosEncontrados
-    console.log('Registros encontrados:', registrosEncontrados);
-  })
-  .catch((error) => {
-    console.error('Error al obtener registros:', error);
-  });
-
-  */
-  
- 
-/*
+    
+  /*
   buscarArchivosEnCarpeta().then((resultados) => {
     console.log('Archivos encontrados:', resultados.archivosEncontrados);
 
@@ -102,11 +104,8 @@ async function SaveFilesToDB(ubicacion) {
     console.error('Error:', error);
   });*/
 
-  
-  
   //const baseDeDatos = buscarArchivosEnCarpeta();
   //console.log("baseDeDatos:",baseDeDatos)
-
 }
 
 // ver si hace falta..
@@ -156,3 +155,5 @@ module.exports = {
 };
 
 //global.insertData = insertData;
+
+

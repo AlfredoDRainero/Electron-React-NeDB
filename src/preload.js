@@ -20,8 +20,10 @@ contextBridge.exposeInMainWorld('electronAPI', {
   enviarDireccion: (datos) => {
     ipcRenderer.send('direccion', datos);
   },
-  recibirMensaje
-  
+
+
+  recibirMensaje,
+  MSJ_DateTimePartnbPathFromFile_Main_to_App
 });
 
 // Función para recibir el mensaje desde main.js y exponerlo al contexto del navegador
@@ -31,6 +33,19 @@ async function recibirMensaje() {
       resolve(mensaje);
     });
     ipcRenderer.send('obtener-mensaje');
+  });
+}
+
+
+//
+async function MSJ_DateTimePartnbPathFromFile_Main_to_App() {
+  return new Promise((resolve) => {
+    ipcRenderer.once('dateTimePartnbPathFromFile_Main_to_App', (_, mensaje) => {
+      console.log("2 mensaje:"+mensaje)
+      resolve(mensaje);
+    });
+    ipcRenderer.send('obtener-mensaje2');
+    
   });
 }
 
