@@ -1,8 +1,8 @@
-const { app } = require("electron");  
+const { app } = require("electron");
 const path = require("path");
 const fs = require("fs");
 
-const Database = require('better-sqlite3');
+const Database = require("better-sqlite3");
 /*
 const {
   agregarNombreEnDB
@@ -28,9 +28,9 @@ const {
   actualizarNumeroPartnb
 } = require("./PartnBToDB_NEDB");
 
-const { saveContenidoDataToDB } = require("./SaveCHRtoDatabase_NEDB");
+const { saveContenidoDataToDB } = require("./SaveCHRtoDatabase_BSQLITE3");
 
-const { saveTituloDataToDB } = require("./SaveHDRtoDatabase_NEDB");
+const { saveTituloDataToDB } = require("./SaveHDRtoDatabase_BSQLITE3");
 
 const { obtenerRegistrosEncontrados } = require("./loadDB_NEDB");
 
@@ -42,16 +42,15 @@ leerNumeroPartnb((numero) => {
 });
 
 function checkForTildeFiles(ubicacion) {
-  console.log( fs.readdirSync())
-  return fs.readdirSync(ubicacion).some(file => file.includes('~'));
-
+  console.log(fs.readdirSync());
+  return fs.readdirSync(ubicacion).some((file) => file.includes("~"));
 }
 
 async function waitUntilFilesRemoved(ubicacion) {
   //console.log("////////////////// control //////////////////////")
-  while (! checkForTildeFiles(ubicacion)) {
-    console.log("///// control ///// - carpeta:",ubicacion)
-    await new Promise(resolve => setTimeout(resolve, 1000)); // Esperar 1 segundo
+  while (!checkForTildeFiles(ubicacion)) {
+    console.log("///// control ///// - carpeta:", ubicacion);
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Esperar 1 segundo
   }
 }
 
@@ -66,7 +65,6 @@ async function SaveFilesToDB(ubicacion) {
   const archivos = fs
     .readdirSync(ubicacion)
     .filter((file) => path.extname(file) === ".txt" && file.includes("_chr"));
-
 
   for (const archivo of archivos) {
     //await waitUntilFilesRemoved("C:\\Users\\vwari8y.VW\\Documents\\informesCZ\\prueba4\\Electron-React-NeDB\\data\\");
@@ -86,35 +84,33 @@ async function SaveFilesToDB(ubicacion) {
     );
 
     if (!fs.existsSync(dbPath)) {
-            fs.writeFileSync(dbPath, ""); // Crear archivo vacío
+      fs.writeFileSync(dbPath, ""); // Crear archivo vacío
     }
 
     //---------------graba contenido
-    let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");  
+    let contenido = fs.readFileSync(path.join(ubicacion, archivo), "utf8");
     let tituloToDB = splitTextTitulo(Titulo, partNumber);
 
+    //funcionando
     /*try {
       await saveTituloDataToDB(tituloToDB, dbPath);
-      // console.log("termino de grabar db1 afuera");
+       console.log(" titulo",tituloToDB);
     } catch (error) {
       console.error("Error 91:", error);
-    }
+    }*/
 
     try {
-      await saveContenidoDataToDB(
+     /* await saveContenidoDataToDB(
         convertLastFiveColumns(splitText(contenido)),
         partNumber,
         dbPath
-      );
-      // console.log("termino de grabar db2 afuera");
+      );*/
+       console.log(". ",convertLastFiveColumns(splitText(contenido)));
     } catch (error) {}
-    */
 
-// Llamar a la función para agregar el nombre "alfredo" en la base de datos "mi_basede_datos.db"
+    // Llamar a la función para agregar el nombre "alfredo" en la base de datos "mi_basede_datos.db"
 
-agregarNombreEnDB(dbPath, "Alfredo");
-
-
+    //agregarNombreEnDB(dbPath, "Alfredo");
 
     console.log("partNumber:", partNumber);
 
@@ -127,20 +123,16 @@ agregarNombreEnDB(dbPath, "Alfredo");
   console.log("- termino -");
 }
 
-
-
 // ver si hace falta..
 function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-
 module.exports = {
   SaveFilesToDB
 };
 
-
-function agregarNombreEnDB(dbpath, nombre) {
+/*function agregarNombreEnDB(dbpath, nombre) {
   const db = new Database(dbpath);
 
   // Crear una tabla llamada 'nombres' si no existe
@@ -158,8 +150,7 @@ function agregarNombreEnDB(dbpath, nombre) {
 
   // Cerrar la conexión a la base de datos cuando hayas terminado
   db.close();
-}
-
+}*/
 
 /*-------------------------- async y await -------------------
  Cuando se declara una función como async, automáticamente devuelve una promesa. 
@@ -197,7 +188,5 @@ db.loadDatabase((err) => {
     console.log("-----------------------");
   });
 };*/
-
-
 
 //global.insertData = insertData;

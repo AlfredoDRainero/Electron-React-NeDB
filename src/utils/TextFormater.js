@@ -27,7 +27,7 @@ function splitTextTitulo(text, partnb) {
     "time",
     "dmesn",
     "partcomment",
-    "order",
+    "orden",
     "temperatureworkpiece"
   ];
 
