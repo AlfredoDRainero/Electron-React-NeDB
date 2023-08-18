@@ -38,7 +38,7 @@ function App() {
    
   }, []);
 
-  useEffect(() => {
+  /*useEffect(() => {
 
     async function DateTimePartnbPathFromFile() {
       try {
@@ -49,9 +49,10 @@ function App() {
       }
     }
 
-    DateTimePartnbPathFromFile();
-  }, []);
+    DateTimePartnbPathFromFile()
 
+  }, []);
+*/
 
   return (
     <div>

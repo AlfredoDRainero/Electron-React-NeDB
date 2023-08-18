@@ -94,7 +94,7 @@ function convertLastFiveColumns(data) {
 
 // esta funcion devuelve todo el texto hasta que aparece el primer "_" es para depurar el nombre de los archivos leidos
 
-function obtenerSubcadenaHastaGuionBajo(texto) {
+function SubcadenaAGuionBajo(texto) {
   const indiceGuionBajo = texto.indexOf("_");
   if (indiceGuionBajo !== -1) {
     return texto.slice(0, indiceGuionBajo);
@@ -104,7 +104,7 @@ function obtenerSubcadenaHastaGuionBajo(texto) {
 }
 
 module.exports = {
-  obtenerSubcadenaHastaGuionBajo,
+  SubcadenaAGuionBajo,
   splitText,
   convertLastFiveColumns,
   splitTextTitulo,

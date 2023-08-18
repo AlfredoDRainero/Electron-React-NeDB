@@ -4,7 +4,7 @@ const { ipcMain } = require("electron");
 
 const { SaveFilesToDB } = require("./services/database/FilesToDb");
 
-const { obtenerRegistrosEncontrados } = require("./services/database/loadDB");
+const { obtenerRegistrosEncontrados } = require("./services/database/loadDB_NEDB");
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 
@@ -57,38 +57,24 @@ ipcMain.on("direccion", (event, ubicacion) => {
   console.log("ubicacion:", ubicacion);
 });
 
-/*function DateTimePartnbPathFromFile_Main_to_App_Async() {
-  
-  return new Promise(async (resolve) => {
-    // Simulamos una operación asincrónica
-    //setTimeout(() => {
-      const obj =  obtenerRegistrosEncontrados();
-    resolve(obj);
-    // }, 2000); // Esperamos 2 segundos antes de resolver la promesa
-  });
-  
-}*/
+
+
+
+
 
 ipcMain.on("obtener-mensaje2", async (event) => {
 
-  obtenerRegistrosEncontrados().then((registrosEncontrados) => {
+ await obtenerRegistrosEncontrados().then((registrosEncontrados) => {
     // Aquí podemos acceder a los datos en la variable registrosEncontrados
-    event.sender.send("dateTimePartnbPathFromFile_Main_to_App", registrosEncontrados)
-   
+    event.sender.send("dateTimePartnbPathFromFile_Main_to_App", registrosEncontrados)   
   })
   .catch((error) => {
-   /* event.sender.send(
-      "dateTimePartnbPathFromFile_Main_to_App",
-      "Error al obten*/
+
     console.error("Error al obtener registros:", error);
   });
 
     
 });
-
-
-
-
 
 
 
@@ -104,6 +90,7 @@ function doSomethingAsync() {
     // }, 2000); // Esperamos 2 segundos antes de resolver la promesa
   });
 }
+
 
 ipcMain.on("obtener-mensaje", async (event) => {
   try {
