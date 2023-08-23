@@ -11,15 +11,19 @@ function splitText(text) {
   return result; // Devuelve la matriz resultante
 }
 
-
-
 function splitTextTitulo(text, partnb) {
-//funcion que toma un string lo separa en filas y columnas, busca palabras claves y devuelve 
-//en un objeto el valor de esas palabras que es tomado sobre la misma columna un renglon adelante
+  //funcion que toma un string lo separa en filas y columnas, busca palabras claves y devuelve
+  //en un objeto el valor de esas palabras que es tomado sobre la misma columna un renglon adelante
 
-  const rows = text.split("\n");
+  //const rows = text.split("\n");
+  let rows = text.split("\n");
+
+  // Cambia "order" por "orden"
+  rows = rows.map((row) => row.replace("order", "orden"));
+
   const datosTituloInformeObj = {};
 
+  //console.log()
   const palabrasClave = [
     "filename",
     "operid",
@@ -45,17 +49,15 @@ function splitTextTitulo(text, partnb) {
     }
   }
 
-
   //agrega numero que usamos como indice partnb
   datosTituloInformeObj["partnb"] = partnb;
   //console.log("Valores en el objeto datosTituloInformeObj:");
   //console.log(datosTituloInformeObj);
-
+  //console.log(datosTituloInformeObj);
   return datosTituloInformeObj;
 }
 
-
-function obtenerDatosColumnasTexto(text,columna) {
+function obtenerDatosColumnasTexto(text, columna) {
   const rows = text.split("\n");
 
   if (rows.length >= 2) {
@@ -108,7 +110,5 @@ module.exports = {
   splitText,
   convertLastFiveColumns,
   splitTextTitulo,
-  obtenerDatosColumnasTexto,
- 
-
+  obtenerDatosColumnasTexto
 };

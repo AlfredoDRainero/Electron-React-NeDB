@@ -1,8 +1,12 @@
 import React, { useEffect } from "react";
 import "./index.css";
+
+
 //const electron = window.require('electron');
 
+
 function App() {
+ 
 
   useEffect(() => {
     function enviarDatos() {
@@ -21,7 +25,6 @@ function App() {
     enviarDireccion();
   });
 
-
   useEffect(() => {
     async function obtenerMensaje() {
       try {
@@ -33,9 +36,6 @@ function App() {
     }
 
     obtenerMensaje();
-
-    
-   
   }, []);
 
   /*useEffect(() => {
@@ -56,6 +56,7 @@ function App() {
 
   return (
     <div>
+
       <h2>Hello from React in Electron! laal</h2>
 
       {/* <button onClick={openFile}>Abrir Archivo</button>*/}
@@ -72,5 +73,3 @@ function App() {
 }
 
 export default App;
-
-

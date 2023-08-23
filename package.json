@@ -45,6 +45,7 @@
     "nedb": "^1.8.0",
     "nedb-async": "^0.1.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.7"
   }
 }

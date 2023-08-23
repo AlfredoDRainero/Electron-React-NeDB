@@ -92,21 +92,21 @@ async function SaveFilesToDB(ubicacion) {
     let tituloToDB = splitTextTitulo(Titulo, partNumber);
 
     //funcionando
-    /*try {
-      await saveTituloDataToDB(tituloToDB, dbPath);
-       console.log(" titulo",tituloToDB);
+    try {
+      await saveTituloDataToDB(  tituloToDB, dbPath);
+       //console.log(" titulo",tituloToDB);
     } catch (error) {
       console.error("Error 91:", error);
-    }*/
+    }
 
-    try {
-     /* await saveContenidoDataToDB(
+    /*try {
+      await saveContenidoDataToDB(
         convertLastFiveColumns(splitText(contenido)),
         partNumber,
         dbPath
-      );*/
+      );
        console.log(". ",convertLastFiveColumns(splitText(contenido)));
-    } catch (error) {}
+    } catch (error) {}*/
 
     // Llamar a la función para agregar el nombre "alfredo" en la base de datos "mi_basede_datos.db"
 
