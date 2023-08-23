@@ -1,12 +1,67 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 
+//import BurgerButton from './BurgerButton';
 
 //const electron = window.require('electron');
+//import './styles.css';
 
+const BurgerButton = ({ isActive, onClick }) => {
+  return (
+    <BurgerButtonWrapper className={isActive ? "active" : ""} onClick={onClick}>
+      <Line1 isActive={isActive} rotation={45} />
+      <Line2 isActive={isActive} rotation={-45} />
+    </BurgerButtonWrapper>
+  );
+};
 
+import styled from "styled-components";
+
+const BurgerButtonWrapper = styled.button`
+  width: 60px;
+  height: 60px;
+  border: none;
+  background: none;
+  position: relative;
+  cursor: pointer;
+`;
+
+const Line1 = styled.div`
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform-origin: center;
+  transition: transform 0.3s;
+
+  ${({ isActive, rotation, spacing }) => `
+    transform: translate(-50%, ${isActive ? '-50%' : '-40%'}) rotate(${
+    isActive ? rotation : 0
+  }deg) translateY(${isActive ? -spacing / 2 : 0}px);
+  `}
+`;
+
+const Line2 = styled.div`
+  width: 20px;
+  height: 3px;
+  background-color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  transition: transform 0.3s;
+
+  ${({ isActive, rotation }) =>
+    isActive ? `transform: rotate(${rotation}deg);` : 'transform: rotate(0);'}
+`;
 function App() {
- 
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
 
   useEffect(() => {
     function enviarDatos() {
@@ -56,6 +111,9 @@ function App() {
 
   return (
     <div>
+      <div className="App">
+        <BurgerButton isActive={isActive} onClick={toggleMenu} />
+      </div>
 
       <h2>Hello from React in Electron! laal</h2>
 
