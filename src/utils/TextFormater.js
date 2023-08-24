@@ -74,6 +74,8 @@ function obtenerDatosColumnasTexto(text, columna) {
 
 function convertLastFiveColumns(data) {
   const newData = [];
+  
+
 
   for (let i = 0; i < data.length; i++) {
     const row = data[i];
@@ -86,11 +88,21 @@ function convertLastFiveColumns(data) {
         const parsedValue = Number(value).toFixed(3);
         newRow[j] = parsedValue.toString();
       }
+
+
+      // CAMBIA POR SER PALABRA RESERVADA PARA LITESQL
+      if (newRow[j] === 'id') {
+        newRow[j] = 'idmeasurement'; // Cambiar "idmeasurement" a "id"
+       
+      }
+
     }
 
+    
+  
     newData.push(newRow);
   }
-
+   //console.log("*",newData)
   return newData;
 }
 

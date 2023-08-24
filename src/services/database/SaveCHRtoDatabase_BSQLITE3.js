@@ -4,28 +4,40 @@ async function saveContenidoDataToDB(data, partnb, dbPath) {
   const db = new sqlite(dbPath);
 
   try {
-    const columnNames = data[0].slice(2).map((_, index) => `column${index + 1}`);
+    const columnNames = data[0].slice(2).map((columnName, index) => columnName);
+    
     const createTableStmt = db.prepare(`
-      CREATE TABLE IF NOT EXISTS Mediciones (
+      CREATE TABLE IF NOT EXISTS mediciones (
         id INTEGER PRIMARY KEY,
         partnb TEXT,
         ${columnNames.map(column => `${column} TEXT`).join(', ')}
       )
     `);
+
     createTableStmt.run();
 
     const insertStmt = db.prepare(`
-      INSERT INTO Mediciones (partnb, ${columnNames.join(', ')})
+      INSERT INTO mediciones (partnb, ${columnNames.join(', ')})
       VALUES (?, ${Array(columnNames.length).fill('?').join(', ')})
     `);
 
     db.transaction(() => {
-      data.forEach((row) => {
+      data.forEach((row, index) => {
         const documentExt = BucleRow(row, partnb);
         const insertValues = [partnb, ...documentExt.slice(1).map(value => value !== undefined ? value : null)];
-        insertStmt.run(insertValues);
+        console.log("")
+
+        if (index === 0) {
+          
+        }else if (insertValues.length === columnNames.length + 1) {
+          insertStmt.run(insertValues);
+        } /*else {
+          console.log("error en:",insertValues)
+          console.error("Error: Insufficient insert values provided _  insertValues.length:"+insertValues.length + " columnNames.length:"+ columnNames.length);
+        }*/
       });
     })();
+
   } catch (error) {
     console.error("Error al insertar en la base de datos:", error);
     throw error;

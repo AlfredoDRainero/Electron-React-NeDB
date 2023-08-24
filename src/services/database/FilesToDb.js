@@ -42,7 +42,7 @@ leerNumeroPartnb((numero) => {
 });
 
 function checkForTildeFiles(ubicacion) {
-  console.log(fs.readdirSync());
+  //console.log(fs.readdirSync());
   return fs.readdirSync(ubicacion).some((file) => file.includes("~"));
 }
 
@@ -99,14 +99,14 @@ async function SaveFilesToDB(ubicacion) {
       console.error("Error 91:", error);
     }
 
-    /*try {
+    try {
       await saveContenidoDataToDB(
         convertLastFiveColumns(splitText(contenido)),
         partNumber,
         dbPath
       );
-       console.log(". ",convertLastFiveColumns(splitText(contenido)));
-    } catch (error) {}*/
+      // console.log(". ",convertLastFiveColumns(splitText(contenido)));
+    } catch (error) {}
 
     // Llamar a la función para agregar el nombre "alfredo" en la base de datos "mi_basede_datos.db"
 
