@@ -24,6 +24,11 @@ const {
 } = require("../../utils/fecha");
 
 const {
+  readFilesInFolder
+} = require("./LoadDatabase_BSQLITE3");
+
+
+const {
   leerNumeroPartnb,
   actualizarNumeroPartnb
 } = require("./PartnBToDB_NEDB");
@@ -32,7 +37,6 @@ const { saveContenidoDataToDB } = require("./SaveCHRtoDatabase_BSQLITE3");
 
 const { saveTituloDataToDB } = require("./SaveHDRtoDatabase_BSQLITE3");
 
-const { obtenerRegistrosEncontrados } = require("./loadDB_NEDB");
 
 //busca ultimo numero de indice partnb
 let partNumber = 0;
@@ -82,6 +86,7 @@ async function SaveFilesToDB(ubicacion) {
       userData,
       `./data/${SubcadenaAGuionBajo(archivoTitulo)}_${year}_${month}.db`
     );
+    console.log("dbpath:",readFilesInFolder)
 
     if (!fs.existsSync(dbPath)) {
       fs.writeFileSync(dbPath, ""); // Crear archivo vacío
@@ -121,36 +126,26 @@ async function SaveFilesToDB(ubicacion) {
 
   actualizarNumeroPartnb(partNumber);
   console.log("- termino -");
+
+
+  //--- load ----
+  const dbFolder = path.join(
+    userData,`./data/`
+  );
+  //const dbFolder = "../../../../data/"; // Cambia esto a la ruta correcta
+  const fileData = await readFilesInFolder(dbFolder);
+ // console.log(fileData);
+
+
+  
 }
 
-// ver si hace falta..
-function delay(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+
 
 module.exports = {
   SaveFilesToDB
 };
 
-/*function agregarNombreEnDB(dbpath, nombre) {
-  const db = new Database(dbpath);
-
-  // Crear una tabla llamada 'nombres' si no existe
-  db.exec(`
-    CREATE TABLE IF NOT EXISTS nombres (
-      id INTEGER PRIMARY KEY,
-      nombre TEXT
-    )
-  `);
-
-  // Insertar el nombre proporcionado en la tabla 'nombres'
-  const insert = db.prepare('INSERT INTO nombres (nombre) VALUES (?)');
-  const result = insert.run(nombre);
-  console.log(`Se insertó correctamente el nombre "${nombre}" con el ID ${result.lastInsertRowid}`);
-
-  // Cerrar la conexión a la base de datos cuando hayas terminado
-  db.close();
-}*/
 
 /*-------------------------- async y await -------------------
  Cuando se declara una función como async, automáticamente devuelve una promesa. 
@@ -164,19 +159,7 @@ Al llamar a una función async, se obtiene una promesa que representa la ejecuci
 como .then() y .catch() para manejar la resolución o el rechazo de la promesa devuelta por la función async.
  */
 
-/*// base de datos
-db.loadDatabase((err) => {
-  if (err) {
-    console.error(err);
-  } else {
-    console.log("Base de datos cargada correctamente");
-  }
-});
-*/
 
-/*ipcMain.on("datos-para-insertar", (event, data) => {
-  insertData(data);
-});*/
 
 //imprecion de objeto
 /*const imprimirArrayObjetos = (arrayObjetos) => {
@@ -189,4 +172,4 @@ db.loadDatabase((err) => {
   });
 };*/
 
-//global.insertData = insertData;
+

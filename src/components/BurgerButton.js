@@ -17,14 +17,14 @@ const BurgerButtonWrapper = styled.button`
 
 const Line1 = styled.div`
   width: 20px;
-  height: 3px;
+  height: 2px;
   background-color: #333;
   position: absolute;
   top: 50%;
   left: 50%;
   transform-origin: center;
   transition: transform 0.3s;
-  border-radius: 3px;
+  border-radius: 2px;
   ${({ isActive, rotation, spacing }) => `
     transform:  rotate(${isActive ? rotation : 0}deg) translateY(${isActive ? -spacing / 8 : 5}px);
   `}
@@ -32,14 +32,14 @@ const Line1 = styled.div`
 
 const Line2 = styled.div`
   width: 20px;
-  height: 3px;
+  height: 2px;
   background-color: #333;
   position: absolute;
   top: 50%;
   left: 50%;
   transform-origin: center;
   transition: transform 0.3s;
-  border-radius: 3px;
+  border-radius: 2px;
 
   ${({ isActive, rotation }) =>
     isActive ? `transform: rotate(${rotation}deg);` : "transform: rotate(0);"}

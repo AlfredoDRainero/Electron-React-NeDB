@@ -39,6 +39,18 @@ function buscarArchivosEnCarpeta() {
       });
     });
   }
+
+  function checkFolderExists(folderPath) {
+    try {
+      const stats = fs.statSync(folderPath);
+      return stats.isDirectory();
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        return false; // El directorio no existe
+      }
+      throw error; // Manejar otros errores
+    }
+  }
   
 
 module.exports = {

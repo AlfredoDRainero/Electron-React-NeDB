@@ -31,10 +31,10 @@ async function saveContenidoDataToDB(data, partnb, dbPath) {
           
         }else if (insertValues.length === columnNames.length + 1) {
           insertStmt.run(insertValues);
-        } /*else {
-          console.log("error en:",insertValues)
-          console.error("Error: Insufficient insert values provided _  insertValues.length:"+insertValues.length + " columnNames.length:"+ columnNames.length);
-        }*/
+        } else {
+          //console.log("error en:",insertValues ,"no se agrego.. ver a futuro")
+          //console.error("Error: Insufficient insert values provided _  insertValues.length:"+insertValues.length + " columnNames.length:"+ columnNames.length);
+        }
       });
     })();
 
