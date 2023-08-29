@@ -23,6 +23,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
 
 
   recibirMensaje,
+  recibirMensajeIndiceDB,
   MSJ_DateTimePartnbPathFromFile_Main_to_App
 });
 
@@ -36,6 +37,16 @@ async function recibirMensaje() {
   });
 }
 
+
+async function recibirMensajeIndiceDB() {
+  return new Promise((resolve) => {
+    ipcRenderer.once('mensaje-desde-main_indice_DB_B', (_, mensaje) => {        //desde main
+    });
+      resolve(mensaje);
+    });
+    ipcRenderer.send('obtener-mensaje_indice_fom_DB');                           //desde main
+  });
+}
 
 //
 async function MSJ_DateTimePartnbPathFromFile_Main_to_App() {
