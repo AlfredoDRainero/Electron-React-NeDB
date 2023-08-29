@@ -13,7 +13,7 @@ async function saveContenidoDataToDB(data, partnb, dbPath) {
         ${columnNames.map(column => `${column} TEXT`).join(', ')}
       )
     `);
-
+ 
     createTableStmt.run();
 
     const insertStmt = db.prepare(`

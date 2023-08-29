@@ -127,24 +127,22 @@ async function SaveFilesToDB(ubicacion) {
   actualizarNumeroPartnb(partNumber);
   console.log("- termino -");
 
-
+/*
   //--- load ----
-  const dbFolder = path.join(
-    userData,`./data/`
-  );
+  const dbFolder = path.join(userData,`./data/`);
   //const dbFolder = "../../../../data/"; // Cambia esto a la ruta correcta
   const fileData = await readFilesInFolder(dbFolder);
- // console.log(fileData);
+*/
 
 
-  
-}
+ 
 
-
+  }
 
 module.exports = {
   SaveFilesToDB
 };
+
 
 
 /*-------------------------- async y await -------------------

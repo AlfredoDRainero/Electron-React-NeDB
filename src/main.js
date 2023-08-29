@@ -4,7 +4,11 @@ const { ipcMain } = require("electron");
 
 const { SaveFilesToDB } = require("./services/database/FilesToDb");
 
-const { obtenerRegistrosEncontrados } = require("./services/database/loadDB_NEDB");
+const {
+  readFilesInFolder
+} = require("../src/services/database/LoadDatabase_BSQLITE3");
+
+const path = require("path");
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 
@@ -53,8 +57,16 @@ app.on("activate", () => {
 
 // carga de archivos en base de datos con llamada activada pedida desde react
 ipcMain.on("direccion", (event, ubicacion) => {
+  
+  
+  
   SaveFilesToDB(ubicacion);
-  console.log("ubicacion:", ubicacion);
+  //console.log("ubicacion:", ubicacion);
+
+
+
+
+
 });
 
 
@@ -80,7 +92,7 @@ ipcMain.on("obtener-mensaje2", async (event) => {
 
 
 
-
+//---------------------- mensaje 1 start-----------------------------------
 // Función asincrónica que retorna una promesa con un mensaje
 function doSomethingAsync() {
   return new Promise((resolve) => {
@@ -101,3 +113,39 @@ ipcMain.on("obtener-mensaje", async (event) => {
     event.sender.send("mensaje-desde-main", "Error al obtener el mensaje");
   }
 });
+//-----------------------mensaje 1 end ------------------------------------
+
+
+
+// Función asincrónica que retorna una promesa con un mensaje
+function doSomethingAsync2() {
+  return new Promise(async (resolve) => {
+    // Simulamos una operación asincrónica
+    //setTimeout(() => {
+      
+
+      
+  //--- load ----
+  const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
+  console.log("userData:",userData)
+  const dbFolder = path.join(userData,`./data/`);
+  console.log("---------------------------------------dbFolder:",dbFolder)
+  //const dbFolder = "../../../../data/"; // Cambia esto a la ruta correcta
+  const fileData = await readFilesInFolder(dbFolder);
+
+    resolve(fileData);
+    // }, 2000); // Esperamos 2 segundos antes de resolver la promesa
+  });
+}
+
+
+ipcMain.on("obtener-mensaje_indice_fom_DB", async (event) => {
+  try {
+    const mensaje = await doSomethingAsync2();
+    event.sender.send("mensaje-desde-main_indice_DB_B", mensaje);
+  } catch (error) {
+    // Manejo de errores si es necesario
+    event.sender.send("mensaje-desde-main_indice_DB", "Error al obtener el mensaje");
+  }
+});
+
