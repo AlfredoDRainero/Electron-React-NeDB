@@ -40,22 +40,21 @@ function App() {
       }
     }
 
+    async function obtenerMensajeIndiceDB() {
+      try {
+        console.log("prueba")
+        const msj  = await window.electronAPI.recibirMensajeIndiceDB();//desde preload.js
+        //setTablaIndice(msj );
+        console.log("Mensaje 2recibido en app.jsx:", msj);
+      } catch (error) {
+        console.error("Error al obtener el mensaje:", error);
+      }
+    }
+    console.log("tabla",tablaIndice)
+    //obtenerMensaje();
+    obtenerMensajeIndiceDB();
    
   }, []);
-
-  async function obtenerMensajeIndiceDB() {
-    try {
-      console.log("prueba")
-      const msj  = await window.electronAPI.recibirMensajeIndiceDB();//desde preload.js
-      setTablaIndice(msj );
-      console.log("Mensaje 2recibido en app.jsx:", msj);
-    } catch (error) {
-      console.error("Error al obtener el mensaje:", error);
-    }
-  }
-  console.log("tabla",tablaIndice)
-  //obtenerMensaje();
-  obtenerMensajeIndiceDB();
   
   
   return (
@@ -69,7 +68,7 @@ function App() {
 
       <h1>Tabla generada</h1>
 
-      <Tabla_Indice data={tablaIndice} />
+     {/* <Tabla_Indice data={tablaIndice} />*/}
      
     </div>
   );
