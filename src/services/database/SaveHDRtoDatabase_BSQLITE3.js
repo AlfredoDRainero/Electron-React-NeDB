@@ -17,12 +17,28 @@ async function saveTituloDataToDB(tituloToDB, dbPath) {
     const insertValues = columnNames.map((key) => tituloToDB[key]);
 
     // Prepare an SQL statement to create the 'title' table if it doesn't exist
-    const createTableStmt = db.prepare(`
+    /*const createTableStmt = db.prepare(`
       CREATE TABLE IF NOT EXISTS title (
         id INTEGER PRIMARY KEY,
         ${columnNames.map((aux, index) => `${aux} TEXT`).join(", ")}
       )
-    `);
+    `);*/
+
+    const createTableStmt = db.prepare(`
+  CREATE TABLE IF NOT EXISTS title (
+    id INTEGER PRIMARY KEY,
+    ${columnNames
+      .map((aux, index) => {
+        if (aux === "partnb") {
+          
+          return `${aux} INTEGER`; // Si es "partnb", se crea como INTEGER
+        } else {
+          return `${aux} TEXT`; // De lo contrario, se crea como TEXT
+        }
+      })
+      .join(", ")}
+  )
+`);
 
     // Execute the 'CREATE TABLE' statement
     createTableStmt.run();

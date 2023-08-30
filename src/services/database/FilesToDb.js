@@ -42,24 +42,22 @@ const { saveTituloDataToDB } = require("./SaveHDRtoDatabase_BSQLITE3");
 let partNumber = 0;
 leerNumeroPartnb((numero) => {
   partNumber = numero;
-  console.log("Número leído:", partNumber);
+  //console.log("Número leído:", partNumber);
 });
 
 function checkForTildeFiles(ubicacion) {
-  //console.log(fs.readdirSync());
   return fs.readdirSync(ubicacion).some((file) => file.includes("~"));
 }
 
 async function waitUntilFilesRemoved(ubicacion) {
   //console.log("////////////////// control //////////////////////")
   while (!checkForTildeFiles(ubicacion)) {
-    console.log("///// control ///// - carpeta:", ubicacion);
+    //console.log("///// control ///// - carpeta:", ubicacion);
     await new Promise((resolve) => setTimeout(resolve, 1000)); // Esperar 1 segundo
   }
 }
 
-//const dbpath = 'mi_basede_datos.db';
-//const nombre = 'alfredo';
+
 
 //levanta archivos segun direccion enviada desde react a main y los formatea y graba en base de datos nedb
 
@@ -86,7 +84,7 @@ async function SaveFilesToDB(ubicacion) {
       userData,
       `./data/${SubcadenaAGuionBajo(archivoTitulo)}_${year}_${month}.db`
     );
-    console.log("dbpath:",readFilesInFolder)
+    //console.log("dbpath:",readFilesInFolder)
 
     if (!fs.existsSync(dbPath)) {
       fs.writeFileSync(dbPath, ""); // Crear archivo vacío
@@ -99,7 +97,7 @@ async function SaveFilesToDB(ubicacion) {
     //funcionando
     try {
       await saveTituloDataToDB(  tituloToDB, dbPath);
-       //console.log(" titulo",tituloToDB);
+     
     } catch (error) {
       console.error("Error 91:", error);
     }
@@ -117,7 +115,7 @@ async function SaveFilesToDB(ubicacion) {
 
     //agregarNombreEnDB(dbPath, "Alfredo");
 
-    console.log("partNumber:", partNumber);
+    //console.log("partNumber:", partNumber);
 
     //await delay(500); // delay pro el problema con neDB por la sincronia.. cambiar al cambiar base de datos
 
@@ -127,12 +125,6 @@ async function SaveFilesToDB(ubicacion) {
   actualizarNumeroPartnb(partNumber);
   console.log("- termino -");
 
-/*
-  //--- load ----
-  const dbFolder = path.join(userData,`./data/`);
-  //const dbFolder = "../../../../data/"; // Cambia esto a la ruta correcta
-  const fileData = await readFilesInFolder(dbFolder);
-*/
 
 
  
@@ -159,15 +151,6 @@ como .then() y .catch() para manejar la resolución o el rechazo de la promesa d
 
 
 
-//imprecion de objeto
-/*const imprimirArrayObjetos = (arrayObjetos) => {
-  arrayObjetos.forEach((objeto, index) => {
-    console.log(`Objeto ${index + 1}:`);
-    Object.entries(objeto).forEach(([clave, valor]) => {
-      console.log(`  ${clave}: ${valor}`);
-    });
-    console.log("-----------------------");
-  });
-};*/
+
 
 

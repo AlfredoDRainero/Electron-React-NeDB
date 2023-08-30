@@ -38,7 +38,7 @@ function leerNumeroPartnb(callback) {
         console.error("Error al actualizar el número:", err);
         return;
       }
-      console.log("Número actualizado:", numeroActualizado);
+      //console.log("Número actualizado:", numeroActualizado);
     });
   }
   

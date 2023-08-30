@@ -14,7 +14,7 @@ function agregarNombreEnDB(dbpath, nombre) {
   // Insertar el nombre proporcionado en la tabla 'nombres'
   const insert = db.prepare('INSERT INTO nombres (nombre) VALUES (?)');
   const result = insert.run(nombre);
-  console.log(`Se insertó correctamente el nombre "${nombre}" con el ID ${result.lastInsertRowid}`);
+  //console.log(`Se insertó correctamente el nombre "${nombre}" con el ID ${result.lastInsertRowid}`);
 
   // Cerrar la conexión a la base de datos cuando hayas terminado
   db.close();

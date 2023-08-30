@@ -6,10 +6,21 @@ import Tabla_Indice from "./components/TablaIndice";
 
 
 const MainDiv = styled.div`
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   display:grid;
-  background-color: #383b3d;
-  color: #e9e9e9;
+  //background-color: #383b3d;
+  //color: #e9e9e9;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  
+  background-color: #242424;
+
+  padding:2rem;
 `;
 
 
@@ -51,7 +62,7 @@ function App() {
 
     async function obtenerMensajeIndiceDB() {
       try {
-        console.log("prueba")
+       // console.log("prueba")
         const msj  = await window.electronAPI.recibirMensajeIndiceDB();//desde preload.js
         
         setTablaIndice(msj);
@@ -60,7 +71,7 @@ function App() {
         console.error("Error al obtener el mensaje:", error);
       }
     }
-    console.log("tabla",tablaIndice)
+    //console.log("tabla",tablaIndice)
     //obtenerMensaje();
 
     obtenerMensajeIndiceDB();
@@ -68,7 +79,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
+   // console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
   }, [tablaIndice]);
   
   

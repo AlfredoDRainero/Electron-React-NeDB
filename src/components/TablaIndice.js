@@ -6,11 +6,15 @@ const TableWrapper = styled.div`
   //position:absolute;
   //top:0;
   //left:0;
-  width: 25vw;
+  width: 30vw;
   //background-color: gray;
   align-self: start;
   justify-self: start;
   font-size: 10px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  max-height: 300px; /* Agrega aquí la altura máxima deseada */
+  overflow-x: auto;
+  border: 1px solid white;
 `;
 
 const TableHeader = styled.h2`
@@ -41,12 +45,12 @@ const Tabla_Indice = ({ data }) => {
   const tableComponents = Object.entries(data).map(
     ([header, { data: rowData }], index) => (
       <TableWrapper key={index}>
-        <TableHeader  style={{ fontSize: 8, width: "25vw" }}>{header}</TableHeader>
+        <TableHeader  style={{ fontSize: 10, width: "25vw" }}>{header}</TableHeader>
 
         {Array.isArray(rowData) ? (
           rowData.map(({ partcomment }, rowIndex) => (           
             rowIndex === 0 && (
-              <TableHeader style={{ fontSize: 8, width: "10vw" }}>
+              <TableHeader style={{ fontSize: 10, width: "10vw" }}>
                 {partcomment}
               </TableHeader>
             )
