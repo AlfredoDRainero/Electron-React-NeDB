@@ -1,57 +1,94 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const TableWrapper = styled.div`
-  margin: 20px;
+  //margin: 20px;
+  //position:absolute;
+  //top:0;
+  //left:0;
+  width: 25vw;
+  //background-color: gray;
+  align-self: start;
+  justify-self: start;
+  font-size: 10px;
+`;
+
+const TableHeader = styled.h2`
+  font-size: 12px;
+  margin-bottom: 10px;
 `;
 
 const StyledTable = styled.table`
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #ddd;
-`;
-
-const TableHeader = styled.th`
-  background-color: #f2f2f2;
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+  margin-top: 12px;
 `;
 
 const TableData = styled.td`
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: 1px solid #ccc;
+  //padding: 8px;
+  text-align: center;
+`;
+
+const NoDataCell = styled.td`
+  text-align: center;
+  //padding: 10px;
+  font-style: italic;
+  //color: #777;
 `;
 
 const Tabla_Indice = ({ data }) => {
-  if (!data || !data.rows || data.rows.length === 0) {
-    return <p>No hay datos disponibles.</p>;
-  }
+  const tableComponents = Object.entries(data).map(
+    ([header, { data: rowData }], index) => (
+      <TableWrapper key={index}>
+        <TableHeader  style={{ fontSize: 8, width: "25vw" }}>{header}</TableHeader>
 
-  const headers = Object.keys(data.rows[0]);
+        {Array.isArray(rowData) ? (
+          rowData.map(({ partcomment }, rowIndex) => (           
+            rowIndex === 0 && (
+              <TableHeader style={{ fontSize: 8, width: "10vw" }}>
+                {partcomment}
+              </TableHeader>
+            )
+          ))
+        ) : (
+          <TableHeader colSpan="4">No data available.</TableHeader>
+        )}
 
-  return (
-    <TableWrapper>
-      <StyledTable>
-        <thead>
-          <tr>
-            {headers.map((header, index) => (
-              <TableHeader key={index}>{header}</TableHeader>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {data.rows.map((row, rowIndex) => (
-            <tr key={rowIndex}>
-              {headers.map((header, colIndex) => (
-                <TableData key={colIndex}>{row[header]}</TableData>
-              ))}
+        <StyledTable>
+          <thead>
+            <tr>
+              <TableData>Date</TableData>
+              <TableData>Time</TableData>             
+              <TableData>Orden</TableData>
+              <TableData>Partnb</TableData>
             </tr>
-          ))}
-        </tbody>
-      </StyledTable>
-    </TableWrapper>
+          </thead>
+          <tbody>
+            {Array.isArray(rowData) ? (
+              rowData.map(
+                ({ date, time, partcomment, orden, partnb }, rowIndex) => (
+                  <tr key={rowIndex}>
+                    <TableData>{date}</TableData>
+                    <TableData>{time}</TableData>
+
+                    <TableData>{orden}</TableData>
+                    <TableData>{partnb}</TableData>
+                  </tr>
+                )
+              )
+            ) : (
+              <tr>
+                <NoDataCell colSpan="4">No data available.</NoDataCell>
+              </tr>
+            )}
+          </tbody>
+        </StyledTable>
+      </TableWrapper>
+    )
   );
+
+  return <div>{tableComponents}</div>;
 };
 
 export default Tabla_Indice;

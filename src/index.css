@@ -2,33 +2,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
   margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  /*max-width: 38rem;*/
+  /*padding: 2rem;*/
 }
 
-table {
-  border-collapse: collapse;
-  width: fit-content;
-  margin: 0 auto; /* Centrar la tabla horizontalmente */
-}
-
-table td,
-table th {
-  border: 1px solid black;
-  padding: 8px;
-  font-size: 12px; /* Cambiar el tamaño de la letra */
-  text-align: left; /* Alinear el texto a la izquierda */
-}
-
-table tr:nth-child(even) {
-  background-color: #494747;
-}
-
-table tr:hover {
-  background-color: #ddd;
-}
-
-table th {
-  background-color: #4caf50;
-  color: white;
-}

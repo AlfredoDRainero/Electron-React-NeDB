@@ -10,7 +10,7 @@ async function readFilesInFolder(dbFolderPath) {
     const filePath = path.join(dbFolderPath, file);
     if (fs.statSync(filePath).isFile()) {
       const db = new Database(filePath, { verbose: console.log });
-      const stmt = db.prepare('SELECT date, time, partcomment, orden FROM title');
+      const stmt = db.prepare('SELECT date, time, partcomment, partnb, orden FROM title');
       const rows = stmt.all();
       
       // Agregar datos al objeto result

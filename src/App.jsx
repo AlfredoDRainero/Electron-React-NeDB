@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-
+import styled from "styled-components";
 import BurgerButton from './components/BurgerButton';
 import Tabla_Indice from "./components/TablaIndice";
+
+
+const MainDiv = styled.div`
+
+  display:grid;
+  background-color: #383b3d;
+  color: #e9e9e9;
+`;
+
 
 function App() {
 
@@ -44,21 +53,28 @@ function App() {
       try {
         console.log("prueba")
         const msj  = await window.electronAPI.recibirMensajeIndiceDB();//desde preload.js
-        //setTablaIndice(msj );
-        console.log("Mensaje 2recibido en app.jsx:", msj);
+        
+        setTablaIndice(msj);
+        //console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
       } catch (error) {
         console.error("Error al obtener el mensaje:", error);
       }
     }
     console.log("tabla",tablaIndice)
     //obtenerMensaje();
+
     obtenerMensajeIndiceDB();
    
   }, []);
+
+  useEffect(() => {
+    console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
+  }, [tablaIndice]);
   
   
   return (
-    <div>
+    <>
+    <MainDiv>
 
       <BurgerButton />
 
@@ -68,9 +84,17 @@ function App() {
 
       <h1>Tabla generada</h1>
 
-     {/* <Tabla_Indice data={tablaIndice} />*/}
      
-    </div>
+
+      
+  
+
+      {/*<a>
+      {JSON.stringify(tablaIndice)}    
+  </a>*/}
+      <Tabla_Indice data={tablaIndice}/>
+      </MainDiv>
+    </>
   );
 }
 
