@@ -149,3 +149,28 @@ ipcMain.on("obtener-mensaje_indice_fom_DB", async (event) => {
   }
 });
 
+
+
+
+//-----------------------MSJ_filesDB_on_Carpet_Data---------------------Start
+
+const { buscarArchivosEnCarpeta } = require("./services/files/files");
+
+
+ipcMain.on("LISTENER_SEARCH_FILE_DATA_CARPET", async (event) => {
+  try {
+    const msj = await buscarArchivosEnCarpeta();
+    console.log("msj------------->",msj)
+    event.sender.send("SEND_RESULT__SEARCH_FILE_DATA_CARPET", msj);
+  } catch (error) {
+    enviarMensajeDeError(event, "Error al obtener el mensaje");
+  }
+});
+//-----------------------MSJ_filesDBonData------------------END
+
+//-----------------------Errors handlings-------------------
+function enviarMensajeDeError(event, mensaje) {
+  event.sender.send("mensaje-desde-main_indice_DB", mensaje);
+}
+//----------------------------------------------------------
+

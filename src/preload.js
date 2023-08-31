@@ -24,7 +24,8 @@ contextBridge.exposeInMainWorld('electronAPI', {
 
   recibirMensaje,
   recibirMensajeIndiceDB,
-  MSJ_DateTimePartnbPathFromFile_Main_to_App
+  MSJ_DateTimePartnbPathFromFile_Main_to_App,
+  MSJ_filesDB_Data_Carpet
 });
 
 // Función para recibir el mensaje desde main.js y exponerlo al contexto del navegador
@@ -57,6 +58,20 @@ async function MSJ_DateTimePartnbPathFromFile_Main_to_App() {
     });
     ipcRenderer.send('obtener-mensaje2');
     
+  });
+}
+
+
+async function MSJ_filesDB_Data_Carpet() {
+  return new Promise((resolve) => {
+    // Escuchar el evento una sola vez
+    ipcRenderer.once('SEND_RESULT__SEARCH_FILE_DATA_CARPET', (_, mensaje) => { 
+      
+      console.log("mensaje ISTENER",mensaje)         
+      resolve(mensaje);
+    });
+     // Enviar el evento al proceso principal
+    ipcRenderer.send('LISTENER_SEARCH_FILE_DATA_CARPET');                           
   });
 }
 

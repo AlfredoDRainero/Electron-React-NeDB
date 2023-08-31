@@ -37,6 +37,7 @@ const { saveContenidoDataToDB } = require("./SaveCHRtoDatabase_BSQLITE3");
 
 const { saveTituloDataToDB } = require("./SaveHDRtoDatabase_BSQLITE3");
 
+const { buscarArchivosEnCarpeta } = require("../files/files");
 
 //busca ultimo numero de indice partnb
 let partNumber = 0;
@@ -95,7 +96,7 @@ async function SaveFilesToDB(ubicacion) {
     let tituloToDB = splitTextTitulo(Titulo, partNumber);
 
     //funcionando
-    try {
+    /*try {
       await saveTituloDataToDB(  tituloToDB, dbPath);
      
     } catch (error) {
@@ -111,22 +112,16 @@ async function SaveFilesToDB(ubicacion) {
       // console.log(". ",convertLastFiveColumns(splitText(contenido)));
     } catch (error) {}
 
-    // Llamar a la función para agregar el nombre "alfredo" en la base de datos "mi_basede_datos.db"
+   
 
-    //agregarNombreEnDB(dbPath, "Alfredo");
 
-    //console.log("partNumber:", partNumber);
-
-    //await delay(500); // delay pro el problema con neDB por la sincronia.. cambiar al cambiar base de datos
-
-    partNumber++;
+    partNumber++;*/
   }
 
   actualizarNumeroPartnb(partNumber);
   console.log("- termino -");
 
-
-
+  console.log("buscarArchivosEnCarpeta:",buscarArchivosEnCarpeta())
  
 
   }

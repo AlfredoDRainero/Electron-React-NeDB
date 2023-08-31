@@ -27,6 +27,7 @@ const MainDiv = styled.div`
 function App() {
 
   const [tablaIndice, setTablaIndice] = useState({ rows: [] });
+  const [fileList, setFileList] = useState(null);
 
 
  //console.log("prueba")
@@ -78,9 +79,32 @@ function App() {
    
   }, []);
 
+
+
+  
   useEffect(() => {
-   // console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
-  }, [tablaIndice]);
+    async function MSJ_FROMMAIN_filesDB_Data_Carpet() {
+      try {
+        const msj = await window.electronAPI.MSJ_filesDB_Data_Carpet(); //desde preload.js
+        //console.log("lista archivos:",msj)
+        setFileList(msj);
+        //setTablaIndice(msj);
+        //console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
+      } catch (error) {
+        console.error("Error al obtener el mensaje:", error);
+      }
+    }
+
+    MSJ_FROMMAIN_filesDB_Data_Carpet();
+  }, []);
+
+  useEffect(() => {
+    // console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
+    console.log("prueba:", fileList);
+  }, [tablaIndice, fileList]);
+
+
+
   
   
   return (
