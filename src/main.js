@@ -15,7 +15,7 @@ const path = require("path");
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
+    width: 1400,
     height: 600,
     webPreferences: {
       //preload: path.join(__dirname, './preload.js'),
@@ -120,24 +120,15 @@ ipcMain.on("obtener-mensaje", async (event) => {
 // Función asincrónica que retorna una promesa con un mensaje
 function doSomethingAsync2() {
   return new Promise(async (resolve) => {
-    // Simulamos una operación asincrónica
-    //setTimeout(() => {
-      
-
-      
-  //--- load ----
   const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
   console.log("userData:",userData)
   const dbFolder = path.join(userData,`./data/`);
   console.log("---------------------------------------dbFolder:",dbFolder)
   //const dbFolder = "../../../../data/"; // Cambia esto a la ruta correcta
   const fileData = await readFilesInFolder(dbFolder);
-
-    resolve(fileData);
-    // }, 2000); // Esperamos 2 segundos antes de resolver la promesa
+    resolve(fileData);    
   });
 }
-
 
 ipcMain.on("obtener-mensaje_indice_fom_DB", async (event) => {
   try {
@@ -153,9 +144,7 @@ ipcMain.on("obtener-mensaje_indice_fom_DB", async (event) => {
 
 
 //-----------------------MSJ_filesDB_on_Carpet_Data---------------------Start
-
 const { buscarArchivosEnCarpeta } = require("./services/files/files");
-
 
 ipcMain.on("LISTENER_SEARCH_FILE_DATA_CARPET", async (event) => {
   try {
@@ -167,6 +156,9 @@ ipcMain.on("LISTENER_SEARCH_FILE_DATA_CARPET", async (event) => {
   }
 });
 //-----------------------MSJ_filesDBonData------------------END
+
+
+
 
 //-----------------------Errors handlings-------------------
 function enviarMensajeDeError(event, mensaje) {

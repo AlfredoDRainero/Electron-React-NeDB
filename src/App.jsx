@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
 import styled from "styled-components";
+
+//components
 import BurgerButton from './components/BurgerButton';
 import Tabla_Indice from "./components/TablaIndice";
+
+
+//functions
+import MSJ_FROMFRONT_sendAdressUnformatedReports from "./SendAndReceiveData";
+
+//import MSJ_FROMBACK_IndiceDB from "./SendAndReceiveData";
+//import MSJ_FROMBACK_filesDB_Data_Carpet from "./SendAndReceiveData";
+
+
+import FileListTable from "./components/TablaFiles";
 
 
 const MainDiv = styled.div`
@@ -27,25 +39,16 @@ const MainDiv = styled.div`
 function App() {
 
   const [tablaIndice, setTablaIndice] = useState({ rows: [] });
-  const [fileList, setFileList] = useState(null);
-
+  //const [fileList, setFileList] = useState(null);
 
  //console.log("prueba")
   useEffect(() => {
-    function enviarDatos() {
-      const datos = { name: "asdasds", age: 301 }; // Datos a insertar en la base de datos
-      window.electronAPI.enviarDatos(datos);
-    }
 
-    function enviarDireccion() {
-      //const datos = { name: "John dd", age: 301 }; // Datos a insertar en la base de datos
-      window.electronAPI.enviarDireccion(
-        "C:\\Users\\vwari8y.VW\\Documents\\informesCZ\\prueba4\\Electron-React-NeDB\\InformesSinProcesar\\"
-      );
-    }
 
-    enviarDatos();
-    enviarDireccion();
+    MSJ_FROMFRONT_sendAdressUnformatedReports();    // it's used to send to main a carpet adress. where we can find unformated "Reports CHR and HDR" files 
+
+
+
   },[]);
 
   
@@ -60,6 +63,8 @@ function App() {
         console.error("Error al obtener el mensaje:", error);
       }
     }
+
+
 
     async function obtenerMensajeIndiceDB() {
       try {
@@ -82,26 +87,11 @@ function App() {
 
 
   
-  useEffect(() => {
-    async function MSJ_FROMMAIN_filesDB_Data_Carpet() {
-      try {
-        const msj = await window.electronAPI.MSJ_filesDB_Data_Carpet(); //desde preload.js
-        //console.log("lista archivos:",msj)
-        setFileList(msj);
-        //setTablaIndice(msj);
-        //console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
-      } catch (error) {
-        console.error("Error al obtener el mensaje:", error);
-      }
-    }
-
-    MSJ_FROMMAIN_filesDB_Data_Carpet();
-  }, []);
-
+  
   useEffect(() => {
     // console.log("Mensaje 2recibido en app.jsx:", tablaIndice);
-    console.log("prueba:", fileList);
-  }, [tablaIndice, fileList]);
+    //console.log("prueba:", fileList);
+  }, [tablaIndice]);
 
 
 
@@ -119,7 +109,8 @@ function App() {
 
       <h1>Tabla generada</h1>
 
-     
+<FileListTable/>
+    
 
       
   
@@ -138,10 +129,10 @@ export default App;
 
 
 
- {/*<h1>Data from SQLite Database</h1>
+/*<h1>Data from SQLite Database</h1>
         <ul>
           {data.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
-          <Table data={convertLastFiveColumns(splitText(fileContent))} />*/}
+          <Table data={convertLastFiveColumns(splitText(fileContent))} />*/
