@@ -18,7 +18,7 @@ const BurgerButtonWrapper = styled.button`
 const Line1 = styled.div`
   width: 20px;
   height: 2px;
-  background-color: #333;
+  background-color: gray;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,7 +33,7 @@ const Line1 = styled.div`
 const Line2 = styled.div`
   width: 20px;
   height: 2px;
-  background-color: #333;
+  background-color: gray;
   position: absolute;
   top: 50%;
   left: 50%;

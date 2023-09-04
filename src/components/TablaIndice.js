@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
 const TableWrapper = styled.div`
   //margin: 20px;
   //position:absolute;
   //top:0;
   //left:0;
-  width: 30vw;
+  width: 100%;
   //background-color: gray;
   align-self: start;
   justify-self: start;
