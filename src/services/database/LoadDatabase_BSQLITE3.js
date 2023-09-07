@@ -27,8 +27,37 @@ async function readFilesInFolder(dbFolderPath) {
   return result;
 }
 
+
+async function readFileInFolder(dbFolderPath, fileName) {
+  const filePath = path.join(dbFolderPath, fileName);
+  if (!fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
+    throw new Error('El archivo no existe o no es un archivo válido.');
+  }
+
+  const db = new Database(filePath, { verbose: console.log });
+  const stmt = db.prepare('SELECT date, time, partcomment, partnb, orden FROM title');
+  const rows = stmt.all();
+
+  db.close();
+
+  return { [fileName]: { data: rows } };
+}
+
+/*// Ejemplo de uso
+const dbFolderPath = 'ruta/de/la/carpeta';
+const fileName = 'nombre_del_archivo.db';
+
+try {
+  const result = await readFilesInFolder(dbFolderPath, fileName);
+  console.log(result);
+} catch (error) {
+  console.error('Error:', error.message);
+}*/
+
+
 module.exports = {
-  readFilesInFolder
+  readFilesInFolder,
+  readFileInFolder
 };
 
 

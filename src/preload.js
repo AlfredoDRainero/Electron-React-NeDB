@@ -22,11 +22,31 @@ contextBridge.exposeInMainWorld('electronAPI', {
   },
 
 
+
+  ///------------------- PRUEBA DE ENVIAR Y RECIBIR UN MENSAJE. ----------------------------------
+  enviarMSJ: (datos) => {
+    // Enviar un mensaje al proceso principal
+ipcRenderer.send('mensajeDesdeRenderizador', 'Hola, proceso principal.');
+
+// Escuchar una respuesta del proceso principal
+ipcRenderer.on('respuestaAlRenderizador', (event, data) => {
+  console.log('Respuesta recibida en el proceso de renderizado:', data);
+});
+  },
+//----------------------------------------------------------------------------------------------------
+
+
+
+
+
   recibirMensaje,
   recibirMensajeIndiceDB,
   MSJ_DateTimePartnbPathFromFile_Main_to_App,
   MSJ_filesDB_Data_Carpet
 });
+
+
+
 
 // Función para recibir el mensaje desde main.js y exponerlo al contexto del navegador
 async function recibirMensaje() {

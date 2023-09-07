@@ -12,9 +12,12 @@ const path = require("path");
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 
+// Create the browser window.
+
+let mainWindow;
+
 const createWindow = () => {
-  // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 1400,
     height: 600,
     webPreferences: {
@@ -22,7 +25,6 @@ const createWindow = () => {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY
     }
   });
-
   // and load the index.html of the app.
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
 
@@ -57,40 +59,35 @@ app.on("activate", () => {
 
 // carga de archivos en base de datos con llamada activada pedida desde react
 ipcMain.on("direccion", (event, ubicacion) => {
-  
-  
-  
   SaveFilesToDB(ubicacion);
   //console.log("ubicacion:", ubicacion);
-
-
-
-
-
 });
 
 
 
+ ///------------------- PRUEBA DE ENVIAR Y RECIBIR UN MENSAJE. ----------------------------------
+ipcMain.on('mensajeDesdeRenderizador', (event, data) => {
+  console.log('Mensaje recibido en el proceso principal:', data);
+  // Envía una respuesta al proceso de renderizado
+  mainWindow.webContents.send('respuestaAlRenderizador', 'Mensaje recibido en el proceso principal');
+});
+//-----------------------------------------------------------------------------------------------------
 
 
 
 ipcMain.on("obtener-mensaje2", async (event) => {
-
- await obtenerRegistrosEncontrados().then((registrosEncontrados) => {
-    // Aquí podemos acceder a los datos en la variable registrosEncontrados
-    event.sender.send("dateTimePartnbPathFromFile_Main_to_App", registrosEncontrados)   
-  })
-  .catch((error) => {
-
-    console.error("Error al obtener registros:", error);
-  });
-
-    
+  await obtenerRegistrosEncontrados()
+    .then((registrosEncontrados) => {
+      // Aquí podemos acceder a los datos en la variable registrosEncontrados
+      event.sender.send(
+        "dateTimePartnbPathFromFile_Main_to_App",
+        registrosEncontrados
+      );
+    })
+    .catch((error) => {
+      console.error("Error al obtener registros:", error);
+    });
 });
-
-
-
-
 
 //---------------------- mensaje 1 start-----------------------------------
 // Función asincrónica que retorna una promesa con un mensaje
@@ -103,7 +100,6 @@ function doSomethingAsync() {
   });
 }
 
-
 ipcMain.on("obtener-mensaje", async (event) => {
   try {
     const mensaje = await doSomethingAsync();
@@ -115,18 +111,16 @@ ipcMain.on("obtener-mensaje", async (event) => {
 });
 //-----------------------mensaje 1 end ------------------------------------
 
-
-
 // Función asincrónica que retorna una promesa con un mensaje
 function doSomethingAsync2() {
   return new Promise(async (resolve) => {
-  const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
-  console.log("userData:",userData)
-  const dbFolder = path.join(userData,`./data/`);
-  console.log("---------------------------------------dbFolder:",dbFolder)
-  //const dbFolder = "../../../../data/"; // Cambia esto a la ruta correcta
-  const fileData = await readFilesInFolder(dbFolder);
-    resolve(fileData);    
+    const userData = app.getAppPath(); // Obtén la ubicación de la aplicación
+    console.log("userData:", userData);
+    const dbFolder = path.join(userData, `./data/`);
+    console.log("---------------------------------------dbFolder:", dbFolder);
+    //const dbFolder = "../../../../data/"; // Cambia esto a la ruta correcta
+    const fileData = await readFilesInFolder(dbFolder);
+    resolve(fileData);
   });
 }
 
@@ -136,12 +130,12 @@ ipcMain.on("obtener-mensaje_indice_fom_DB", async (event) => {
     event.sender.send("mensaje-desde-main_indice_DB_B", mensaje);
   } catch (error) {
     // Manejo de errores si es necesario
-    event.sender.send("mensaje-desde-main_indice_DB", "Error al obtener el mensaje");
+    event.sender.send(
+      "mensaje-desde-main_indice_DB",
+      "Error al obtener el mensaje"
+    );
   }
 });
-
-
-
 
 //-----------------------MSJ_filesDB_on_Carpet_Data---------------------Start
 const { buscarArchivosEnCarpeta } = require("./services/files/files");
@@ -149,7 +143,7 @@ const { buscarArchivosEnCarpeta } = require("./services/files/files");
 ipcMain.on("LISTENER_SEARCH_FILE_DATA_CARPET", async (event) => {
   try {
     const msj = await buscarArchivosEnCarpeta();
-    console.log("msj------------->",msj)
+    console.log("msj------------->", msj);
     event.sender.send("SEND_RESULT__SEARCH_FILE_DATA_CARPET", msj);
   } catch (error) {
     enviarMensajeDeError(event, "Error al obtener el mensaje");
@@ -157,12 +151,8 @@ ipcMain.on("LISTENER_SEARCH_FILE_DATA_CARPET", async (event) => {
 });
 //-----------------------MSJ_filesDBonData------------------END
 
-
-
-
 //-----------------------Errors handlings-------------------
 function enviarMensajeDeError(event, mensaje) {
   event.sender.send("mensaje-desde-main_indice_DB", mensaje);
 }
 //----------------------------------------------------------
-

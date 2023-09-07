@@ -103,7 +103,7 @@ const TopContainer = styled.div`
 const BottomContainer = styled.div`
   /* Estilos para el contenedor inferior */
   display: grid;
-  grid-template-columns: 3fr 1fr; /* Dos columnas de igual tamaño */
+  grid-template-columns: 3fr auto; /* Dos columnas de igual tamaño */
   //gap: 5px; /* Espacio entre las columnas */
   height: calc(75vh);
 `;
@@ -129,6 +129,7 @@ function App() {
   //console.log("prueba")
   useEffect(() => {
     MSJ_FROMFRONT_sendAdressUnformatedReports(); // it's used to send to main a carpet adress. where we can find unformated "Reports CHR and HDR" files
+    
   }, []);
 
   //
@@ -187,7 +188,7 @@ function App() {
             <BottomContainer>
               {/* Contenedor inferior */}
               <LeftBottomContainer>
-                <Tabla_Indice data={tablaIndice} />
+                <Tabla_Indice data={tablaIndice} /> {/*problema por la falta de key aca*/}
               </LeftBottomContainer>
               <RightBottomContainer>
                 <FileListTable />
@@ -209,3 +210,38 @@ export default App;
           ))}
         </ul>
           <Table data={convertLastFiveColumns(splitText(fileContent))} />*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

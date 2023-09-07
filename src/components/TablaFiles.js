@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const TableContainer = styled.div`
 
+const TableContainer = styled.div`
   width: 100%; // Ajusta el ancho de la tabla según tus necesidades
-  justify-self: end;
+  //justify-self: start;
 `;
 
 const Table = styled.table`
@@ -22,15 +22,41 @@ const Td = styled.td`
   border: 1px solid #ddd;
   padding: 8px;
   cursor: pointer;
-  max-width: 50px; /* Establece el ancho máximo */
+  max-width: 20vw; /* Establece el ancho máximo */
   white-space: nowrap; /* Evita el salto de línea */
   overflow: hidden; /* Oculta el exceso de texto */
   text-overflow: ellipsis; /* Muestra los tres puntos */
 `;
 
+function SubStringDateAndFilename(texto) {
+  const indicePunto = texto.lastIndexOf(".");
+  const indiceGuionBajo = texto.lastIndexOf("_", indicePunto) - 5;
+  if (indiceGuionBajo !== -1 && indicePunto !== -1) {
+    const subcadenaDate = texto.slice(indiceGuionBajo + 1, indicePunto); // Extraemos la subcadena entre el primer "." y el segundo "_"
+    const subcadenaName = texto.slice(0, indiceGuionBajo); // Extraemos la subcadena desde el inicio hasta el indiceGuionBajo
+    return {
+      date: subcadenaDate,
+      name: subcadenaName
+    };
+  } else {
+    return "No se encontraron las marcas requeridas.";
+  }
+}
+
 function FileListTable() {
   const [fileList, setFileList] = useState([]);
   const [expandedRow, setExpandedRow] = useState(null);
+  const [expandedSubRow, setExpandedSubRow] = useState(null);
+
+  const resultado = fileList.map((elemento) =>
+    SubStringDateAndFilename(elemento)
+  );
+
+  // Utilizamos un conjunto (Set) para almacenar los nombres únicos
+  /* El Set es una estructura de datos en JavaScript que solo puede contener valores únicos. 
+  Cuando convertimos el arreglo de nombres en un conjunto usando new Set(), 
+  automáticamente elimina cualquier duplicado.*/
+  const nombresUnicos = [...new Set(resultado.map((file) => file.name))];
 
   useEffect(() => {
     async function fetchData() {
@@ -53,6 +79,15 @@ function FileListTable() {
     }
   };
 
+  const readDBfile = (archivo) => {
+    console.log("file",archivo)
+  };
+
+
+
+  
+  
+
   return (
     <TableContainer>
       <Table>
@@ -62,18 +97,55 @@ function FileListTable() {
           </tr>
         </thead>
         <tbody>
-          {fileList.map((fileName, index) => (
+          {/*-----------------------------------------------------------------------------------------file name----------------------------*/}
+          {nombresUnicos.map((nombre, index) => (
             <React.Fragment key={index}>
-              <tr>
-                <Td onClick={() => handleRowClick(index)}>{fileName}</Td>
+              <tr onClick={() => setExpandedRow(index)}>
+              <Td>
+                  {nombre}<div style={{margin:"5px"}}>{/*---------------------------------------------file date----------------------------*/}
+                          <Table>
+                          <tbody>                          
+                          {expandedRow === index &&
+                          resultado
+                            .filter((file) => file.name === nombre)
+                            .map((file, subIndex) => (
+                              <tr
+                                key={subIndex}
+                                onClick={() =>
+                                  setExpandedSubRow(subIndex) &
+                                  readDBfile(file.name + "_" + file.date + ".db")
+                                  //console.log("click en", file.date)
+                                }
+                              >
+                              <td>
+                                  {file.date}{expandedSubRow === subIndex && (
+                                    <div style={{margin:"5px", fontSize:"12px"}}>{/*--------------------Reports----------------------------*/}
+                                    <Table>
+                                    <tbody>
+                                          <tr>
+                                            <td>5 lib m2 ra 3971</td>
+                                            <td>7:51</td>
+                                            <td>dia 1</td>
+                                          </tr>
+                                          <tr>
+                                            <td>5 lib m2 ra 3971</td>
+                                            <td>7:51</td>
+                                            <td>dia 1</td>
+                                          </tr>
+                                    </tbody>
+                                    </Table>
+                                    </div>
+                                  )}{/*----------------------------------------------------------------------------------------------------*/}
+                                </td>
+                              </tr>
+                            ))}
+                            </tbody>
+                            </Table>
+                            </div>{/*------------------------------------------------------------------------------------------------------*/}
+              </Td>
               </tr>
-              {expandedRow === index && (
-                <tr>
-                  <Td>Contenido adicional aquí</Td>
-                </tr>
-              )}
             </React.Fragment>
-          ))}
+          ))}{/*---------------------------------------------------------------------------------------------------------------------------*/}
         </tbody>
       </Table>
     </TableContainer>
