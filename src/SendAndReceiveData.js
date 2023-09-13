@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+const { ipcMain } = require("electron");
 
 export  function MSJ_FROMFRONT_sendAdressUnformatedReports(direccion) {
   // Verifica si la dirección es null o no
@@ -11,6 +11,14 @@ export  function MSJ_FROMFRONT_sendAdressUnformatedReports(direccion) {
   // envía la dirección a -> preload -> main
   window.electronAPI.enviarDireccion(direccion);
 }
+
+
+
+
+
+
+
+
 
 
 

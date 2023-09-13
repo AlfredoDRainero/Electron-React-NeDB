@@ -87,8 +87,7 @@ const GridContainer = styled.div`
   //gap: 5px; /* Espacio entre las filas */
   height: 100%; /* Establece la altura del contenedor al 100% del viewport */
   width: 100%;
- // padding: 5px;
-
+  // padding: 5px;
 `;
 
 const TopContainer = styled.div`
@@ -113,7 +112,6 @@ const LeftBottomContainer = styled.div`
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  
 `;
 
 const RightBottomContainer = styled.div`
@@ -129,7 +127,6 @@ function App() {
   //console.log("prueba")
   useEffect(() => {
     MSJ_FROMFRONT_sendAdressUnformatedReports(); // it's used to send to main a carpet adress. where we can find unformated "Reports CHR and HDR" files
-    
   }, []);
 
   //
@@ -165,9 +162,65 @@ function App() {
     //console.log("prueba:", fileList);
   }, [tablaIndice]);
 
+
+  //---------------------------------------- enviar y recibir
+  const [messageToMain, setMessageToMain] = useState("");
+  const [messageFromMain, setMessageFromMain] = useState("");
+
+  useEffect(() => {
+    window.electron.receiveFromMain("respuestaAlRenderizador", (data) => {
+      setMessageFromMain(data);
+    });
+  }, []);
+
+  const sendMessageToMain = () => {
+    window.electron.sendToMain("mensajeDesdeRenderizador", messageToMain);
+  };
+
+  const SendAndRecibMSJ = async (
+  
+    nombreMsjToMain,
+    nombreMsjToRender,
+    fromTo,
+    msjToMain
+    
+    //msjToRender,
+    
+    
+  ) => {
+  
+   // if (where == "renderMain") {
+      window.electron.sendToMain(nombreMsjToMain, msjToMain);
+      await window.electron.receiveFromMain(nombreMsjToRender, (data) => { resolve(data); });      
+    //}
+  
+  
+  };
+
+
+
+  //------------------------------------------------------------------------------
+
+
+
+
   return (
     <>
       <MainDiv>
+        <div>
+          <h1>Comunicación IPC bidireccional en React</h1>
+          <div>
+            <label>Enviar mensaje al proceso principal:</label>
+            <input
+              type="text"
+              value={messageToMain}
+              onChange={(e) => setMessageToMain(e.target.value)}
+            />
+            <button onClick={sendMessageToMain}>Enviar</button>
+          </div>
+          <p>Mensaje recibido en el proceso principal: {messageFromMain}</p>
+        </div>
+
         <div style={{ display: "flex" }}>
           <Sider>
             {/* Menú */}
@@ -188,7 +241,8 @@ function App() {
             <BottomContainer>
               {/* Contenedor inferior */}
               <LeftBottomContainer>
-                <Tabla_Indice data={tablaIndice} /> {/*problema por la falta de key aca*/}
+                <Tabla_Indice data={tablaIndice} />{" "}
+                {/*problema por la falta de key aca*/}
               </LeftBottomContainer>
               <RightBottomContainer>
                 <FileListTable />
@@ -210,38 +264,3 @@ export default App;
           ))}
         </ul>
           <Table data={convertLastFiveColumns(splitText(fileContent))} />*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

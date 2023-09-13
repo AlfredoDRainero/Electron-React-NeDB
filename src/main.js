@@ -65,13 +65,55 @@ ipcMain.on("direccion", (event, ubicacion) => {
 
 
 
- ///------------------- PRUEBA DE ENVIAR Y RECIBIR UN MENSAJE. ----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+ ///------------------- PRUEBA DE ENVIAR Y RECIBIR UN MENSAJE. ----------------------------------------
+
 ipcMain.on('mensajeDesdeRenderizador', (event, data) => {
   console.log('Mensaje recibido en el proceso principal:', data);
-  // Envía una respuesta al proceso de renderizado
-  mainWindow.webContents.send('respuestaAlRenderizador', 'Mensaje recibido en el proceso principal');
+  // Enviar una respuesta al proceso de renderizado
+  mainWindow.webContents.send('respuestaAlRenderizador', 'Respuesta desde el proceso principal-abs');
 });
+
 //-----------------------------------------------------------------------------------------------------
+
+
+const RecibAndSendMSJ = async (
+  
+  nombreMsjToMain,
+  nombreMsjToRender,
+  fromTo,
+  msjToRender  
+  //msjToRender,
+) => {
+
+
+  ipcMain.on(nombreMsjToMain, (event, data) => {
+    console.log('Mensaje recibido en el proceso principal:', data);
+    // Enviar una respuesta al proceso de renderizado
+    mainWindow.webContents.send(nombreMsjToRender, msjToRender);
+  });
+
+
+
+};
+
+
+
+
+
+
+
 
 
 
